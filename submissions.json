@@ -2830,6 +2830,22 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF59704245": {
+    "contest_id": 228,
+    "language": "GNU C++17",
+    "path": "codeforces/228/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Is your horseshoe on the other hoof?",
+    "problem_url": "https://codeforces.com/contest/228/problem/A",
+    "submission_id": "CF59704245",
+    "submission_url": "https://codeforces.com/contest/228/submission/59704245",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Aug/30/2019 17:29"
+  },
   "CF59705200": {
     "contest_id": 9,
     "language": "GNU C++17",
