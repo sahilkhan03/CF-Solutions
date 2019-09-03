@@ -2830,6 +2830,22 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF59958160": {
+    "contest_id": 404,
+    "language": "GNU C++14",
+    "path": "codeforces/404/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Valera and X",
+    "problem_url": "https://codeforces.com/contest/404/problem/A",
+    "submission_id": "CF59958160",
+    "submission_url": "https://codeforces.com/contest/404/submission/59958160",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Sep/03/2019 22:26"
+  },
   "CF59958367": {
     "contest_id": 742,
     "language": "GNU C++14",
