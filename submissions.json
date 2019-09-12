@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF60454490": {
+    "contest_id": 66,
+    "language": "GNU C++14",
+    "path": "codeforces/66/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Petya and Countryside",
+    "problem_url": "https://codeforces.com/contest/66/problem/B",
+    "submission_id": "CF60454490",
+    "submission_url": "https://codeforces.com/contest/66/submission/60454490",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Sep/12/2019 22:50"
+  },
   "CF60455348": {
     "contest_id": 680,
     "language": "GNU C++14",
