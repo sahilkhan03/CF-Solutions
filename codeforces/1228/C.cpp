@@ -11,7 +11,7 @@ using namespace std;
 #define pf push_front
 #define pb push_back
 #define fast ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define ll long long
+#define ll int64_t
 #define pi pair<int,int>
 #define pl pair<long,long>
 #define pll pair<long long,long long>
