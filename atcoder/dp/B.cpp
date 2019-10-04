@@ -1,81 +1,56 @@
-/*
-    Author : DemonStar
+/*                    ___          |\    /|           ____   ____   ____  ____
+   |     |    /\    /    \ |     | | \  / |    /\    |    \ |    \ |     |    \
+   |_____|   /__\   \____  |_____| |  \/  |   /__\   |____/ |____/ |__   |____/
+   |     |  /    \       \ |     | |      |  /    \  |      |      |     |   \
+   |     | /      \ \____/ |     | |      | /      \ |      |      |____ |    \
 */
-
-// #pragma GCC optimize("Ofast")
-// #pragma GCC optimize("unroll-loops")
-// #pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx2,tune=native")
-
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace __gnu_pbds;
-#define ordered_set tree<pair<int, int>, null_type, less<pair<int, int>>, rb_tree_tag, tree_order_statistics_node_update>
-#define fast                      \
-    ios_base::sync_with_stdio(0); \
-    cin.tie(0);                   \
-    cout.tie(0);
+#define lb lower_bound
+#define ub upper_bound
+#define pf push_front
+#define pb push_back
+#define fast ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define ll long long
-#define pi pair<int, int>
-#define pl pair<long long, long long>
-#define pld pair<long double, long double>
+#define pi pair<int,int>
+#define pl pair<long,long>
+#define pll pair<long long,long long>
+#define pld pair<long double,long double>
+#define gc getchar_unlocked
+#define pc putchar_unlocked
 #define endl '\n'
-#define loop(i, n) for (ll i = 0; i < n; i++)
-#define rep(i, begin, end) for (__typeof(begin) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
-#define all(x) x.begin(), x.end()
+#define loop(i,n) for(ll i=0;i<n;i++)
+#define mod 1e9+7
+#define in(x) scanf("%lld",&x)
+#define in2(x,y) scanf("%lld %lld",&x,&y)
 #define vl vector<ll>
-#define vi vector<int>
-#define ml map<ll, ll>
-#define vpl vector<pair<ll, ll>>
-const ll mod = 1e9 + 7;
+#define vpll vector<pair<ll,ll>>
+#define INF 0x3f3f3f3f
+#define mp make_pair
 
-template <typename T, typename TT>
-ostream &operator<<(ostream &os, const pair<T, TT> &t)
-{
-    return os << t.first << " " << t.second;
-}
-template <typename T>
-ostream &operator<<(ostream &os, const vector<T> &t)
-{
-    for (auto &i : t)
-        os << i << " ";
-    return os;
-}
-template <typename T>
-istream &operator>>(istream &is, vector<T> &v)
-{
-    for (T &t : v)
-        is >> t;
-    return is;
-}
-template <typename T1, typename T2>
-istream &operator>>(istream &is, vector<pair<T1, T2>> &v)
-{
-    for (pair<T1, T2> &t : v)
-        is >> t.first >> t.second;
-    return is;
+ll calc(vl &dp,vl v,ll cost,ll pos, ll n) {
+    if(dp[pos] == -1) {
+        if(pos == n) return  dp[pos] = cost;
+        if(pos == n-1) return dp[pos] = calc(dp,v,cost+abs(v[pos-1]-v[pos]),pos+1,n);
+        dp[pos] = cost + min(calc(dp,v,abs(v[pos-1]-v[pos]),pos+1,n), calc(dp,v,abs(v[pos-1]-v[pos+1]),pos+2,n));
+    }
+    return dp[pos];
 }
 
 int main()
 {
-    fast;
-    int n, k;
-    cin >> n >> k;
-    vi v(n);
-    cin >> v;
-    vi dp(n + 1, 1e9);
-    dp[0] = 0;
-    rep(i, 1, n)
-    {
-        rep(j, 1, k + 1) if (i >= j) dp[i] = min(dp[i], dp[i - j] + abs(v[i] - v[i - j]));
+    ll n,k;
+    if(in2(n,k)!=2) return 0;
+    vl v(n),dp(n+1,INF);
+    loop(i,n) in(v[i]);
+    dp[n] = 0;
+    dp[n-1] = abs(v[n-1]-v[n-2]);
+    for(ll i=n-2;i>0;i--) {
+        for(ll j=1;j<=k;j++)
+            if(i+j<=n)
+                dp[i] = min(dp[i+j] + abs(v[i-1]-v[i+j-1]),dp[i]);
     }
-    cout << dp[n - 1] << endl;
-
-#ifdef LOCAL
-    cerr
-        << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n";
-#endif
-
+    cout<<dp[1]<<endl;
+    // for(auto x:dp) cout<<x<<" ";
     return 0;
 }
