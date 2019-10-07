@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF62050566": {
+    "contest_id": 216,
+    "language": "GNU C++17",
+    "path": "codeforces/216/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Forming Teams",
+    "problem_url": "https://codeforces.com/contest/216/problem/B",
+    "submission_id": "CF62050566",
+    "submission_url": "https://codeforces.com/contest/216/submission/62050566",
+    "tags": [
+      "dfs and similar",
+      "implementation",
+      "*1700"
+    ],
+    "timestamp": "Oct/07/2019 14:49"
+  },
   "CF62071534": {
     "contest_id": 1228,
     "language": "GNU C++14",
