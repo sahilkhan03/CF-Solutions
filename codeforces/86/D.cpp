@@ -5,6 +5,7 @@
    |     | /      \ \____/ |     | |      | /      \ |      |      |____ |    \
 */
 #include<bits/stdc++.h>
+#pragma GCC optimeze("ofast")
 using namespace std;
 #define lb lower_bound
 #define ub upper_bound
