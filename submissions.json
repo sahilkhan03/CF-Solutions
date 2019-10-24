@@ -2830,6 +2830,27 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF63338632": {
+    "contest_id": 777,
+    "language": "GNU C++14",
+    "path": "codeforces/777/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Alyona and Spreadsheet",
+    "problem_url": "https://codeforces.com/contest/777/problem/C",
+    "submission_id": "CF63338632",
+    "submission_url": "https://codeforces.com/contest/777/submission/63338632",
+    "tags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "greedy",
+      "implementation",
+      "two pointers",
+      "*1600"
+    ],
+    "timestamp": "Oct/24/2019 22:40"
+  },
   "CF63400022": {
     "contest_id": 518,
     "language": "GNU C++14",
