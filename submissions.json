@@ -1919,6 +1919,22 @@
     ],
     "timestamp": "Nov/28/2020 18:11"
   },
+  "AC8463394": {
+    "contest_id": "abc145",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/abc145/A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "Circle",
+    "problem_url": "https://atcoder.jp/contests/abc145/tasks/abc145_a",
+    "submission_id": "AC8463394",
+    "submission_url": "https://atcoder.jp/contests/abc145/submissions/8463394",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Nov/16/2019 17:31"
+  },
   "AC8468296": {
     "contest_id": "abc145",
     "language": "C++14 (GCC 5.4.1)",
