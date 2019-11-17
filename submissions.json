@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF65267997": {
+    "contest_id": 1144,
+    "language": "GNU C++14",
+    "path": "codeforces/1144/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Equalize Them All",
+    "problem_url": "https://codeforces.com/contest/1144/problem/D",
+    "submission_id": "CF65267997",
+    "submission_url": "https://codeforces.com/contest/1144/submission/65267997",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*1400"
+    ],
+    "timestamp": "Nov/17/2019 23:37"
+  },
   "CF65447209": {
     "contest_id": 611,
     "language": "GNU C++14",
