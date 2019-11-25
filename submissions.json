@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF65720519": {
+    "contest_id": 813,
+    "language": "GNU C++14",
+    "path": "codeforces/813/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "The Tag Game",
+    "problem_url": "https://codeforces.com/contest/813/problem/C",
+    "submission_id": "CF65720519",
+    "submission_url": "https://codeforces.com/contest/813/submission/65720519",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "*1700"
+    ],
+    "timestamp": "Nov/26/2019 00:18"
+  },
   "CF65800729": {
     "contest_id": 616,
     "language": "GNU C++14",
