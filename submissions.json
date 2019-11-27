@@ -2830,6 +2830,22 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF65800729": {
+    "contest_id": 616,
+    "language": "GNU C++14",
+    "path": "codeforces/616/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "The Labyrinth",
+    "problem_url": "https://codeforces.com/contest/616/problem/C",
+    "submission_id": "CF65800729",
+    "submission_url": "https://codeforces.com/contest/616/submission/65800729",
+    "tags": [
+      "dfs and similar",
+      "*1600"
+    ],
+    "timestamp": "Nov/27/2019 12:48"
+  },
   "CF65805625": {
     "contest_id": 1202,
     "language": "GNU C++14",
