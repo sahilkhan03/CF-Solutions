@@ -1919,6 +1919,22 @@
     ],
     "timestamp": "Nov/28/2020 18:11"
   },
+  "AC8725796": {
+    "contest_id": "sumitrust2019",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/sumitrust2019/A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "November 30",
+    "problem_url": "https://atcoder.jp/contests/sumitrust2019/tasks/sumitb2019_a",
+    "submission_id": "AC8725796",
+    "submission_url": "https://atcoder.jp/contests/sumitrust2019/submissions/8725796",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Dec/01/2019 17:33"
+  },
   "AC8731528": {
     "contest_id": "sumitrust2019",
     "language": "C++14 (GCC 5.4.1)",
