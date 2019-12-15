@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF66952037": {
+    "contest_id": 1271,
+    "language": "GNU C++14",
+    "path": "codeforces/1271/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Blocks",
+    "problem_url": "https://codeforces.com/contest/1271/problem/B",
+    "submission_id": "CF66952037",
+    "submission_url": "https://codeforces.com/contest/1271/submission/66952037",
+    "tags": [
+      "greedy",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Dec/15/2019 15:28"
+  },
   "CF66957281": {
     "contest_id": 1271,
     "language": "GNU C++14",
