@@ -1919,6 +1919,22 @@
     ],
     "timestamp": "Nov/28/2020 18:11"
   },
+  "AC9181403": {
+    "contest_id": "agc041",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/agc041/A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "Table Tennis Training",
+    "problem_url": "https://atcoder.jp/contests/agc041/tasks/agc041_a",
+    "submission_id": "AC9181403",
+    "submission_url": "https://atcoder.jp/contests/agc041/submissions/9181403",
+    "tags": [
+      "AtCoder",
+      "*300"
+    ],
+    "timestamp": "Dec/28/2019 18:14"
+  },
   "CF100031338": {
     "contest_id": 1455,
     "language": "GNU C++17",
