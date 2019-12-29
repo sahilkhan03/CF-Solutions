@@ -1,103 +1,51 @@
-#include "bits/stdc++.h"
+/*                    ___          |\    /|           ____   ____   ____  ____
+   |     |    /\    /    \ |     | | \  / |    /\    |    \ |    \ |     |    \
+   |_____|   /__\   \____  |_____| |  \/  |   /__\   |____/ |____/ |__   |____/
+   |     |  /    \       \ |     | |      |  /    \  |      |      |     |   \
+   |     | /      \ \____/ |     | |      | /      \ |      |      |____ |    \
+*/
+#include<bits/stdc++.h>
 using namespace std;
-#define int long long int
-#define endl "\n"
-const int MOD=1e9+7;
-#define sim template < class c
-#define ris return * this
-#define dor > debug & operator <<
-#define eni(x) sim > typename \
-  enable_if<sizeof dud<c>(0) x 1, debug&>::type operator<<(c i) {
-sim > struct rge { c b, e; };
-sim > rge<c> range(c i, c j) { return rge<c>{i, j}; }
-sim > auto dud(c* x) -> decltype(cerr << *x, 0);
-sim > char dud(...);
-struct debug {
-#ifdef HOME
-~debug() { cerr << endl; }
-eni(!=) cerr << boolalpha << i; ris; }
-eni(==) ris << range(begin(i), end(i)); }
-sim, class b dor(pair < b, c > d) {
-  ris << "(" << d.first << ", " << d.second << ")";
-}
-sim dor(rge<c> d) {
-  *this << "[";
-  for (auto it = d.b; it != d.e; ++it)
-    *this << ", " + 2 * (it == d.b) << *it;
-  ris << "]";
-}
-#else
-sim dor(const c&) { ris; }
-#endif
-};
-#define me(...) " [" << #__VA_ARGS__ ": " << (__VA_ARGS__) << "] "
- 
-int32_t main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    int n;
-    cin>>n;
-    int a[n+5];
-    map<int,int>m;
-    set<int>v;
-    for(int i=1;i<=n;i++){
-        cin>>a[i];
-        if(a[i]){
-            m[a[i]] = i;
-        }else{
-            v.insert(i);
-        }
-    }
-    set<int>k;
-    for(int i=1;i<=n;i++){
-        if(m[i] == 0){
-            k.insert(i);
-        }
-    }
-    map<int,int>vis;
-    for(auto x:k){
-        vis[x]++;
-    }
-    for(auto y:v){
-        vis[y]++;
-    }
-    // debug()<<me(vis);
-    // debug()<<me(k) me(v);
-    for(auto z:vis){
-        if(z.second >= 2){
-            // debug()<<me(v);
-            for(auto y = v.rbegin();y != v.rend();y++){
-                if(*y !=  z.first){
-                    a[*y] = z.first;
-                    v.erase(*y);
-                    k.erase(z.first);
-                    break;
-                }
-            }
-            // for(auto y:v){
-            //     if(y !=  z.first){
-            //         a[y] = z.first;
-            //         v.erase(y);
-            //         // k.erase(z.first);
-            //         break;
-            //     }
-            // }
-        }
-    }
-    for(auto x:k){
-        bool flag = false;
-        for(auto y:v){
-            if(y != x){
-                a[y] = x;
-                v.erase(y);
-                break;
-            }
-        }
-    }
-    for(int i=1;i<=n;i++){
-        cout<<a[i]<<" ";
-        // cerr<<i<<" ";
-    }
+#define isko_lga_dala_to_life_jhinga_la_la ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define lb lower_bound
+#define ub upper_bound
+#define pf push_front
+#define pb push_back
+#define ll long long
+#define pi pair<int,int>
+#define pl pair<long long,long long>
+#define pld pair<long double,long double>
+#define endl '\n'
+#define loop(i,n) for(ll i=0;i<n;i++)
+#define rep(i,a,b) for(int i=(a);i<=(b);i++)
+#define mod ((ll)(1e9+7))
+#define in(x) scanf("%lld",&x)
+#define in2(x,y) scanf("%lld %lld",&x,&y)
+#define in3(x,y,z) scanf("%lld %lld %lld",&x,&y,&z)
+#define inv(v) for(auto&i:v) in(i)
+#define all(x) x.begin(), x.end()
+#define vl vector<ll>
+#define ml unordered_map<ll,ll> 
+#define vpl vector<pair<ll,ll>>
+#define INF 0x3f3f3f3f
+
+template<typename T, typename TT>
+ostream& operator<<(ostream &os, const pair<T, TT> &t) { return os<<t.first<<" "<<t.second; }
+template<typename T>
+ostream& operator<<(ostream& os, const vector<T> &t) { for(auto& i: t) os<<i<<" "; return os; }
+
+int main() {
+        ll n;
+        in(n);
+        vl v(n);
+        vl r,l,p(n,-1);
+        loop(i,n) {in(v[i]);if(!v[i]) r.push_back(i); if(v[i]) p[v[i]-1]=i;}
+        loop(i,p.size()) if(p[i]==-1) l.push_back(i);
+        sort(all(l));
+		sort(all(r));
+		// cout<<r<<endl<<l<<endl;
+		loop(i,l.size()) if(r[i]== l[i]) swap(l[i],l[(i+1)%l.size()]);
+		loop(i,r.size()) v[r[i]]  = l[i]+1;
+        cout<<v<<endl;
     return 0;
-    
 }
