@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF68166401": {
+    "contest_id": 1284,
+    "language": "GNU C++14",
+    "path": "codeforces/1284/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "New Year and Naming",
+    "problem_url": "https://codeforces.com/contest/1284/problem/A",
+    "submission_id": "CF68166401",
+    "submission_url": "https://codeforces.com/contest/1284/submission/68166401",
+    "tags": [
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Jan/04/2020 17:40"
+  },
   "CF68192282": {
     "contest_id": 1284,
     "language": "GNU C++14",
