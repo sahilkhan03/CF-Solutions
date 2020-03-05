@@ -35,8 +35,8 @@ template<typename T>
 ostream& operator<<(ostream& os, const vector<T> &t) { for(auto& i: t) os<<i<<" "; return os; }
 
 ll func(ll n) {
-    for(ll i=n/2;i>1;i--) 
-        if(n%i==0) return i;
+    for(ll i=2;i*i<=n;i++) 
+        if(n%i==0) return n/i;
     return -1;
 }
 
