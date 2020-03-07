@@ -7596,6 +7596,23 @@
     ],
     "timestamp": "Jan/11/2020 18:40"
   },
+  "CF72662511": {
+    "contest_id": 1028,
+    "language": "GNU C++14",
+    "path": "codeforces/1028/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Unnatural Conditions",
+    "problem_url": "https://codeforces.com/contest/1028/problem/B",
+    "submission_id": "CF72662511",
+    "submission_url": "https://codeforces.com/contest/1028/submission/72662511",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Mar/07/2020 18:13"
+  },
   "CF72664000": {
     "contest_id": 614,
     "language": "GNU C++14",
