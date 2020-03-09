@@ -7596,6 +7596,24 @@
     ],
     "timestamp": "Jan/11/2020 18:40"
   },
+  "CF72835750": {
+    "contest_id": 978,
+    "language": "GNU C++14",
+    "path": "codeforces/978/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Mentors",
+    "problem_url": "https://codeforces.com/contest/978/problem/F",
+    "submission_id": "CF72835750",
+    "submission_url": "https://codeforces.com/contest/978/submission/72835750",
+    "tags": [
+      "binary search",
+      "data structures",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Mar/09/2020 21:53"
+  },
   "CF72942317": {
     "contest_id": 745,
     "language": "GNU C++17",
