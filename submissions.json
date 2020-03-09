@@ -7596,6 +7596,22 @@
     ],
     "timestamp": "Jan/11/2020 18:40"
   },
+  "CF72777232": {
+    "contest_id": 985,
+    "language": "GNU C++14",
+    "path": "codeforces/985/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Liebig's Barrels",
+    "problem_url": "https://codeforces.com/contest/985/problem/C",
+    "submission_id": "CF72777232",
+    "submission_url": "https://codeforces.com/contest/985/submission/72777232",
+    "tags": [
+      "greedy",
+      "*1500"
+    ],
+    "timestamp": "Mar/09/2020 15:36"
+  },
   "CF72804502": {
     "contest_id": 1004,
     "language": "GNU C++14",
