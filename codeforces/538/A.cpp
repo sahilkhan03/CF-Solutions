@@ -40,16 +40,14 @@ int main() {
     string s;
     cin>>s;
     string str="CODEFORCES";
-    ll l=0,r=s.size()-1,i=0;
-    while(s[l]==str[i] and i<str.size() and l<s.size()) l++,i++;
-    i=str.size()-1;
-    while(s[r]==str[i] and i>=0 and r>=0) r--,i--;
-    if(l+s.size()-r-1>=10) 
-        cout<<"YES"<<endl;
-    else 
-        cout<<"NO"<<endl;
-    #ifdef LOCAL_DEFINE
-        cerr << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n";
-    #endif
+    for(ll i=0;i<s.size();i++) {
+        for(ll j=i;j<s.size();j++) {
+            if(str == s.substr(0,i)+s.substr(j+1,s.size()-j)) {
+                cout<<"YES"<<endl;
+                return 0;
+            }
+        }
+    }
+    cout<<"NO"<<endl;
     return 0;
 }
