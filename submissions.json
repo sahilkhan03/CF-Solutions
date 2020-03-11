@@ -7596,6 +7596,22 @@
     ],
     "timestamp": "Jan/11/2020 18:40"
   },
+  "CF72942317": {
+    "contest_id": 745,
+    "language": "GNU C++17",
+    "path": "codeforces/745/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Hongcow Solves A Puzzle",
+    "problem_url": "https://codeforces.com/contest/745/problem/B",
+    "submission_id": "CF72942317",
+    "submission_url": "https://codeforces.com/contest/745/submission/72942317",
+    "tags": [
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Mar/11/2020 14:40"
+  },
   "CF72943750": {
     "contest_id": 6,
     "language": "GNU C++14",
