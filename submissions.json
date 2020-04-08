@@ -7596,6 +7596,24 @@
     ],
     "timestamp": "Jan/11/2020 18:40"
   },
+  "CF75822350": {
+    "contest_id": 1327,
+    "language": "GNU C++14",
+    "path": "codeforces/1327/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Princesses and Princes",
+    "problem_url": "https://codeforces.com/contest/1327/problem/B",
+    "submission_id": "CF75822350",
+    "submission_url": "https://codeforces.com/contest/1327/submission/75822350",
+    "tags": [
+      "brute force",
+      "graphs",
+      "greedy",
+      "*1200"
+    ],
+    "timestamp": "Apr/08/2020 15:42"
+  },
   "CF75914964": {
     "contest_id": 1328,
     "language": "GNU C++14",
