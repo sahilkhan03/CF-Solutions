@@ -8701,6 +8701,26 @@
     ],
     "timestamp": "Apr/09/2020 10:05"
   },
+  "CF75976182": {
+    "contest_id": 1328,
+    "language": "GNU C++14",
+    "path": "codeforces/1328/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Carousel",
+    "problem_url": "https://codeforces.com/contest/1328/problem/D",
+    "submission_id": "CF75976182",
+    "submission_url": "https://codeforces.com/contest/1328/submission/75976182",
+    "tags": [
+      "constructive algorithms",
+      "dp",
+      "graphs",
+      "greedy",
+      "math",
+      "*1800"
+    ],
+    "timestamp": "Apr/09/2020 15:28"
+  },
   "CF76000869": {
     "contest_id": 1332,
     "language": "GNU C++14",
