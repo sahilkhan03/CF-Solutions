@@ -35,13 +35,20 @@ template<typename T>
 ostream& operator<<(ostream& os, const vector<T> &t) { for(auto& i: t) os<<i<<" "; return os; }
 
 int main() {
+    vl p(33); p[0]=1;
+    rep(i,1,32) p[i]=p[i-1]*2;
+    rep(i,1,32) p[i]+=p[i-1];
     ll t;in(t);
     while (t--) {
         ll n; in(n);
         vl v(n); inv(v);
         ll ans=0,last=v[0];
         rep(i,1,n-1) {
-            if(v[i]<last) ans = max(ans, (ll)log2(last-v[i])+1);
+            if(v[i]<last) {
+                ll num = lower_bound(p.begin(),p.end(),last-v[i])-p.begin();
+                ans = max(ans, num+1);
+                //v[i]+=p[num];
+            } 
             last = max(last,v[i]);
         }
         cout<<ans<<endl; 
