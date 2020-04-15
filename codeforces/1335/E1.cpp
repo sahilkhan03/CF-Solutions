@@ -39,11 +39,12 @@ template<typename T>
 ostream& operator<<(ostream& os, const vector<T> &t) { for(auto& i: t) os<<i<<" "; return os; }
 
 int main() {
-    fast;
-    ll t;in(t);
+    // fast;
+    int t;scanf("%d",&t);
     while (t--) {
-        ll n;in(n);
-        vl v(n); inv(v);
+        int n;scanf("%d",&n);
+        vector<int> v(n);
+        loop(i,n) scanf("%d",&v[i]);
         vector<vector<int>> freq(26, vector<int>(n+1));
         loop(i,26) {
             freq[i][0]=0;
@@ -63,7 +64,7 @@ int main() {
                 j--; 
             }  
         }
-        cout<<ans<<endl;
+        printf("%d\n",ans);
     }
     #ifdef LOCAL
         cerr << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n";
