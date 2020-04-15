@@ -39,7 +39,7 @@ template<typename T>
 ostream& operator<<(ostream& os, const vector<T> &t) { for(auto& i: t) os<<i<<" "; return os; }
 
 int main() {
-    // fast;
+    fast;
     int t;scanf("%d",&t);
     while (t--) {
         int n;scanf("%d",&n);
