@@ -7596,6 +7596,23 @@
     ],
     "timestamp": "Jan/11/2020 18:40"
   },
+  "CF77649496": {
+    "contest_id": 1343,
+    "language": "GNU C++14",
+    "path": "codeforces/1343/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Candies",
+    "problem_url": "https://codeforces.com/contest/1343/problem/A",
+    "submission_id": "CF77649496",
+    "submission_url": "https://codeforces.com/contest/1343/submission/77649496",
+    "tags": [
+      "brute force",
+      "math",
+      "*900"
+    ],
+    "timestamp": "Apr/22/2020 18:44"
+  },
   "CF77653930": {
     "contest_id": 1343,
     "language": "GNU C++14",
