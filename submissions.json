@@ -1,4 +1,20 @@
 {
+  "AC13048461": {
+    "contest_id": "abc167",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/abc167/C.cpp",
+    "platform": "AtCoder",
+    "problem_index": "C",
+    "problem_name": "Skill Up",
+    "problem_url": "https://atcoder.jp/contests/abc167/tasks/abc167_c",
+    "submission_id": "AC13048461",
+    "submission_url": "https://atcoder.jp/contests/abc167/submissions/13048461",
+    "tags": [
+      "AtCoder",
+      "*300"
+    ],
+    "timestamp": "May/10/2020 17:51"
+  },
   "AC13078284": {
     "contest_id": "abc167",
     "language": "C++ (GCC 9.2.1)",
