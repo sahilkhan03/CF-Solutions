@@ -68,21 +68,10 @@ int sum(int i)
         s += fen[i], i -= i & (-i);
     return s;
 }
-int search(int n)
-{
-    int pos = 0, sum = 0;
-    for (int i = log2(N); i >= 0; i--)
-    {
-        if (pos + (1 << i) < N and sum + fen[pos + (1 << i)] < n)
-            pos += 1 << i, sum += fen[pos];
-    }
-    return pos + 1;
-}
-
 int main()
 {
     fast;
-    int n, q, last, t;
+    int n, q, lo, hi, mid, last, t;
     scanf("%d%d", &n, &q);
     loop(i, n)
     {
@@ -97,14 +86,33 @@ int main()
         else
         {
             t = -t;
-            last = search(t);
+            lo = 1, hi = N, last = hi;
+            while (lo <= hi)
+            {
+                mid = lo + (hi - lo) / 2;
+                if (sum(mid) >= t)
+                    last = mid, hi = mid - 1;
+                else
+                    lo = mid + 1;
+            }
             update(last, -1);
         }
     }
     if (sum(N - 1))
-        printf("%d", search(1));
+    {
+        lo = 1, hi = N - 1, last = N - 1;
+        while (lo <= hi)
+        {
+            mid = lo + (hi - lo) / 2;
+            if (sum(mid) >= 1)
+                hi = mid - 1, last = mid;
+            else
+                lo = mid + 1;
+        }
+        cout << last << endl;
+    }
     else
-        printf("0");
+        cout << 0 << endl;
 #ifdef LOCAL
     cerr
         << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n";
