@@ -72,7 +72,7 @@ int main()
             if (j - v[i].first >= 0)
                 dp[j] = max(dp[j], dp[j - v[i].first] + v[i].second);
     }
-    cout << *max_element(all(dp)) << endl;
+    cout << dp[w] << endl;
 
 #ifdef LOCAL
     cerr
