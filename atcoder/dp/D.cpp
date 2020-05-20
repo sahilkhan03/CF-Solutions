@@ -64,15 +64,18 @@ int main()
     cin >> n >> w;
     vpl v(n);
     cin >> v;
-    vl dp(w + 1, 0);
-    dp[0] = 0;
-    loop(i, n)
+    vector<vl> dp(n + 1, vl(w + 1, 0));
+    dp[0][0] = 0;
+    rep(i, 1, n + 1)
     {
-        for (int j = w; j >= 0; j--)
-            if (j - v[i].first >= 0)
-                dp[j] = max(dp[j], dp[j - v[i].first] + v[i].second);
+        loop(j, w + 1)
+        {
+            dp[i][j] = dp[i - 1][j];
+            if (j - v[i - 1].first >= 0)
+                dp[i][j] = max(dp[i][j], dp[i - 1][j - v[i - 1].first] + v[i - 1].second);
+        }
     }
-    cout << dp[w] << endl;
+    cout << dp[n][w] << endl;
 
 #ifdef LOCAL
     cerr
