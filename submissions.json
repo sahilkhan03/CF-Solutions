@@ -1,4 +1,20 @@
 {
+  "AC13456089": {
+    "contest_id": "dp",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/dp/M.cpp",
+    "platform": "AtCoder",
+    "problem_index": "M",
+    "problem_name": "Candies",
+    "problem_url": "https://atcoder.jp/contests/dp/tasks/dp_m",
+    "submission_id": "AC13456089",
+    "submission_url": "https://atcoder.jp/contests/dp/submissions/13456089",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "May/21/2020 17:58"
+  },
   "AC13456736": {
     "contest_id": "dp",
     "language": "C++14 (GCC 5.4.1)",

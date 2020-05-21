@@ -63,20 +63,19 @@ int main()
     cin >> n >> k;
     vl v(n);
     cin >> v;
-    vl dp(k + 1, 0);
-    dp[0] = 1;
+    vector<vl> dp(n + 1, vl(k + 1, 0));
+    loop(i, k + 1) dp[0][i] = 1;
     for (int i = 1; i < n + 1; i++)
     {
-        vl tmp = dp;
-        for (int j = k; j >= 0; j--)
+        for (int j = 0; j <= k; j++)
         {
-            int r = j, l = max(j - v[i - 1], 0LL);
-            dp[j] = (mod + tmp[l] - (r < k ? tmp[r + 1] : 0)) % mod;
-            if (j < k)
-                (dp[j] += dp[j + 1]) %= mod;
+            int l = max(0LL, j - v[i - 1]), r = j;
+            dp[i][j] = (mod + dp[i - 1][r] - (l ? dp[i - 1][l - 1] : 0)) % mod;
+            if (j)
+                (dp[i][j] += dp[i][j - 1]) %= mod;
         }
     }
-    cout << dp[k] << endl;
+    cout << (mod + dp[n][k] - (k ? dp[n][k - 1] : 0)) % mod << endl;
 
 #ifdef LOCAL
     cerr
