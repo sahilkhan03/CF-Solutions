@@ -9309,6 +9309,23 @@
     ],
     "timestamp": "May/04/2020 14:42"
   },
+  "CF81201583": {
+    "contest_id": 38,
+    "language": "GNU C++14",
+    "path": "codeforces/38/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Let's Go Rolling!",
+    "problem_url": "https://codeforces.com/contest/38/problem/E",
+    "submission_id": "CF81201583",
+    "submission_url": "https://codeforces.com/contest/38/submission/81201583",
+    "tags": [
+      "dp",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "May/24/2020 18:51"
+  },
   "CF81201603": {
     "contest_id": 38,
     "language": "GNU C++14",
