@@ -1,60 +1,88 @@
-/*                    ___          |\    /|           ____   ____   ____  ____
-   |     |    /\    /    \ |     | | \  / |    /\    |    \ |    \ |     |    \
-   |_____|   /__\   \____  |_____| |  \/  |   /__\   |____/ |____/ |__   |____/
-   |     |  /    \       \ |     | |      |  /    \  |      |      |     |   \
-   |     | /      \ \____/ |     | |      | /      \ |      |      |____ |    \
+/*
+    Author : DemonStar
 */
-#include<bits/stdc++.h>
+
+// #pragma GCC optimize("Ofast")
+// #pragma GCC optimize("unroll-loops")
+// #pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx2,tune=native")
+
+#include <bits/stdc++.h>
 using namespace std;
-#define isko_lga_dala_to_life_jhinga_la_la ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define lb lower_bound
-#define ub upper_bound
-#define pf push_front
-#define pb push_back
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
+#define ordered_set tree<pair<int, int>, null_type, less<pair<int, int>>, rb_tree_tag, tree_order_statistics_node_update>
+#define fast                      \
+    ios_base::sync_with_stdio(0); \
+    cin.tie(0);                   \
+    cout.tie(0);
 #define ll long long
-#define pi pair<int,int>
-#define pl pair<long long,long long>
-#define pld pair<long double,long double>
+#define pi pair<int, int>
+#define pl pair<long long, long long>
+#define pld pair<long double, long double>
 #define endl '\n'
-#define loop(i,n) for(ll i=0;i<n;i++)
-#define mod ((ll)(1e9+7))
-#define in(x) scanf("%lld",&x)
-#define in2(x,y) scanf("%lld %lld",&x,&y)
-#define in3(x,y,z) scanf("%lld %lld %lld",&x,&y,&z)
-#define inv(v) for(auto&i:v) in(i)
+#define loop(i, n) for (ll i = 0; i < n; i++)
+#define rep(i, begin, end) for (__typeof(begin) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
+#define all(x) x.begin(), x.end()
 #define vl vector<ll>
-#define ml unordered_map<ll,ll> 
-#define vpl vector<pair<ll,ll>>
-#define INF 0x3f3f3f3f
+#define vi vector<int>
+#define ml map<ll, ll>
+#define vpl vector<pair<ll, ll>>
+const ll mod = 1e9 + 7;
 
-template<typename T, typename TT>
-ostream& operator<<(ostream &os, const pair<T, TT> &t) { return os<<t.first<<" "<<t.second; }
-template<typename T>
-ostream& operator<<(ostream& os, const vector<T> &t) { for(auto& i: t) os<<i<<" "; return os; }
+template <typename T, typename TT>
+ostream &operator<<(ostream &os, const pair<T, TT> &t)
+{
+    return os << t.first << " " << t.second;
+}
+template <typename T>
+ostream &operator<<(ostream &os, const vector<T> &t)
+{
+    for (auto &i : t)
+        os << i << " ";
+    return os;
+}
+template <typename T>
+istream &operator>>(istream &is, vector<T> &v)
+{
+    for (T &t : v)
+        is >> t;
+    return is;
+}
+template <typename T1, typename T2>
+istream &operator>>(istream &is, vector<pair<T1, T2>> &v)
+{
+    for (pair<T1, T2> &t : v)
+        is >> t.first >> t.second;
+    return is;
+}
 
-int main() {
+vl c(1e6 + 5);
+vl last(1e6 + 5);
+int main()
+{
+    fast;
     string s;
-    cin>>s;
-    ll ans=0,n=s.size();
-    vl c(n,-1),d(n,-1);
-    stack<ll> st;
-    loop(i,n) {
-        if(s[i]=='(') st.push(i); 
-        else {
-            if(st.empty()) continue;
-            d[i]=st.top();
+    c[0] = 1;
+    cin >> s;
+    stack<int> st;
+    int mx = 0;
+    loop(i, s.size()) {
+        if(s[i] == '(') st.push(i);
+        else if(!st.empty()) {
+            int len = i - st.top() + 1;
+            if(st.top() > 0 and last[st.top() - 1]!=-1) len += last[st.top() - 1];
+            last[i] = len;
+            c[len]++; 
+            mx = max(mx, len);
             st.pop();
-            c[i] = i - d[i] +1;
-            if(d[i]>0) c[i]+=(c[d[i]-1]==-1 ? 0  : c[d[i]-1]);
-            ans = max(ans,c[i]);
         }
     }
-    // cout<<c<<endl<<d<<endl;
-    if(ans) {
-        ll count=0;
-        loop(i,n) if(c[i]==ans) count++;
-        cout<<ans<<" "<<count<<endl;
-    }
-    else cout<<0<<" "<<1<<endl;
+    cout << mx << " " << c[mx] << endl;
+
+    #ifdef LOCAL
+        cerr << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s.\n";
+    #endif
+
     return 0;
 }
