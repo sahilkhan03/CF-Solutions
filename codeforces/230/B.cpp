@@ -56,7 +56,30 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v)
     return is;
 }
 
-bitset<1000005> sieve;
+ll modpow(ll n, ll p, ll m) {
+    ll ans = 1;
+    while (p) {
+        if (p & 1) (ans *= n) %= m;
+        (n *= n) %= m, p /= 2;
+    }
+    return ans;
+}
+
+bool isprime(ll t) {
+    if (t == 1 or t == 4)
+        return 0;
+    if (t == 2 or t == 3)
+        return 1;
+    loop(i, 10) {
+        ll r = 2 + rand() % (t - 4);
+        if (__gcd(r, t) != 1)
+            return 0;
+        ll ans = modpow(r, t - 1, t);
+        if (ans != 1)
+            return 0;
+    }
+    return 1;
+}
 
 int main()
 {
@@ -66,19 +89,13 @@ int main()
 #endif
 
     fast;
-    for (int i = 2; i < 1e6 + 5; i++) {
-        if (!sieve[i]) {
-            for (int j = 2 * i; j < 1e6 + 5; j += i)
-                sieve[j] = 1;
-        }
-    }
     ll n;
     scanf("%lld", &n);
     loop(i, n)  {
         ll t;
         scanf("%lld", &t);
         ll root = sqrt(t);
-        if (t > 3 and root * root == t and !sieve[root])
+        if (root * root == t and isprime(root))
             printf("YES\n");
         else
             printf("NO\n");
