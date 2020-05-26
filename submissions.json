@@ -9255,6 +9255,24 @@
     ],
     "timestamp": "May/04/2020 14:42"
   },
+  "CF81474028": {
+    "contest_id": 332,
+    "language": "GNU C++14",
+    "path": "codeforces/332/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Maximum Absurdity",
+    "problem_url": "https://codeforces.com/contest/332/problem/B",
+    "submission_id": "CF81474028",
+    "submission_url": "https://codeforces.com/contest/332/submission/81474028",
+    "tags": [
+      "data structures",
+      "dp",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "May/26/2020 18:48"
+  },
   "CF81477210": {
     "contest_id": 493,
     "language": "GNU C++14",
