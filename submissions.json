@@ -9255,6 +9255,23 @@
     ],
     "timestamp": "May/04/2020 14:42"
   },
+  "CF81635274": {
+    "contest_id": 255,
+    "language": "GNU C++14",
+    "path": "codeforces/255/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Almost Arithmetical Progression",
+    "problem_url": "https://codeforces.com/contest/255/problem/C",
+    "submission_id": "CF81635274",
+    "submission_url": "https://codeforces.com/contest/255/submission/81635274",
+    "tags": [
+      "brute force",
+      "dp",
+      "*1500"
+    ],
+    "timestamp": "May/27/2020 21:14"
+  },
   "CF81638401": {
     "contest_id": 446,
     "language": "GNU C++14",
