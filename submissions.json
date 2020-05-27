@@ -9255,6 +9255,25 @@
     ],
     "timestamp": "May/04/2020 14:42"
   },
+  "CF81640083": {
+    "contest_id": 313,
+    "language": "GNU C++14",
+    "path": "codeforces/313/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Ilya and Matrix",
+    "problem_url": "https://codeforces.com/contest/313/problem/C",
+    "submission_id": "CF81640083",
+    "submission_url": "https://codeforces.com/contest/313/submission/81640083",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "May/27/2020 22:10"
+  },
   "CF81641416": {
     "contest_id": 253,
     "language": "GNU C++14",
