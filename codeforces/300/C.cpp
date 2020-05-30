@@ -108,9 +108,8 @@ int main()
     fast;
     int a, b, n;
     cin >> a >> b >> n;
-    vl fact(1e6 + 1);
-    vl inv(1e6 + 1);
-    fact[0] = fact[1] = inv[0] = inv[1] = 1;
+    vl fact(1e6 + 1, 1);
+    vl inv(1e6 + 1, 1);
     for (int i = 2; i <= 1e6; i++) {
         (fact[i] = fact[i - 1] * i) %= mod;
         inv[i] = modpow(fact[i], mod - 2);
