@@ -77,6 +77,18 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
 }
 
 const ll mod = 1e9 + 7;
+vector<vl> dp(105, vl(105, -1));
+ll func(ll n, ll k , ll d) {
+    if (!n and d == 1) return 1;
+    if (n < 0) return 0;
+    debug(n, d);
+    ll &ans = dp[n][d];
+    if (ans != -1) return ans;
+    ans = 0;
+    for (int i = 1; i <= k; i++)
+        (ans += func(n - i, k, (i >= d ? 1 : d))) %= mod;
+    return ans;
+}
 
 int main()
 {
@@ -89,19 +101,7 @@ int main()
     fast;
     int n, k, d;
     cin >> n >> k >> d;
-    int dp[n + 1][2];
-    memset(dp, 0, sizeof dp);
-    dp[0][0] = 1;
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= k and i - j >= 0 ; j++) {
-            if (j >= d)
-                (dp[i][1] += (dp[i - j][0] + dp[i - j][1]) % mod) %= mod;
-            else
-                (dp[i][1] += dp[i - j][1]) %= mod,
-                                              (dp[i][0] += dp[i - j][0]) %= mod;
-        }
-    }
-    cout << dp[n][1] << endl;
+    cout << func(n, k , d) << endl;
 
 #ifdef LOCAL
     cerr << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s\n";
