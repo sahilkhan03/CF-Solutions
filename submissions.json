@@ -9255,6 +9255,23 @@
     ],
     "timestamp": "May/04/2020 14:42"
   },
+  "CF82598766": {
+    "contest_id": 1362,
+    "language": "GNU C++14",
+    "path": "codeforces/1362/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Johnny and His Hobbies",
+    "problem_url": "https://codeforces.com/contest/1362/problem/B",
+    "submission_id": "CF82598766",
+    "submission_url": "https://codeforces.com/contest/1362/submission/82598766",
+    "tags": [
+      "bitmasks",
+      "brute force",
+      "*1200"
+    ],
+    "timestamp": "Jun/05/2020 11:15"
+  },
   "CF82600563": {
     "contest_id": 1362,
     "language": "GNU C++14",
