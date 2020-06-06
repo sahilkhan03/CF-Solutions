@@ -96,22 +96,56 @@ int main()
     vl p(3);
     cin >> p;
     ll r; cin >> r;
-    vl c(3);
+    ll cb = 0 , cs = 0, cc = 0;
     loop(i, (ll)s.size()) {
-        if (s[i] == 'B') c[0]++;
-        else if (s[i] == 'S') c[1]++;
-        else c[2]++;
+        if (s[i] == 'B') cb++;
+        else if (s[i] == 'S') cs++;
+        else cc++;
     }
-    ll ans = 0, lo = 0, hi = 1e15, mid;
-    while (lo <= hi) {
-        mid = lo + (hi - lo) / 2;
-        ll ra = max(0ll, mid * c[0] - n[0]),
-           rb = max(0ll, mid * c[1] - n[1]),
-           rc = max(0ll, mid * c[2] - n[2]);
-        if (r >= ra * p[0] + rb * p[1] + rc * p[2])
-            ans = mid, lo = mid + 1;
-        else hi = mid - 1;
+    vl c = {cb , cs , cc};
+    ll ans = 0;
+    vector<pl> v(3);
+    vl rem(3);
+    if (c[0]) v[0] = {n[0] / c[0], 0}, rem[0] = n[0] % c[0];
+    else v[0] = {1e18, 0}, rem[0] = 0;
+    if (c[1]) v[1] = {n[1] / c[1], 1}, rem[1] = n[1] % c[1];
+    else v[1] = {1e18, 1}, rem[1] = 0;
+    if (c[2]) v[2] = {n[2] / c[2], 2}, rem[2] = n[2] % c[2];
+    else v[2] = {1e18, 2}, rem[2] = 0;
+    sort(all(v));
+    v[1].first -= v[0].first, v[2].first -= v[0].first;
+    ans += v[0].first;
+    v[0].first = 0;
+    if (v[0].first < v[1].first) {
+        ll d = v[1].first - v[0].first;
+        r -= (c[v[0].second] - rem[v[0].second]) * p[v[0].second];
+        if (r < 0) goto skip;
+        ans++, d--, v[1].first--, v[2].first--, rem[v[0].second] = 0;
+        ll mx = (r / p[v[0].second]) / c[v[0].second];
+        r -= min(d, mx) * (p[v[0].second] * c[v[0].second]);
+        ans += min(d, mx);
+        v[1].first -= min(d, mx);
+        v[2].first -= min(d, mx);
+        if (v[0].first < v[1].first)
+            goto skip;
     }
+    if (v[1].first < v[2].first) {
+        ll d = v[2].first - v[1].first;
+        r -= (c[v[0].second] - rem[v[0].second]) * p[v[0].second] + (c[v[1].second] - rem[v[1].second]) * p[v[1].second];
+        if (r < 0) goto skip;
+        ans++, d--, v[2].first--, rem[v[1].second] = 0, rem[v[0].second] = 0;
+        ll mx = r / (p[v[0].second] * c[v[0].second] + p[v[1].second] * c[v[1].second]);
+        r -= min(d, mx) * (p[v[0].second] * c[v[0].second] + p[v[1].second] * c[v[1].second]);
+        ans += min(d, mx);
+        v[2].first -= min(d, mx);
+        if (v[1].first < v[2].first)
+            goto skip;
+    }
+    r -= (c[v[0].second] - rem[v[0].second]) * p[v[0].second] + (c[v[1].second] - rem[v[1].second]) * p[v[1].second] + (c[v[2].second] - rem[v[2].second]) * p[v[2].second];
+    if (r < 0) goto skip;
+    ans++;
+    ans += r / (p[0] * c[0] + p[1] * c[1] + p[2] * c[2]);
+skip:;
     cout << ans << endl;
 
 #ifdef LOCAL
