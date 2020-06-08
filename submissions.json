@@ -2830,6 +2830,24 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF83108580": {
+    "contest_id": 1365,
+    "language": "GNU C++14",
+    "path": "codeforces/1365/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Matrix Game",
+    "problem_url": "https://codeforces.com/contest/1365/problem/A",
+    "submission_id": "CF83108580",
+    "submission_url": "https://codeforces.com/contest/1365/submission/83108580",
+    "tags": [
+      "games",
+      "greedy",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Jun/08/2020 12:38"
+  },
   "CF83109800": {
     "contest_id": 1365,
     "language": "GNU C++14",
