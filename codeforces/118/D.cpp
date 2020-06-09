@@ -79,21 +79,6 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
 }
 
 const ll mod = 1e8;
-ll n1, n2, k1, k2;
-ll dp[11][11][105][105];
-ll solve(ll i, ll j, ll k, ll l) {
-    debug(i, j, k, l);
-    ll &ans = dp[k][l][i][j];
-    if (ans != -1) return ans;
-    if (i == n1 and j == n2) return 1;
-    if (i > n1 or j > n2) return 0;
-    ans = 0;
-    if (k > 0)
-        (ans += solve(i + 1, j, k - 1, k2)) %= mod;
-    if (l > 0)
-        (ans += solve(i, j + 1, k1, l - 1)) %= mod;
-    return ans;
-}
 
 int main()
 {
@@ -103,9 +88,22 @@ int main()
     freopen("output.txt", "w", stdout);
 #endif
 
+    ll n1, n2, k1, k2;
     cin >> n1 >> n2 >> k1 >> k2;
-    memset(dp, -1, sizeof dp);
-    cout << solve(0, 0, k1, k2) << endl;
+    ll dp[2][n1 + 1][n2 + 1];
+    memset(dp, 0, sizeof dp);
+    dp[0][0][0] = 1;
+    dp[1][0][0] = 1;
+    for (int i = 0; i <= n1; i++) {
+        for (int j = 0; j <= n2; j++) {
+            for (int k = 1; k <= k1 and i - k >= 0; k++)
+                (dp[0][i][j] += dp[1][i - k][j]) %= mod;
+            for (int k = 1; k <= k2 and j - k >= 0; k++)
+                (dp[1][i][j] += dp[0][i][j - k]) %= mod;
+            debug(i, j, dp[0][i][j], dp[1][i][j]);
+        }
+    }
+    cout << (dp[0][n1][n2]  + dp[1][n1][n2]) % mod << endl;
 
 #ifdef LOCAL
     cerr << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s";
