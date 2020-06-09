@@ -97,18 +97,16 @@ int main()
     loop(i, n) {
         pre[i + 1] = pre[i] + v[i];
     }
-    vl dp(n + 1, 0), tmp;
+    vector<vl> dp(k + 1, vl(n + 1, 0));
     for (int i = 1; i <= k; i++) {
-        tmp = dp;
-        for (int j = 1; j <= n ; j++) {
-            dp[j] = dp[j - 1];
+        for (int j = 1; j <= n; j++) {
+            dp[i][j] = dp[i][j - 1];
             if (j - m >= 0)
-                dp[j] = max(dp[j], tmp[j - m] + pre[j] - pre[j - m]);
+                dp[i][j] = max(dp[i][j], dp[i - 1][j - m] + pre[j] - pre[j - m]);
         }
-        tmp.clear();
-        debug(dp);
     }
-    cout << *max_element(all(dp)) << endl;
+    debug(dp);
+    cout << dp[k][n] << endl;
 
 
 #ifdef LOCAL
