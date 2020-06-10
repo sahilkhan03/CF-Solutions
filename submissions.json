@@ -2830,6 +2830,24 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF83281064": {
+    "contest_id": 295,
+    "language": "GNU C++14",
+    "path": "codeforces/295/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Greg and Graph",
+    "problem_url": "https://codeforces.com/contest/295/problem/B",
+    "submission_id": "CF83281064",
+    "submission_url": "https://codeforces.com/contest/295/submission/83281064",
+    "tags": [
+      "dp",
+      "graphs",
+      "shortest paths",
+      "*1700"
+    ],
+    "timestamp": "Jun/10/2020 13:47"
+  },
   "CF83306978": {
     "contest_id": 466,
     "language": "GNU C++14",
