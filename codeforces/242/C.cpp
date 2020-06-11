@@ -79,7 +79,7 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
 }
 
 const ll mod = 1e9 + 7;
-map<int, unordered_map<int, bool, custom_hash>> m;
+map<int, unordered_map<int, bool>> m;
 
 int main()
 {
