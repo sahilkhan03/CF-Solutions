@@ -93,33 +93,37 @@ int main()
     int n;
     cin >> n;
     int lim = log2(n);
-    vector<vector<int>> gcd(lim + 1);
+    vector<vector<int>> v(lim + 1), gcd(lim + 1);
     for (int i = 0; i < n ; i++) {
         int tmp ;
         cin >> tmp;
+        v[0].push_back(tmp);
         gcd[0].push_back(tmp);
     }
     for (int i = 1; i <= lim; i++) {
         int mx = n - (1 << i) + 1;
+        v[i].resize(mx);
         gcd[i].resize(mx);
         for (int j = 0; j < mx; j++) {
+            v[i][j] = min(v[i - 1][j], v[i - 1][j + (1 << (i - 1))]);
             gcd[i][j] = __gcd(gcd[i - 1][j], gcd[i - 1][j + (1 << (i - 1))]);
         }
     }
+    debug(v, gcd);
     int mx = 0, i = 0, j = 0;
     set<int> ans;
     for (int i = 0; i < n; i++) {
         int lo = i, hi = n - 1, lf = -1, rg = -1;;
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2, len = log2(mid - i + 1);
-            if (__gcd(gcd[len][i], gcd[len][mid - (1 << len) + 1]) == gcd[0][i])
+            if (min(v[len][i], v[len][mid - (1 << len) + 1]) == __gcd(gcd[len][i], gcd[len][mid - (1 << len) + 1]) and __gcd(gcd[len][i], gcd[len][mid - (1 << len) + 1]) == v[0][i])
                 rg = mid, lo = mid + 1;
             else hi = mid - 1;
         }
         lo = 0, hi = i;
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2, len = log2(i - mid + 1);
-            if (__gcd(gcd[len][mid], gcd[len][i - (1 << len) + 1]) == gcd[0][i])
+            if (min(v[len][mid], v[len][i - (1 << len) + 1]) == __gcd(gcd[len][mid], gcd[len][i - (1 << len) + 1]) and __gcd(gcd[len][mid], gcd[len][i - (1 << len) + 1]) == v[0][i])
                 lf = mid, hi = mid - 1;
             else lo = mid + 1;
         }
