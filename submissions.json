@@ -2830,6 +2830,22 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF83658870": {
+    "contest_id": 363,
+    "language": "GNU C++14",
+    "path": "codeforces/363/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Soroban",
+    "problem_url": "https://codeforces.com/contest/363/problem/A",
+    "submission_id": "CF83658870",
+    "submission_url": "https://codeforces.com/contest/363/submission/83658870",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Jun/13/2020 21:35"
+  },
   "CF83728007": {
     "contest_id": 1364,
     "language": "GNU C++14",
