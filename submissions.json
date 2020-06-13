@@ -2830,6 +2830,24 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF83598235": {
+    "contest_id": 404,
+    "language": "GNU C++14",
+    "path": "codeforces/404/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Restore Graph",
+    "problem_url": "https://codeforces.com/contest/404/problem/C",
+    "submission_id": "CF83598235",
+    "submission_url": "https://codeforces.com/contest/404/submission/83598235",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Jun/13/2020 15:22"
+  },
   "CF83645132": {
     "contest_id": 448,
     "language": "GNU C++14",
