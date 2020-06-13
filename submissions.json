@@ -9841,6 +9841,23 @@
     ],
     "timestamp": "Jun/13/2020 15:22"
   },
+  "CF83607534": {
+    "contest_id": 479,
+    "language": "GNU C++14",
+    "path": "codeforces/479/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Riding in a Lift",
+    "problem_url": "https://codeforces.com/contest/479/problem/E",
+    "submission_id": "CF83607534",
+    "submission_url": "https://codeforces.com/contest/479/submission/83607534",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "*1900"
+    ],
+    "timestamp": "Jun/13/2020 17:17"
+  },
   "CF83645132": {
     "contest_id": 448,
     "language": "GNU C++14",
