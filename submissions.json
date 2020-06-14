@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF83736958": {
+    "contest_id": 284,
+    "language": "GNU C++14",
+    "path": "codeforces/284/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Cows and Poker Game",
+    "problem_url": "https://codeforces.com/contest/284/problem/B",
+    "submission_id": "CF83736958",
+    "submission_url": "https://codeforces.com/contest/284/submission/83736958",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Jun/14/2020 15:30"
+  },
   "CF83737354": {
     "contest_id": 515,
     "language": "GNU C++14",
