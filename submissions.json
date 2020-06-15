@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF83852478": {
+    "contest_id": 369,
+    "language": "GNU C++14",
+    "path": "codeforces/369/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Valera and Plates",
+    "problem_url": "https://codeforces.com/contest/369/problem/A",
+    "submission_id": "CF83852478",
+    "submission_url": "https://codeforces.com/contest/369/submission/83852478",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Jun/15/2020 20:23"
+  },
   "CF83852756": {
     "contest_id": 486,
     "language": "GNU C++14",
