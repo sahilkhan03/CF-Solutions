@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF83919955": {
+    "contest_id": 615,
+    "language": "GNU C++14",
+    "path": "codeforces/615/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Multipliers",
+    "problem_url": "https://codeforces.com/contest/615/problem/D",
+    "submission_id": "CF83919955",
+    "submission_url": "https://codeforces.com/contest/615/submission/83919955",
+    "tags": [
+      "math",
+      "number theory",
+      "*2000"
+    ],
+    "timestamp": "Jun/16/2020 17:39"
+  },
   "CF83928611": {
     "contest_id": 367,
     "language": "GNU C++14",
