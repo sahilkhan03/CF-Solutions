@@ -88,6 +88,7 @@ int main()
     freopen("output.txt", "w", stdout);
 #endif
 
+    fast;
     ll t;
     cin >> t;
     while (t--) {
