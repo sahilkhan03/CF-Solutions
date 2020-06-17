@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF84071084": {
+    "contest_id": 621,
+    "language": "GNU C++14",
+    "path": "codeforces/621/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Wet Shark and Bishops",
+    "problem_url": "https://codeforces.com/contest/621/problem/B",
+    "submission_id": "CF84071084",
+    "submission_url": "https://codeforces.com/contest/621/submission/84071084",
+    "tags": [
+      "combinatorics",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Jun/17/2020 17:51"
+  },
   "CF84072551": {
     "contest_id": 617,
     "language": "GNU C++14",
