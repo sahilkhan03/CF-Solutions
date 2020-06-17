@@ -8786,6 +8786,23 @@
     ],
     "timestamp": "Jun/17/2020 20:40"
   },
+  "CF84089599": {
+    "contest_id": 286,
+    "language": "GNU C++14",
+    "path": "codeforces/286/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Lucky Permutation",
+    "problem_url": "https://codeforces.com/contest/286/problem/A",
+    "submission_id": "CF84089599",
+    "submission_url": "https://codeforces.com/contest/286/submission/84089599",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "*1400"
+    ],
+    "timestamp": "Jun/17/2020 21:17"
+  },
   "CF84091164": {
     "contest_id": 389,
     "language": "GNU C++14",
