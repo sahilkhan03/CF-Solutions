@@ -92,11 +92,18 @@ int main()
     ll n, m;
     cin >> m >> n;
     vector<vl> dp(n + 1, vl(m + 1, 0));
-    for (int i = 1; i <= m; i++) dp[1][i] = 1;
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= m; j++) {
-            for (int k = j; k <= m; k += j)
-                (dp[i + 1][k] += dp[i][j]) %= mod;
+            if (i == 1) {
+                dp[i][j] = 1;
+                continue;
+            }
+            for (int k = 1; k * k <= j; k++) {
+                if (j % k == 0) {
+                    (dp[i][j] += dp[i - 1][j / k]) %= mod;
+                    if (j != k * k) (dp[i][j] += dp[i - 1][k]) %= mod;
+                }
+            }
         }
     }
     ll ans = 0;
