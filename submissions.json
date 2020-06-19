@@ -2830,6 +2830,24 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF84296167": {
+    "contest_id": 515,
+    "language": "GNU C++14",
+    "path": "codeforces/515/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Drazil and Factorial",
+    "problem_url": "https://codeforces.com/contest/515/problem/C",
+    "submission_id": "CF84296167",
+    "submission_url": "https://codeforces.com/contest/515/submission/84296167",
+    "tags": [
+      "greedy",
+      "math",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "Jun/19/2020 11:58"
+  },
   "CF84299042": {
     "contest_id": 385,
     "language": "GNU C++14",
