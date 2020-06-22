@@ -109,11 +109,10 @@ int main()
         }
         debug(x1 & (1 << i), x2 & (1 << i));
     }
-    ll n1 = 0, n2 = 0, n3 = 0;
+    ll n1 = 0, n2 = 0, n3 = (1 << 10) - 1;
     for (auto x : ans[0]) n1 += (1 << x);
     for (auto x : ans[1]) n2 += (1 << x);
-    for (auto x : ans[2]) n3 += (1 << x);
-    n3 = ~n3 & ((1 << 10) - 1);
+    for (auto x : ans[2]) n3 -= (1 << x);
     cout << 3 << endl;
     cout << "| " << n1 << endl;
     cout << "^ " << n2 << endl;
