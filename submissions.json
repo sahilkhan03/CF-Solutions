@@ -2830,6 +2830,24 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF84631703": {
+    "contest_id": 1368,
+    "language": "GNU C++14",
+    "path": "codeforces/1368/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "AND, OR and square sum",
+    "problem_url": "https://codeforces.com/contest/1368/problem/D",
+    "submission_id": "CF84631703",
+    "submission_url": "https://codeforces.com/contest/1368/submission/84631703",
+    "tags": [
+      "bitmasks",
+      "greedy",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "Jun/22/2020 10:50"
+  },
   "CF84635787": {
     "contest_id": 1268,
     "language": "GNU C++14",
