@@ -2830,6 +2830,24 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF84725680": {
+    "contest_id": 505,
+    "language": "GNU C++14",
+    "path": "codeforces/505/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Mr. Kitayuta's Gift",
+    "problem_url": "https://codeforces.com/contest/505/problem/A",
+    "submission_id": "CF84725680",
+    "submission_url": "https://codeforces.com/contest/505/submission/84725680",
+    "tags": [
+      "brute force",
+      "implementation",
+      "strings",
+      "*1100"
+    ],
+    "timestamp": "Jun/23/2020 13:51"
+  },
   "CF84734714": {
     "contest_id": 501,
     "language": "GNU C++14",
