@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF84942374": {
+    "contest_id": 492,
+    "language": "GNU C++14",
+    "path": "codeforces/492/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Vanya and Exams",
+    "problem_url": "https://codeforces.com/contest/492/problem/C",
+    "submission_id": "CF84942374",
+    "submission_url": "https://codeforces.com/contest/492/submission/84942374",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "Jun/25/2020 11:37"
+  },
   "CF85091922": {
     "contest_id": 437,
     "language": "GNU C++14",
