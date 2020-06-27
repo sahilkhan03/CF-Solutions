@@ -79,6 +79,7 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
 }
 
 const ll mod = 1e9 + 7;
+ll sieve[10000001];
 
 int main()
 {
@@ -88,13 +89,13 @@ int main()
     freopen("output.txt", "w", stdout);
 #endif
 
-    ll n, ans = 0;
+    ll n, ans = 1;
     cin >> n;
-    for (ll i = 1; i <= n; i++) {
-        ll num = n / i;
-        ans += num * (2 * i + (num - 1) * i) / 2;
+    for (int i = 2; i <= n; i++) {
+        ans += i * (sieve[i] + 2);
+        // debug(i, sieve[i]);
+        for (int j = 2 * i; j <= n; j += i) sieve[j]++;
     }
-
     cout << ans << endl;
 
 
