@@ -1,4 +1,20 @@
 {
+  "AC14880438": {
+    "contest_id": "abc166",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/abc166/A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "A?C",
+    "problem_url": "https://atcoder.jp/contests/abc166/tasks/abc166_a",
+    "submission_id": "AC14880438",
+    "submission_url": "https://atcoder.jp/contests/abc166/submissions/14880438",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Jul/01/2020 12:52"
+  },
   "AC14880493": {
     "contest_id": "abc166",
     "language": "C++ (GCC 9.2.1)",
