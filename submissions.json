@@ -1,4 +1,20 @@
 {
+  "AC14880688": {
+    "contest_id": "abc166",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/abc166/D.cpp",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": "I hate Factorization",
+    "problem_url": "https://atcoder.jp/contests/abc166/tasks/abc166_d",
+    "submission_id": "AC14880688",
+    "submission_url": "https://atcoder.jp/contests/abc166/submissions/14880688",
+    "tags": [
+      "AtCoder",
+      "*400"
+    ],
+    "timestamp": "Jul/01/2020 13:07"
+  },
   "AC14880783": {
     "contest_id": "abc166",
     "language": "C++ (GCC 9.2.1)",
