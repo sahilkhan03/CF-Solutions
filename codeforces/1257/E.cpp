@@ -105,18 +105,19 @@ int main()
     ll n = k1 + k2 + k3;
     vl v1(k1), v2(k2), v3(k3), v;
     cin >> v1 >> v2 >> v3;
-    vl p(n + 1);
-    for (auto x : v1) p[x] = 1;
-    for (auto x : v2) p[x] = 2;
-    for (auto x : v3) p[x] = 3;
-    vector<vl> dp(4, vl(n + 1, 1e18));
-    dp[0][0] = dp[1][0] = dp[2][0] = dp[3][0] = 0;
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j < 4; j++) {
-            dp[j][i] = min(dp[j - 1][i], dp[j][i - 1] + (p[i] != j));
-        }
+    sort(all(v1));
+    sort(all(v2));
+    sort(all(v3));
+    for (auto x : v1) v.push_back(x);
+    for (auto x : v2) v.push_back(x);
+    for (auto x : v3) v.push_back(x);
+    vl lis;
+    for (int i = 0; i < n; i++) {
+        auto it = lower_bound(all(lis), v[i]) - lis.begin();
+        if (it == lis.size()) lis.push_back(v[i]);
+        else lis[it] = v[i];
     }
-    cout << dp[3][n] << endl;
+    cout << n - lis.size();
 
 
 #ifdef LOCAL
