@@ -1,4 +1,20 @@
 {
+  "AC14922913": {
+    "contest_id": "abc165",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/abc165/A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "We Love Golf",
+    "problem_url": "https://atcoder.jp/contests/abc165/tasks/abc165_a",
+    "submission_id": "AC14922913",
+    "submission_url": "https://atcoder.jp/contests/abc165/submissions/14922913",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Jul/03/2020 18:17"
+  },
   "AC14923382": {
     "contest_id": "abc165",
     "language": "C++ (GCC 9.2.1)",
