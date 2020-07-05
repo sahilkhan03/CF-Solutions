@@ -10423,6 +10423,24 @@
     ],
     "timestamp": "Jul/03/2020 16:45"
   },
+  "CF86041116": {
+    "contest_id": 1375,
+    "language": "GNU C++14",
+    "path": "codeforces/1375/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Replace by MEX",
+    "problem_url": "https://codeforces.com/contest/1375/problem/D",
+    "submission_id": "CF86041116",
+    "submission_url": "https://codeforces.com/contest/1375/submission/86041116",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "sortings",
+      "*1900"
+    ],
+    "timestamp": "Jul/05/2020 15:05"
+  },
   "CF86118192": {
     "contest_id": 840,
     "language": "GNU C++14",
