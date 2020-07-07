@@ -97,22 +97,33 @@ int main()
         cin >> n >> a >> b;
         string s;
         cin >> s;
-        s = '0' + s;
-        vl v;
-        for (int i = 1; i < s.size(); i++) v.push_back(max(s[i], s[i - 1]) - '0');
-        vector<vl> dp(2, vl(v.size(), 1e18));
-        dp[0][0] = b;
+        s = '0' + s + '0';
+        vl v, l, r;
+        for (int i = 1; i < s.size(); i++)
+            v.push_back(max(s[i], s[i - 1]) - '0');
         for (int i = 1; i < v.size(); i++) {
-            if (v[i] == 1) {
-                dp[1][i] = min(dp[1][i - 1] + a + 2 * b, dp[0][i - 1] + 2 * a + 2 * b);
-            }
-            else {
-                dp[0][i] = min(dp[0][i - 1] + a + b, dp[1][i - 1] + 2 * a + b);
-                dp[1][i] = min(dp[1][i - 1] + a + 2 * b, dp[0][i - 1] + 2 * a + 2 * b);
-            }
+            if (v[i] == 1 and v[i - 1] == 0) r.push_back(i);
+            else if (v[i] == 0 and v[i - 1] == 1) l.push_back(i - 1);
         }
-        debug(dp);
-        cout << min(dp[0][v.size() - 1] + a + b, dp[1][v.size() - 1] + 2 * a + b) << endl;
+        ans = b;
+        debug(v, l, r);
+        ll g = 0, h = 0;
+        for (int i = 1; i < v.size(); i++) {
+            ans += (v[i] == 1 ? 2 * b : b) + (abs(v[i] - v[i - 1]) == 1 ? 2 * a : a);
+            debug(i, ans);
+            while (g < l.size() and l[g] == i) {
+                g++;
+                auto it = lower_bound(all(r), i);
+                if (it == r.end()) goto skip;
+                ll dis = *it - i;
+                ans += min(a * dis + 2 * b * (dis - 1) , 4 * a + a * (dis - 2) + b * (dis - 1));
+                ans += 2 * b;
+                i = *it;
+                debug(i, ans);
+            }
+skip:;
+        }
+        cout << ans << endl;
     }
 
 
