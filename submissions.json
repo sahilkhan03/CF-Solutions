@@ -10423,6 +10423,23 @@
     ],
     "timestamp": "Jul/03/2020 16:45"
   },
+  "CF86180890": {
+    "contest_id": 1194,
+    "language": "GNU C++14",
+    "path": "codeforces/1194/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "1-2-K Game",
+    "problem_url": "https://codeforces.com/contest/1194/problem/D",
+    "submission_id": "CF86180890",
+    "submission_url": "https://codeforces.com/contest/1194/submission/86180890",
+    "tags": [
+      "games",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "Jul/07/2020 13:21"
+  },
   "CF86190767": {
     "contest_id": 1294,
     "language": "GNU C++14",
