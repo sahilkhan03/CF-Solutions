@@ -80,18 +80,19 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
 }
 
 const ll mod = 1e9 + 7;
+vl vis;
 
-ll find(vl &link, ll a) {
-    while (link[a] != a) a = link[a];
-    return a;
-}
-
-void unite(vl &link, vl &sz, ll a, ll b) {
-    a = find(link, a), b = find(link, b);
-    if (a == b) return;
-    if (sz[a] > sz[b]) swap(a, b);
-    link[a] = b;
-    sz[b] += sz[a];
+ll dfs(vector<vl> &v, vl &ans, ll i) {
+    ll c = 1;
+    vis.push_back(i);
+    ans[i] = 0;
+    for (auto x : v[i]) {
+        if (ans[x] == -1) {
+            c += dfs(v, ans, x);
+        }
+    }
+    debug(i, c);
+    return c;
 }
 
 int main()
@@ -104,23 +105,25 @@ int main()
 
     ll n, m;
     cin >> n >> m;
-    vl link(n), sz(n, 1);
-    for (int i = 0; i < n; i++) link[i] = i;
+    vector<vl> v(n);
     while (m--) {
         ll k;
         cin >> k;
-        vl v(k);
-        cin >> v;
-        if (k < 2) continue;
-        ll mx = v[0] - 1;
-        for (int i = 1; i < k; i++) unite(link, sz, mx, v[i] - 1);
-        debug(link);
-        debug(sz);
+        vl t(k);
+        cin >> t;
+        for (int i = 1; i < k; i++) {
+            v[t[i] - 1].push_back(t[i -  1] - 1);
+            v[t[i - 1] - 1].push_back(t[i] - 1);
+        }
     }
+    vl ans(n, -1);
     for (int i = 0; i < n; i++) {
-        cout << sz[find(link, i)] << " ";
+        ll c = 0;
+        if (ans[i] == -1) c = dfs(v, ans, i);
+        for (auto x : vis) ans[x] = c;
+        vis.clear();
     }
-    cout << endl;
+    cout << ans << endl;
 
 #ifdef LOCAL
     cerr << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s";
