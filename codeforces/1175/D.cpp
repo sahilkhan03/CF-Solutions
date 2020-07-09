@@ -97,9 +97,10 @@ int main()
     vl suf(n);
     suf[n - 1] = v[n - 1];
     for (int i = n - 2; ~i; i--) suf[i] = suf[i  + 1] + v[i];
+    ll ans = suf[0];
     sort(suf.begin() + 1, suf.end(), greater<ll>());
-    ll ans = 0;
-    for (int i = 0; i < k ; i++) ans += suf[i];
+    debug(suf);
+    for (int i = 1; i <= k - 1; i++) ans += suf[i];
     cout << ans << endl;
 
 #ifdef LOCAL
