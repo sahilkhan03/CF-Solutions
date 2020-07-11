@@ -10423,6 +10423,23 @@
     ],
     "timestamp": "Jul/03/2020 16:45"
   },
+  "CF86576071": {
+    "contest_id": 1372,
+    "language": "GNU C++14",
+    "path": "codeforces/1372/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Omkar and Baseball",
+    "problem_url": "https://codeforces.com/contest/1372/problem/C",
+    "submission_id": "CF86576071",
+    "submission_url": "https://codeforces.com/contest/1372/submission/86576071",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Jul/11/2020 21:51"
+  },
   "CF86631393": {
     "contest_id": 1132,
     "language": "GNU C++14",
