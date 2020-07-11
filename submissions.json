@@ -10423,6 +10423,24 @@
     ],
     "timestamp": "Jul/03/2020 16:45"
   },
+  "CF86508151": {
+    "contest_id": 1238,
+    "language": "GNU C++14",
+    "path": "codeforces/1238/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Standard Free2play",
+    "problem_url": "https://codeforces.com/contest/1238/problem/C",
+    "submission_id": "CF86508151",
+    "submission_url": "https://codeforces.com/contest/1238/submission/86508151",
+    "tags": [
+      "dp",
+      "greedy",
+      "math",
+      "*1600"
+    ],
+    "timestamp": "Jul/11/2020 19:23"
+  },
   "CF86515248": {
     "contest_id": 1372,
     "language": "GNU C++14",
