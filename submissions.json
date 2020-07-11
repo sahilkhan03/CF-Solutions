@@ -10423,6 +10423,23 @@
     ],
     "timestamp": "Jul/03/2020 16:45"
   },
+  "CF86515248": {
+    "contest_id": 1372,
+    "language": "GNU C++14",
+    "path": "codeforces/1372/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Omkar and Completion",
+    "problem_url": "https://codeforces.com/contest/1372/problem/A",
+    "submission_id": "CF86515248",
+    "submission_url": "https://codeforces.com/contest/1372/submission/86515248",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Jul/11/2020 20:37"
+  },
   "CF86558033": {
     "contest_id": 1372,
     "language": "GNU C++14",
