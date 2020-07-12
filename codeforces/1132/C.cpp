@@ -90,16 +90,16 @@ int main()
 #endif
 
     fast;
-    short n, m;
+    int n, m;
     cin >> n >> m;
-    vector<pair<short, short>> v(m);
+    vector<pair<int, int>> v(m);
     cin >> v;
-    vector<vector<short>> pt(n + 1, vector<short>());
+    vector<vector<int>> pt(n + 1, vector<int>());
     for (int c = 0; c < m; c++) {
         for (int i = v[c].first; i <= v[c].second; i++)
-            pt[i].push_back(c);
+            if (pt[i].size() < 3) pt[i].push_back(c);
     }
-    vector<vector<short>> cnt(m, vector<short>(m, 0));
+    vector<vector<int>> cnt(m, vector<int>(m, 0));
     vector<int> sg(m, 0);
     ll sum  = 0;
     for (auto x : pt) {
@@ -112,6 +112,7 @@ int main()
     for (int i = 0; i < m; i++) {
         for (int j = i + 1; j < m; j++) {
             ans = max(ans, sum - sg[i] - sg[j] - cnt[i][j]);
+            debug(i, j , sg[i], sg[j], cnt[i][j]);
         }
     }
     cout << ans << endl;
