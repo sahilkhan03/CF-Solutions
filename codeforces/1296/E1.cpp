@@ -94,23 +94,21 @@ int main()
     cin >> n;
     string s;
     cin >> s;
-    vl s1, s2;
+    vl ans(n, -1);
     for (int i = 0; i < n; i++) {
-        char x = s[i];
-        if (s1.empty() or x >= s[s1.back()]) s1.push_back(i);
-        else if (s2.empty() or x >= s[s2.back()]) s2.push_back(i);
-        else {
-            cout << "NO" << endl;
-            return 0;
+        if (ans[i] == -1) ans[i] = 0;
+        for (int j = i + 1; j < n; j++) {
+            if (s[i] > s[j]) {
+                if (ans[j] == -1) ans[j] = !ans[i];
+                else if (ans[j] == ans[i]) {
+                    cout << "NO" << endl;
+                    return 0;
+                }
+            }
         }
     }
     cout << "YES" << endl;
-    vl ans(n);
-    for (auto x : s1) ans[x] = 0;
-    for (auto x : s2)  ans[x] = 1;
     for (auto x : ans) cout << x ;
-
-
 
 #ifdef LOCAL
     cerr << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s";
