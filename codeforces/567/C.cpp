@@ -79,15 +79,14 @@ int main()
     cin >> n >> k;
     vl v(n);
     cin >> v;
-    map<ll, ll> m1, m2;
+    map<ll, pl> m;
     ll ans = 0;
-    for (auto x : v) m2[x]++;
     for (int i = 0; i < n; i++) {
-        m2[v[i]]--;
-        if (v[i] % k == 0)
-            ans += m1[v[i] / k] * m2[v[i] * k];
-        m1[v[i]]++;
-        debug(m1);
+        if (v[i] % k == 0) {
+            ans += m[v[i] / k].first;
+            m[v[i]].first += m[v[i] / k].second;
+        }
+        m[v[i]].second++;
     }
     cout << ans << endl;
 
