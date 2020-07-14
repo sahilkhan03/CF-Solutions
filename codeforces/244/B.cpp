@@ -66,6 +66,20 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
 
 const ll mod = 1e9 + 7;
 
+set<ll> s;
+ll cur = 0;
+void calc(ll i, ll j, ll rem) {
+    if (rem < 0) return;
+    s.insert(cur);
+    cur = cur * 10 + i;
+    calc(i, j, rem - 1);
+    cur /= 10;
+    cur = cur * 10 + j;
+    calc(i, j, rem - 1);
+    cur /= 10;
+    return;
+}
+
 int main()
 {
 
@@ -77,22 +91,13 @@ int main()
     fast;
     ll n;
     cin >> n;
-    set<ll> s;
     for (int i = 0; i < 10; i++) {
-        for (int j = i + 1; j < 10; j++) {
-            for (int len = 1; len <= 10; len++) {
-                for (int mask = 0; mask < (1ll << len); mask++) {
-                    ll num = 0;
-                    for (int k = 0; k < len; k++) {
-                        if (mask & (1ll << k)) num = num * 10 + i;
-                        else num = num * 10 + j;
-                    }
-                    s.insert(num);
-                }
-            }
+        for (int j = 0; j < 10; j++) {
+            calc(i, j, 10);
         }
     }
     vl ans(all(s));
+    // debug(ans);
     cout << upper_bound(all(ans), n) - ans.begin() - 1 << endl;
 
 
