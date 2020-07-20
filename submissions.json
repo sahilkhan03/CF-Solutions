@@ -10423,6 +10423,23 @@
     ],
     "timestamp": "Jul/03/2020 16:45"
   },
+  "CF87442349": {
+    "contest_id": 1196,
+    "language": "GNU C++11",
+    "path": "codeforces/1196/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Connected Component on a Chessboard",
+    "problem_url": "https://codeforces.com/contest/1196/problem/E",
+    "submission_id": "CF87442349",
+    "submission_url": "https://codeforces.com/contest/1196/submission/87442349",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1800"
+    ],
+    "timestamp": "Jul/20/2020 20:50"
+  },
   "CF87446997": {
     "contest_id": 1196,
     "language": "GNU C++11",
