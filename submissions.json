@@ -14878,6 +14878,25 @@
     ],
     "timestamp": "Jul/21/2020 20:08"
   },
+  "CF87671882": {
+    "contest_id": 1181,
+    "language": "GNU C++11",
+    "path": "codeforces/1181/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Flag",
+    "problem_url": "https://codeforces.com/contest/1181/problem/C",
+    "submission_id": "CF87671882",
+    "submission_url": "https://codeforces.com/contest/1181/submission/87671882",
+    "tags": [
+      "brute force",
+      "combinatorics",
+      "dp",
+      "implementation",
+      "*1900"
+    ],
+    "timestamp": "Jul/22/2020 17:32"
+  },
   "CF87678200": {
     "contest_id": 1183,
     "language": "GNU C++11",
