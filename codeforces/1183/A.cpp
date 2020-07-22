@@ -1,11 +1,3 @@
-
-// Problem : A. Nearest Interesting Number
-// Contest : Codeforces - Codeforces Round #570 (Div. 3)
-// URL : https://codeforces.com/contest/1183/problem/A
-// Memory Limit : 256 MB
-// Time Limit : 1000 ms
-// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
-
 /*
     Author : DemonStar
 */
@@ -35,7 +27,7 @@ void __print(long double x) {cerr << x;}
 void __print(char x) {cerr << '\'' << x << '\'';}
 void __print(const char *x) {cerr << '\"' << x << '\"';}
 void __print(const string &x) {cerr << '\"' << x << '\"';}
-void __print(bool x) {cerr << (x ? "true" : "false");}
+void __print(bool x) {cerr << x;}
 
 template<typename T, typename V>
 void __print(const pair<T, V> &x) {cerr << '{'; __print(x.first); cerr << ','; __print(x.second); cerr << '}';}
@@ -71,8 +63,7 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
     return is;
 }
 
-const ll mod = 1e9 + 7;
-
+const ll mod = 998244353;
 ll calc(ll n) {
     ll sum = 0;
     while (n) {
@@ -81,15 +72,20 @@ ll calc(ll n) {
     }
     return sum;
 }
-
 int main()
 {
+
+#ifdef LOCAL
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+#endif
+
     fast;
     ll n;
     cin >> n;
     while (calc(n) % 4 != 0) n++;
     cout << n << endl;
- 
+
 
 
 #ifdef LOCAL
