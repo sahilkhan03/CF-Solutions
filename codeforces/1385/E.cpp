@@ -1,6 +1,11 @@
-/*
-    Author : DemonStar
-*/
+
+// Problem : E. Directing Edges
+// Contest : Codeforces - Codeforces Round #656 (Div. 3)
+// URL : https://codeforces.com/problemset/problem/1385/E
+// Memory Limit : 256 MB
+// Time Limit : 3000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+// $%U%$ 
 
 #pragma GCC optimize("Ofast")
 #pragma GCC target ("sse4")
@@ -9,8 +14,8 @@ using namespace std;
 typedef long long ll;
 #define fast ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define all(x) x.begin(), x.end()
-#define loop(i, n) for(ll i = 0; i < n; i++)
-#define mset(v, a) memset(v, a, sizeof v);
+#define F first
+#define S second
 #define pl pair<ll, ll>
 #define vl vector<ll>
 #define vi vector<int>
@@ -86,12 +91,6 @@ void dfs(vector<vl> &v, vl &state, ll node, ll prev ) {
 
 int main()
 {
-
-#ifdef LOCAL
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif
-
     fast;
     ll t;
     cin >> t;
