@@ -5,7 +5,6 @@
 // Memory Limit : 256 MB
 // Time Limit : 3000 ms
 // Powered by CP Editor (https://github.com/cpeditor/cpeditor)
-// $%U%$ 
 
 #pragma GCC optimize("Ofast")
 #pragma GCC target ("sse4")
