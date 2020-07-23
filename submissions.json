@@ -14878,6 +14878,25 @@
     ],
     "timestamp": "Jul/21/2020 20:08"
   },
+  "CF87739161": {
+    "contest_id": 1138,
+    "language": "GNU C++11",
+    "path": "codeforces/1138/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Circus",
+    "problem_url": "https://codeforces.com/contest/1138/problem/B",
+    "submission_id": "CF87739161",
+    "submission_url": "https://codeforces.com/contest/1138/submission/87739161",
+    "tags": [
+      "brute force",
+      "greedy",
+      "math",
+      "strings",
+      "*1800"
+    ],
+    "timestamp": "Jul/23/2020 11:58"
+  },
   "CF87741520": {
     "contest_id": 1138,
     "language": "GNU C++11",
