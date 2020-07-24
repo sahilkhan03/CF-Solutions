@@ -14878,6 +14878,25 @@
     ],
     "timestamp": "Jul/21/2020 20:08"
   },
+  "CF87860860": {
+    "contest_id": 1183,
+    "language": "GNU C++14",
+    "path": "codeforces/1183/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Subsequences (easy version)",
+    "problem_url": "https://codeforces.com/contest/1183/problem/E",
+    "submission_id": "CF87860860",
+    "submission_url": "https://codeforces.com/contest/1183/submission/87860860",
+    "tags": [
+      "dp",
+      "graphs",
+      "implementation",
+      "shortest paths",
+      "*2000"
+    ],
+    "timestamp": "Jul/24/2020 18:01"
+  },
   "CF87868663": {
     "contest_id": 1183,
     "language": "GNU C++14",
