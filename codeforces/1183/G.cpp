@@ -101,8 +101,11 @@ int main()
     		auto tp = pq.top(); pq.pop();
     		if(tp.F + tp.S > req) {
     			ll len = tp.F + tp.S - req;
-    			tp.F -= max(0ll, len - tp.S);
-    			tp.S -= min(tp.S, len);
+    			if(tp.S >= len) tp.S -= len;
+    			else {
+    				tp.F -= len - tp.S;
+    				tp.S = 0;	
+    			}
     			pq.push(tp);
     			continue;
     		}
