@@ -14878,6 +14878,24 @@
     ],
     "timestamp": "Jul/21/2020 20:08"
   },
+  "CF88107376": {
+    "contest_id": 1076,
+    "language": "GNU C++14",
+    "path": "codeforces/1076/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Edge Deletion",
+    "problem_url": "https://codeforces.com/contest/1076/problem/D",
+    "submission_id": "CF88107376",
+    "submission_url": "https://codeforces.com/contest/1076/submission/88107376",
+    "tags": [
+      "graphs",
+      "greedy",
+      "shortest paths",
+      "*1800"
+    ],
+    "timestamp": "Jul/27/2020 13:24"
+  },
   "CF88124282": {
     "contest_id": 1076,
     "language": "GNU C++14",
