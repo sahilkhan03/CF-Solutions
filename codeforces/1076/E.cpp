@@ -110,7 +110,7 @@ void dfs(ll u, ll p, ll dis) {
 
 int main()
 {
-    // fast;
+    fast;
  	 ll n; scanf("%lld", &n);
  	 v.resize(n); upd.resize(n); res.resize(n);
  	 for(ll i = 0; i < n - 1; i++) {
