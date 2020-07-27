@@ -73,10 +73,8 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
 }
 
 const ll mod = 1e9 + 7;
-vector<vl> v;
-vector<vector<pl>> upd;
 const ll N = 5e5;
-vl res, fen(N, 0);
+vl fen(N, 0);
 void add(ll i, ll d, ll x) {
 	ll j = i;
 	while(j < N) {
@@ -99,11 +97,13 @@ ll sum(int i) {
 	}
 	return ans;
 }
-void dfs(ll u, ll p, ll dis) {
+void dfs(ll u, ll p, ll dis,vector<vl> &v,
+vector<vector<pl>> &upd,
+vl &res) {
 	for(auto& x: upd[u]) add(dis, x.F, x.S);
 	res[u] = sum(dis);
 	for(auto& x: v[u]) {
-		if(x != p) dfs(x, u, dis + 1);
+		if(x != p) dfs(x, u, dis + 1,v,upd,res);
 	}
 	for(auto& x: upd[u]) add(dis, x.F, -x.S);
 }
@@ -112,7 +112,9 @@ int main()
 {
     fast;
  	 ll n; scanf("%lld", &n);
- 	 v.resize(n); upd.resize(n); res.resize(n);
+ 	 vector<vl> v(n);
+	 vector<vector<pl>> upd(n);
+	 vl res(n);
  	 for(ll i = 0; i < n - 1; i++) {
  	 	ll a, b; scanf("%lld %lld", &a, &b);
  	 	a--, b--;
@@ -126,7 +128,7 @@ int main()
  	 	u--; d = min(d, n);
  	 	upd[u].push_back({d, x}); 
  	 }
- 	 dfs(0, -1, 1);
+ 	 dfs(0, -1, 1, v, upd, res);
  	 for(auto x: res) printf("%lld ", x);
     printf("\n");
     return 0;
