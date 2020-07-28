@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF88192380": {
+    "contest_id": 1165,
+    "language": "GNU C++14",
+    "path": "codeforces/1165/F1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F1",
+    "problem_name": "Microtransactions (easy version)",
+    "problem_url": "https://codeforces.com/contest/1165/problem/F1",
+    "submission_id": "CF88192380",
+    "submission_url": "https://codeforces.com/contest/1165/submission/88192380",
+    "tags": [
+      "binary search",
+      "greedy",
+      "*2000"
+    ],
+    "timestamp": "Jul/28/2020 15:30"
+  },
   "CF88203196": {
     "contest_id": 1073,
     "language": "GNU C++14",
