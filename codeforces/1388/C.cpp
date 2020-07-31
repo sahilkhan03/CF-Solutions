@@ -92,13 +92,13 @@ pl dfs(ll u, ll p) {
 		}
 	}
 	ll H = (tp + dif[u])/2, B = tp - H;
-	ll cH = H, cB = B;
+	ll cH = H - h, cB = B - b;
 	if(pi[u] > cB) {
 		cH -= pi[u] - cB; cB = 0;
 	}
 	else cB -= pi[u];
 	debug(u + 1, H, B, cH, cB);
-	if(cB > b or cH < h or H < 0 or B < 0 or H + B != tp or H - B != dif[u]) {
+	if(cB > 0 or cH < 0 or H < 0 or B < 0 or H + B != tp or H - B != dif[u]) {
 		ans = 0; 
 		return {0, 0};
 	}
