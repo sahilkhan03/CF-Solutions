@@ -74,51 +74,89 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
 }
 
 const ll mod = 1e9 + 7;
+const int MAX = 1000001; 
 
-const int N = 5e5 + 5;
-int fen[N];
-void add(int i, int d) {
-	while(i < N) {
-		fen[i] += d;
-		i += i & (-i);
-	}
-}
-
-ll sum(int i) {
-	ll ans = 0;
-	while(i) {
-		ans += fen[i];
-		i -= i  & (-i);
-	}
-	return ans;
-}
+struct Query 
+{ 
+    int l, r, idx; 
+}; 
+  
+// cmp function to sort queries according to r 
+bool cmp(Query x, Query y) 
+{ 
+    return x.r < y.r; 
+} 
+  
+// updating the bit array 
+void update(int idx, int val, int bit[], int n) 
+{ 
+    for (; idx <= n; idx += idx&-idx) 
+        bit[idx] += val; 
+} 
+  
+// querying the bit array 
+int query(int idx, int bit[], int n) 
+{ 
+    int sum = 0; 
+    for (; idx>0; idx-=idx&-idx) 
+        sum += bit[idx]; 
+    return sum; 
+} 
+  
+void answeringQueries(vector<ll> &arr, int n, Query queries[], int q) 
+{ 
+    // initialising bit array 
+    int bit[n+1]; 
+    memset(bit, 0, sizeof(bit)); 
+  
+    // holds the rightmost index of any number 
+    // as numbers of a[i] are less than or equal to 10^6 
+    int last_visit[MAX]; 
+    memset(last_visit, -1, sizeof(last_visit)); 
+  
+    // answer for each query 
+    int ans[q]; 
+    int query_counter = 0; 
+    for (int i=0; i<n; i++) 
+    { 
+        // If last visit is not -1 update -1 at the 
+        // idx equal to last_visit[arr[i]] 
+        if (last_visit[arr[i]] !=-1) 
+            update (last_visit[arr[i]] + 1, -1, bit, n); 
+  
+        // Setting last_visit[arr[i]] as i and updating 
+        // the bit array accordingly 
+        last_visit[arr[i]] = i; 
+        update(i + 1, 1, bit, n); 
+  
+        // If i is equal to r of any query  store answer 
+        // for that query in ans[] 
+        while (query_counter < q && queries[query_counter].r == i) 
+        { 
+            ans[queries[query_counter].idx] = 
+                     query(queries[query_counter].r + 1, bit, n)- 
+                     query(queries[query_counter].l, bit, n); 
+            query_counter++; 
+        } 
+    } 
+  
+    // print answer for each query 
+    for (int i=0; i<q; i++) 
+        cout << ans[i] << endl; 
+} 
+  
 
 void solve() {
-	ll n, q;
-	cin >> n >> q;
+	ll n, q; cin >> n >> q;
 	vl v(n); cin >> v;
-	vl last(5e5 + 5, -1);
-	vector<vl> qr;
-	vl ans(q);
+	Query queries[q]; 
 	for(int i = 0; i < q; i++) {
-		ll a, b;
-		cin >> a >> b;
-		qr.pb({a, b, i});
+		cin >> queries[i].l >> queries[i].r;
+		queries[i].l--, queries[i].r--;
+		queries[i].idx = i;
 	}
-	sort(all(qr), [](vl a, vl b) -> bool{
-		return a[1] < b[1];
-	});
-	ll j = 0;
-	for(int i = 0; i < n; i++) {
-		if(last[v[i]] == -1) add(i + 1, 1);
-		else add(last[v[i]], -1), add(i + 1, 1);
-		last[v[i]] = i + 1;
-		while(j < q and qr[j][1] <= i + 1) {
-			ans[qr[j][2]] = sum(i + 1) - sum(qr[j][0] - 1);
-			j++;
-		}
-	}
-	for(auto x: ans) cout << x << endl;
+	sort(queries, queries + q, cmp);
+	answeringQueries(v, n, queries, q); 
 }
 
 int main()
