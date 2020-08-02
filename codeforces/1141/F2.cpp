@@ -1,3 +1,4 @@
+
 // Problem : F2. Same Sum Blocks (Hard)
 // Contest : Codeforces - Codeforces Round #547 (Div. 3)
 // URL : https://codeforces.com/contest/1141/problem/F2
@@ -10,7 +11,7 @@
 */
 
 #pragma GCC optimize("Ofast")
-// #pragma GCC target ("sse4")
+#pragma GCC target ("sse4")
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
