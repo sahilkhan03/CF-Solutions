@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF88801958": {
+    "contest_id": 1118,
+    "language": "GNU C++14",
+    "path": "codeforces/1118/D2.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D2",
+    "problem_name": "Coffee and Coursework (Hard Version)",
+    "problem_url": "https://codeforces.com/contest/1118/problem/D2",
+    "submission_id": "CF88801958",
+    "submission_url": "https://codeforces.com/contest/1118/submission/88801958",
+    "tags": [
+      "binary search",
+      "greedy",
+      "*1700"
+    ],
+    "timestamp": "Aug/03/2020 18:51"
+  },
   "CF88803292": {
     "contest_id": 1118,
     "language": "GNU C++14",
