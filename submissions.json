@@ -2830,6 +2830,27 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF88778834": {
+    "contest_id": 1141,
+    "language": "GNU C++14",
+    "path": "codeforces/1141/G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Privatization of Roads in Treeland",
+    "problem_url": "https://codeforces.com/contest/1141/problem/G",
+    "submission_id": "CF88778834",
+    "submission_url": "https://codeforces.com/contest/1141/submission/88778834",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "dfs and similar",
+      "graphs",
+      "greedy",
+      "trees",
+      "*1900"
+    ],
+    "timestamp": "Aug/03/2020 12:43"
+  },
   "CF88797967": {
     "contest_id": 1118,
     "language": "GNU C++14",
