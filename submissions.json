@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF88920925": {
+    "contest_id": 1102,
+    "language": "GNU C++14",
+    "path": "codeforces/1102/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Balanced Ternary String",
+    "problem_url": "https://codeforces.com/contest/1102/problem/D",
+    "submission_id": "CF88920925",
+    "submission_url": "https://codeforces.com/contest/1102/submission/88920925",
+    "tags": [
+      "greedy",
+      "strings",
+      "*1500"
+    ],
+    "timestamp": "Aug/05/2020 11:54"
+  },
   "CF88922162": {
     "contest_id": 1102,
     "language": "GNU C++14",
