@@ -2830,6 +2830,25 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF88995039": {
+    "contest_id": 1399,
+    "language": "GNU C++14",
+    "path": "codeforces/1399/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Binary String To Subsequences",
+    "problem_url": "https://codeforces.com/contest/1399/problem/D",
+    "submission_id": "CF88995039",
+    "submission_url": "https://codeforces.com/contest/1399/submission/88995039",
+    "tags": [
+      "constructive algorithms",
+      "data structures",
+      "greedy",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Aug/05/2020 20:36"
+  },
   "CF89050572": {
     "contest_id": 1399,
     "language": "GNU C++14",
