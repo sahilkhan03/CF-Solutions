@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF88922162": {
+    "contest_id": 1102,
+    "language": "GNU C++14",
+    "path": "codeforces/1102/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Monotonic Renumeration",
+    "problem_url": "https://codeforces.com/contest/1102/problem/E",
+    "submission_id": "CF88922162",
+    "submission_url": "https://codeforces.com/contest/1102/submission/88922162",
+    "tags": [
+      "combinatorics",
+      "sortings",
+      "*1700"
+    ],
+    "timestamp": "Aug/05/2020 12:13"
+  },
   "CF88944164": {
     "contest_id": 1102,
     "language": "GNU C++14",
