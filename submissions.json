@@ -2830,6 +2830,24 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF89185974": {
+    "contest_id": 1095,
+    "language": "GNU C++14",
+    "path": "codeforces/1095/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Make It Connected",
+    "problem_url": "https://codeforces.com/contest/1095/problem/F",
+    "submission_id": "CF89185974",
+    "submission_url": "https://codeforces.com/contest/1095/submission/89185974",
+    "tags": [
+      "dsu",
+      "graphs",
+      "greedy",
+      "*1900"
+    ],
+    "timestamp": "Aug/07/2020 13:31"
+  },
   "CF89207156": {
     "contest_id": 1334,
     "language": "GNU C++14",
