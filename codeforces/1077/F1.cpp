@@ -77,11 +77,15 @@ const ll mod = 1e9 + 7;
 void solve() {
 	int n, k, x;
 	cin >> n >> k >> x;
+	// if(n/k > x) {
+		// cout << -1 << endl;
+		// return;
+	// }
 	vl v(n); cin >> v;
-	vector<vl> dp(n + 1, vl(x + 1, -1e18));
+	vector<vl> dp(n + 1, vl(x + 1, -11e18));
 	dp[0][0] = 0;
-	for(int use = 1; use <= x; use++) {
-		for(int i = 1; i <= n; i++) {
+	for(int i = 1; i <= n; i++) {
+		for(int use = 1; use <= min(i,x); use++) {
 			for(int j = i - 1; j >= 0 and i - j <= k; j--) {
 				dp[i][use] = max(dp[i][use], dp[j][use - 1] + v[i - 1]);
 			}
