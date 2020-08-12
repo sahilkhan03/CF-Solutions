@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF89638404": {
+    "contest_id": 1036,
+    "language": "GNU C++14",
+    "path": "codeforces/1036/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Vasya and Arrays",
+    "problem_url": "https://codeforces.com/contest/1036/problem/D",
+    "submission_id": "CF89638404",
+    "submission_url": "https://codeforces.com/contest/1036/submission/89638404",
+    "tags": [
+      "greedy",
+      "two pointers",
+      "*1600"
+    ],
+    "timestamp": "Aug/12/2020 14:59"
+  },
   "CF89640719": {
     "contest_id": 1036,
     "language": "GNU C++14",
