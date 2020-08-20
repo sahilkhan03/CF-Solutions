@@ -17662,6 +17662,22 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF90461234": {
+    "contest_id": 1009,
+    "language": "GNU C++14",
+    "path": "codeforces/1009/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Game Shopping",
+    "problem_url": "https://codeforces.com/contest/1009/problem/A",
+    "submission_id": "CF90461234",
+    "submission_url": "https://codeforces.com/contest/1009/submission/90461234",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Aug/20/2020 17:49"
+  },
   "CF90461728": {
     "contest_id": 1009,
     "language": "GNU C++14",
