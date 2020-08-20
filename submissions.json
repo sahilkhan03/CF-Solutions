@@ -17662,6 +17662,23 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF90463364": {
+    "contest_id": 1009,
+    "language": "GNU C++14",
+    "path": "codeforces/1009/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Annoying Present",
+    "problem_url": "https://codeforces.com/contest/1009/problem/C",
+    "submission_id": "CF90463364",
+    "submission_url": "https://codeforces.com/contest/1009/submission/90463364",
+    "tags": [
+      "greedy",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "Aug/20/2020 18:21"
+  },
   "CF90468183": {
     "contest_id": 1009,
     "language": "GNU C++14",
