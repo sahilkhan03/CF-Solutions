@@ -70,8 +70,9 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
     return is;
 }
 
-const ll mod = 1e9 + 7;
-
+const ll mod = 1e9 + 7, N = 5e7;
+vi pr;
+bitset<N> sieve;
 bool check(int n) {
 	for(int i = 2; i * i <= n; i++) {
 		if(n%i == 0) {
@@ -81,17 +82,34 @@ bool check(int n) {
 	return 1;
 }
 void solve() {
-	int n; cin >> n;
-	if(check(n)) {
-		cout << 1 << endl << n << endl;
-		return;
+	for(int i = 2; i < N; i++) {
+		if(!sieve[i]) {
+			pr.pb(i);
+			for(int j = 2*i; j < N; j += i) sieve[j] = 1;
+		}
 	}
+	int n; cin >> n;
+	for(int i = 2; i * i <= n; i++) {
+		if(n%i == 0) {
+			goto skip;
+		}
+	}
+	cout << 1 << endl << n << endl;
+	return;
+	skip:;
 	vi ans;
 	if(n & 1) ans.pb(3), n -= 3;
-	for(int i = 2; i < n; i++) {
-		if(check(i) and check(n - i)) {
-			ans.pb(i); ans.pb(n - i);
-			break;
+	for(int x: pr) {
+		if(x < n) {
+			if(n - x < N and !sieve[n - x]) {
+				ans.pb(x); 
+				ans.pb(n - x);
+				break;
+			} 
+			if(n - x >= N and check(n - x)) {
+				ans.pb(x); ans.pb(n - x);
+				break;
+			}
 		}
 	}
 	cout << ans.size() << endl;
