@@ -89,8 +89,8 @@ void solve() {
 		diag1.pb(cur);
 	}
 	for(int k = n - 1; k >= 0; k--) {
-		ll cur = 0, mx = -1e18;
-		pl idx = {1, n - 1};
+		ll cur = 0, mx = 0;
+		pl idx = {1, k};
 		for(int i = 0, j = k; i < n and j < n; i++, j++) cur += v[i][j];
 		for(int i = 0, j = k; i < n and j < n; i++, j++) {
 			if(mx < cur + diag1[i + j] - v[i][j]) 
@@ -99,8 +99,8 @@ void solve() {
 		diag2.pb({mx, idx.F, idx.S});
 	}
 	for(int k = 1; k < n; k++) {
-		ll cur = 0, mx = -1e18;
-		pl idx = {1, n};
+		ll cur = 0, mx = 0;
+		pl idx = {k, 1};
 		for(int i = k, j = 0; i < n and j < n; i++, j++) cur += v[i][j];
 		for(int i = k, j = 0; i < n and j < n; i++, j++) {
 			if(mx < cur + diag1[i + j] - v[i][j]) 
