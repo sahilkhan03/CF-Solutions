@@ -17662,6 +17662,22 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF90874231": {
+    "contest_id": 990,
+    "language": "GNU C++14",
+    "path": "codeforces/990/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Bracket Sequences Concatenation Problem",
+    "problem_url": "https://codeforces.com/contest/990/problem/C",
+    "submission_id": "CF90874231",
+    "submission_url": "https://codeforces.com/contest/990/submission/90874231",
+    "tags": [
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Aug/25/2020 12:07"
+  },
   "CF90879141": {
     "contest_id": 990,
     "language": "GNU C++14",
