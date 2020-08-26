@@ -68,15 +68,24 @@ void solve()
     cin >> n;
     vi v(n);
     cin >> v;
-    ll ans = 0;
-    vi pr(1e7);
-    for (int j = n - 1; j >= 0; j--)
+    vi cnt(3001, 0), nc(3001, 0), pr(1e7);
+    for (int i = n - 1; i >= 0; i--)
     {
-        for (int i = 0; i < j; i++)
-            ans += pr[v[i] * 3000 + v[j]];
-        for(int k = j + 1; k < n; k++)
-            pr[v[j]*3000 + v[k]]++;
-    }   
+        for(int j = 1; j < 3001; j++)
+            pr[v[i]*3000 + j] += cnt[j];
+        cnt[v[i]]++;
+    }
+    ll ans = 0;
+    for (int i = 0; i < n; i++)
+    {
+        cnt[v[i]]--;
+        for (int j = 1; j < 3001; j++)
+        {
+            pr[v[i]*3000 + j] -= cnt[j];
+            ans += nc[j] * pr[j*3000 + v[i]];
+        }
+        nc[v[i]]++;
+    }
     cout << ans << endl;
 }
 
