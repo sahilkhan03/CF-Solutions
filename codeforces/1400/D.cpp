@@ -1,6 +1,6 @@
 /* “Whether you think you can or you think you can’t, you’re right” - Henry Ford */
 
-// #pragma GCC optimize("Ofast")
+#pragma GCC optimize("Ofast")
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
