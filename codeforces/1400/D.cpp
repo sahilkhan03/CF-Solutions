@@ -1,6 +1,6 @@
 /* “Whether you think you can or you think you can’t, you’re right” - Henry Ford */
 
-#pragma GCC optimize("Ofast")
+// #pragma GCC optimize("Ofast")
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -46,29 +46,13 @@ istream &operator>>(istream &is, vector<pair<T1, T2>> &v)
 
 const ll mod = 1e9 + 7;
 
-struct custom_hash
-{
-    static uint64_t splitmix64(uint64_t x)
-    {
-        x += 0x9e3779b97f4a7c15;
-        x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9;
-        x = (x ^ (x >> 27)) * 0x94d049bb133111eb;
-        return x ^ (x >> 31);
-    }
-    size_t operator()(uint64_t x) const
-    {
-        static const uint64_t FIXED_RANDOM = chrono::steady_clock::now().time_since_epoch().count();
-        return splitmix64(x + FIXED_RANDOM);
-    }
-};
-
 void solve()
 {
     ll n;
     cin >> n;
     vi v(n);
     cin >> v;
-    vector<short> cnt(3001, 0), nc(3001, 0);
+    vi cnt(3001, 0);
     vector<vi> pr(3001, vi(3001, 0));
     for (int i = n - 1; i >= 0; i--)
     {
@@ -77,6 +61,7 @@ void solve()
         cnt[v[i]]++;
     }
     ll ans = 0;
+    vi nc(3001, 0);
     for (int i = 0; i < n; i++)
     {
         cnt[v[i]]--;
