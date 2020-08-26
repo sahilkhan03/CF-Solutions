@@ -69,13 +69,13 @@ void solve()
     vi v(n);
     cin >> v;
     ll ans = 0;
-    vi pr(n*n, 0);
+    vi pr(1e7);
     for (int j = n - 1; j >= 0; j--)
     {
         for (int i = 0; i < j; i++)
-            ans += pr[v[i] * n + v[j] - n - 1];
+            ans += pr[v[i] * 3000 + v[j]];
         for(int k = j + 1; k < n; k++)
-            pr[v[j]*n + v[k] - n - 1]++;
+            pr[v[j]*3000 + v[k]]++;
     }   
     cout << ans << endl;
 }
