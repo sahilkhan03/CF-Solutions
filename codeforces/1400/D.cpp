@@ -68,11 +68,12 @@ void solve()
     cin >> n;
     vi v(n);
     cin >> v;
-    vi cnt(3001, 0), nc(3001, 0), pr(1e7);
+    vector<short> cnt(3001, 0), nc(3001, 0);
+    vector<vi> pr(3001, vi(3001, 0));
     for (int i = n - 1; i >= 0; i--)
     {
-        for(int j = 1; j < 3001; j++)
-            pr[v[i]*3000 + j] += cnt[j];
+        for (int j = 1; j < 3001; j++)
+            pr[v[i]][j] += cnt[j];
         cnt[v[i]]++;
     }
     ll ans = 0;
@@ -81,8 +82,8 @@ void solve()
         cnt[v[i]]--;
         for (int j = 1; j < 3001; j++)
         {
-            pr[v[i]*3000 + j] -= cnt[j];
-            ans += nc[j] * pr[j*3000 + v[i]];
+            pr[v[i]][j] -= cnt[j];
+            ans += nc[j] * pr[j][v[i]];
         }
         nc[v[i]]++;
     }
