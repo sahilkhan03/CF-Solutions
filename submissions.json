@@ -17662,6 +17662,24 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF91188737": {
+    "contest_id": 962,
+    "language": "GNU C++14",
+    "path": "codeforces/962/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Students in Railway Carriage",
+    "problem_url": "https://codeforces.com/contest/962/problem/B",
+    "submission_id": "CF91188737",
+    "submission_url": "https://codeforces.com/contest/962/submission/91188737",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Aug/28/2020 13:13"
+  },
   "CF91189188": {
     "contest_id": 962,
     "language": "GNU C++14",
