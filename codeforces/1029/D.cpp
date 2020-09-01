@@ -81,7 +81,7 @@ void solve()
     vl v(n);
     cin >> v;
     ll ans = 0;
-    vector<unordered_map<ll, ll, custom_hash>> m(11);
+    vector<map<ll, ll>> m(11);
     for (int i = 0; i < n; i++)
     {
         ll len = log10(v[i]) + 1;
