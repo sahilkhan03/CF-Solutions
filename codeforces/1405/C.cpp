@@ -73,26 +73,34 @@ void solve() {
     ll n, k;
     cin >> n >> k;
     string s; cin >> s;
+    ll o = 0, z = 0, q = 0;
     for (int i = 0; i < k; i++) {
-        char cur = '?';
-        for (int j = i; j < n; j += k) {
-            if (s[j] != '?') {
-                if (cur == '?') cur = s[j];
-                else if (cur != s[j]) {
-                    cout << "NO" << endl;
-                    return;
-                }
-            }
-        }
-        for (int j = i; j < n; j += k) s[j] = cur;
+        if (s[i] == '1') o++;
+        else if (s[i] == '0') z++;
     }
-    vl cnt(2, 0);
-    for (int i = 0; i < k; i++) {
-        if (s[i] != '?') cnt[s[i] - '0']++;
-    }
-    if (cnt[0] > k / 2 or cnt[1] > k / 2) {
+    if (o > k / 2 or z > k / 2  or (k % 2 == 1)) {
         cout << "NO" << endl;
         return;
+    }
+    o = k / 2 - o, z = k / 2 - z;
+    vl cnt = {z, o};
+    for (int i = k; i < n; i++) {
+        if (s[i] == '?') {
+            if (s[i - k] != '?') s[i] = s[i - k];
+            continue;
+        }
+        if (s[i - k] != '?' and s[i] != s[i - k]) {
+            cout << "NO" << endl;
+            return;
+        }
+        if (s[i - k] == '?') {
+            if (!cnt[s[i] - '0']) {
+                cout << "NO" << endl;
+                return;
+            }
+            cnt[s[i] - '0']--;
+        }
+        debug(i, cnt);
     }
     cout << "YES" << endl;
 }
