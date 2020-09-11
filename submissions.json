@@ -16003,6 +16003,22 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF92483863": {
+    "contest_id": 1208,
+    "language": "GNU C++14",
+    "path": "codeforces/1208/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Magic Grid",
+    "problem_url": "https://codeforces.com/contest/1208/problem/C",
+    "submission_id": "CF92483863",
+    "submission_url": "https://codeforces.com/contest/1208/submission/92483863",
+    "tags": [
+      "constructive algorithms",
+      "*1800"
+    ],
+    "timestamp": "Sep/11/2020 14:52"
+  },
   "CF92504339": {
     "contest_id": 946,
     "language": "GNU C++14",
