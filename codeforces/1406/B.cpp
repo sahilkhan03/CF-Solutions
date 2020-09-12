@@ -1,124 +1,212 @@
 /*
-    "Whether you think you can or you think you can't, you're right"
-        - Henry Ford
+    Author : DemonStar
 */
 
 #pragma GCC optimize("Ofast")
+#pragma GCC target ("sse4")
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
+using namespace __gnu_pbds;
 typedef long long ll;
+#define ordered_set tree<ll, null_type, less<ll>, rb_tree_tag, tree_order_statistics_node_update>
 #define fast ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define all(x) x.begin(), x.end()
-#define F first
-#define S second
-#define pb push_back
+#define loop(i, n) for(ll i = 0; i < n; i++)
 #define pl pair<ll, ll>
 #define vl vector<ll>
-#define vi vector<int>
 #define endl '\n'
+void __print(int x) {cerr << x;}
+void __print(long x) {cerr << x;}
+void __print(long long x) {cerr << x;}
+void __print(unsigned x) {cerr << x;}
+void __print(unsigned long x) {cerr << x;}
+void __print(unsigned long long x) {cerr << x;}
+void __print(float x) {cerr << x;}
+void __print(double x) {cerr << x;}
+void __print(long double x) {cerr << x;}
+void __print(char x) {cerr << '\'' << x << '\'';}
+void __print(const char *x) {cerr << '\"' << x << '\"';}
+void __print(const string &x) {cerr << '\"' << x << '\"';}
+void __print(bool x) {cerr << (x ? "true" : "false");}
+
+template<typename T, typename V>
+void __print(const pair<T, V> &x) {cerr << '{'; __print(x.first); cerr << ','; __print(x.second); cerr << '}';}
+template<typename T>
+void __print(const T &x) {int f = 0; cerr << '{'; for (auto &i : x) cerr << (f++ ? "," : ""), __print(i); cerr << "}";}
+void _print() {cerr << "]\n";}
+template <typename T, typename... V>
+void _print(T t, V... v) {__print(t); if (sizeof...(v)) cerr << ", "; _print(v...);}
+
+#ifdef LOCAL
+#define debug(x...) cerr << "[" << #x << "] = ["; _print(x)
+#else
+#define debug(x...)
+#endif
+
+struct custom_hash {
+    static uint64_t splitmix64(uint64_t x) {
+        x += 0x9e3779b97f4a7c15;
+        x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9;
+        x = (x ^ (x >> 27)) * 0x94d049bb133111eb;
+        return x ^ (x >> 31);
+    }
+    size_t operator()(uint64_t x) const {
+        static const uint64_t FIXED_RANDOM = chrono::steady_clock::now().time_since_epoch().count();
+        return splitmix64(x + FIXED_RANDOM);
+    }
+};
+
 
 template <typename T, typename TT>
-inline ostream &operator<<(ostream &os, const pair<T, TT> &t) {
+ostream &operator<<(ostream &os, const pair<T, TT> &t) {
     return os << t.first << " " << t.second;
 }
 template <typename T>
-inline ostream &operator<<(ostream &os, const vector<T> &t) {
-    for (auto i : t) os << i << " ";
+ostream &operator<<(ostream &os, const vector<T> &t) {
+    for (auto &i : t) os << i << " ";
     return os;
 }
 template <typename T>
-inline ostream &operator<<(ostream &os, const set<T> &t) {
-    for (auto i : t) os << i << " ";
-    return os;
-}
-template <typename T1, typename T2>
-inline ostream &operator<<(ostream &os, const map<T1, T2> &t) {
-    for (auto i : t) os << i.first << " : " << i.second << endl;
-    return os;
-}
-template <typename T>
-inline istream &operator>>(istream &is, vector<T> &v) {
+istream &operator>>(istream &is, vector<T> &v) {
     for (T &t : v) is >> t;
     return is;
 }
 template <typename T1, typename T2>
-inline istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
+istream &operator>>(istream &is, vector<pair<T1, T2>> &v) {
     for (pair<T1, T2> &t : v) is >> t.first >> t.second;
     return is;
 }
 
-#ifdef LOCAL
-#define debug(args...) (Debugger()), args
-class Debugger {
-public:
-    bool first;
-    string separator;
-    Debugger(const string &_separator = ", ") : first(true), separator(_separator) {}
-    template <typename ObjectType>
-    Debugger &operator, (const ObjectType &v) {
-        if (!first) cerr << separator;
-        cerr << v;
-        first = false;
-        return *this;
-    }
-    ~Debugger() { cerr << endl; }
-};
-#else
-#define debug(args...)
-#endif
-
 const ll mod = 1e9 + 7;
 
-void solve() {
-    ll n; cin >> n;
-    vl pos, neg;
+ll calc(vl &cnt) {
+    for (int i = 0; i < cnt.size(); i++) {
+        if (!cnt[i]) return i;
+    }
+    return cnt.size();
+}
+
+ll solve() {
+
+    ll n, k = 5;
+    cin >> n;
+    vl v(n);
+    cin >> v;
     ll z = 0;
-    for (int i = 0; i < n; i++) {
-        ll t; cin >> t;
-        if (t > 0) pos.pb(t);
-        else if (t < 0) neg.pb(t);
-        else z++;
+    vl pos, neg;
+    for (auto x : v) {
+        if (x >= 0) pos.push_back(x);
+        else if (x < 0) neg.push_back(x);
+        if (x == 0) z++;
     }
     sort(all(pos), greater<ll>());
     sort(all(neg));
-    ll ans = 1;
-    if (z) ans = 0;
-    else {
-        ans = 1;
-        ll i = pos.size() - 1, j = neg.size() - 1, c = 0;
-        while (c < 5 and i >= 0 and j >= 0) {
-            if (pos[i] > neg[j]) ans *= neg[j--];
-            else ans *= pos[i--];
-            c++;
+    if (n == k) {
+        ll prod = 1;
+        for (auto x : v)
+            prod *= x;
+        cout << prod << endl;
+        return 0;
+    }
+    if (pos.empty() or !pos[0]) {
+        ll prod = 1;
+        if (k & 1) {
+            if (z) {
+                cout << 0 << endl;
+                return 0;
+            }
+            for (int i = neg.size() - 1, c = 0; i >= 0 and c < k; i--, c++)
+                prod *= neg[i];
+            cout << prod << endl;
         }
-        while (c < 5 and i >= 0) c++, ans *= pos[i--];
-        while (c < 5 and j >= 0) c++, ans *= neg[j--];
-        if (c < 5) ans = 0;
+        else {
+            if (neg.size() < k) cout << 0 << endl;
+            else {
+                for (int i = 0; i < k; i++)
+                    prod *= neg[i];
+                cout << prod << endl;
+            }
+        }
+        return 0;
     }
-    if (pos.size() >= 1) {
-        ll cur = pos[0];
-        if (neg.size() >= 4) cur *= neg[0] * neg[1] * neg[2] * neg[3];
-        else cur = -1e18;
-        ans = max(ans, cur);
+    vl ans;
+    if (pos.size() < k) {
+        vl ans = pos, ans2;
+        while (!ans.back()) ans.pop_back();
+        ll i = 0;
+        while (ans.size() + ans2.size() < k and i < neg.size()) {
+            ans2.push_back(neg[i++]);
+        }
+        if (((i & 1) and i == neg.size()) or ans.size() + ans2.size() < k) {
+            cout << 0 << endl;
+            return 0;
+        }
+        if (i & 1) {
+            ans.pop_back();
+            ans2.push_back(neg[i++]);
+        }
+        reverse(all(ans));
+        ll j = 1;
+        while (j < ans.size() and i  + 1 < neg.size()) {
+            if (ans[j] * ans[j - 1] < neg[i] * neg[i + 1]) {
+                ans[j] = neg[i];
+                ans[j - 1] = neg[i + 1];
+            }
+            j += 2, i += 2;
+        }
+        debug(ans, ans2);
+        ll prod = 1;
+        for (auto x : ans)
+            prod *=  x;
+        for (auto x : ans2)
+            prod *=  x;
+        cout << prod << endl;
     }
-    if (pos.size() >= 3) {
-        ll cur = pos[1] * pos[0] * pos[2];
-        if (neg.size() >= 2) cur *= neg[0] * neg[1];
-        else cur = -1e18;
-        ans = max(ans, cur);
+    else {
+        vl ans, ans2;
+        for (int i = 0; i < k; i++) ans.push_back(pos[i]);
+        while (!ans.back()) ans.pop_back();
+        ll i = 0;
+        while (ans.size() + ans2.size() < k and i < neg.size()) {
+            ans2.push_back(neg[i++]);
+        }
+        if (((i & 1) and i == neg.size()) or ans.size() + ans2.size() < k) {
+            cout << 0 << endl;
+            return 0;
+        }
+        if (i & 1) {
+            ans.pop_back();
+            ans2.push_back(neg[i++]);
+        }
+        reverse(all(ans));
+        ll j = 1;
+        while (j < ans.size() and i  + 1 < neg.size()) {
+            if (ans[j] * ans[j - 1] < neg[i] * neg[i + 1]) {
+                ans[j] = neg[i];
+                ans[j - 1] = neg[i + 1];
+            }
+            j += 2, i += 2;
+        }
+        debug(ans, ans2);
+        ll prod = 1;
+        for (auto x : ans)
+            (prod *=  x);
+        for (auto x : ans2)
+            (prod *= x);
+        cout << prod << endl;
     }
-    if (pos.size() >= 5) {
-        ll cur = pos[0] * pos[1] * pos[2] * pos[3] * pos[4];
-        ans = max(ans, cur);
-    }
-    cout << ans << endl;
+    return 0;
 }
+
 
 int main()
 {
+
+
     fast;
-    ll t = 1;
-    cin >> t;
+    ll t; cin >> t;
     while (t--) {
         solve();
     }
