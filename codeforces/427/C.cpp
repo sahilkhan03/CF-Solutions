@@ -84,7 +84,7 @@ void dfs(ll u) {
         if (onstc[x]) low[u] = min(low[u], low[x]);
     }
     if (id[u] == low[u]) {
-        pl c = {1e18, 0}; // {cost, ways} for current SCC
+        pl c = {9e18, 0}; // {cost, ways} for current SCC
         while (true) {
             ll w = s.top(); s.pop();
             if (cost[w] < c.F) c = {cost[w], 1};
