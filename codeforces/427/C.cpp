@@ -85,16 +85,12 @@ void dfs(ll u) {
     }
     if (id[u] == low[u]) {
         pl c = {1e18, 0}; // {cost, ways} for current SCC
-        vl scc;
         while (true) {
             ll w = s.top(); s.pop();
-            scc.pb(w);
+            if (cost[w] < c.F) c = {cost[w], 1};
+            else if (cost[w] == c.F) c.S++;
             onstc[w] = 0;
             if (w == u) break;
-        }
-        for (auto x : scc) {
-            if (cost[x] < c.F) c = {cost[x], 1};
-            else if (cost[x] == c.F) c.S++;
         }
         ans.F += c.F;
         (ans.S *= c.S) %= mod;
