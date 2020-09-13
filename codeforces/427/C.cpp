@@ -69,47 +69,58 @@ public:
 
 const ll mod = 1e9 + 7;
 
-ll n, idx = 0;
+ll n;
 vector<vl> v, inv;
-vector<bool> onstc;
-stack<ll> s;
-vl id, low, cost;
-pl ans = {0, 1}; // {cost, ways}
-
+vector<bool> vis;
+vl ord;
 void dfs(ll u) {
-    id[u] = low[u] = idx++;
-    onstc[u] = 1; s.push(u);
+    if (vis[u]) return;
+    vis[u] = 1;
     for (auto x : v[u]) {
-        if (id[x] == -1) dfs(x);
-        if (onstc[x]) low[u] = min(low[u], low[x]);
+        dfs(x);
     }
-    if (id[u] == low[u]) {
-        pl c = {9e18, 0}; // {cost, ways} for current SCC
-        while (true) {
-            ll w = s.top(); s.pop();
-            if (cost[w] < c.F) c = {cost[w], 1};
-            else if (cost[w] == c.F) c.S++;
-            onstc[w] = 0;
-            if (w == u) break;
-        }
-        ans.F += c.F;
-        (ans.S *= c.S) %= mod;
+    ord.pb(u);
+}
+vl cur;
+void dfs1(ll u) {
+    if (vis[u]) return;
+    vis[u] = 1;
+    for (auto x : inv[u]) {
+        dfs1(x);
     }
+    cur.pb(u);
 }
 
 void solve() {
     cin >> n;
-    cost.resize(n); cin >> cost;
-    v.resize(n); id.resize(n, -1), low.resize(n, -1);
+    vl cost(n); cin >> cost;
+    v.resize(n); inv.resize(n);
     ll m; cin >> m;
     while (m--) {
         ll a, b;
         cin >> a >> b;
         v[a - 1].pb(b - 1);
+        inv[b - 1].pb(a - 1);
     }
-    onstc = vector<bool>(n, 0);
+    vis = vector<bool>(n, 0);
     for (int i = 0; i < n; i++) {
-        if (id[i] == -1) dfs(i);
+        if (!vis[i]) dfs(i);
+    }
+    debug(ord);
+    vis = vector<bool>(n, 0);
+    pl ans = {0, 1};
+    for (int i = n - 1; i >= 0; i--) {
+        if (!vis[ord[i]]) {
+            cur.clear();
+            dfs1(ord[i]);
+            pl c = {1e18, 0};
+            for (auto x : cur) {
+                if (cost[x] < c.F) c = {cost[x], 1};
+                else if (cost[x] == c.F) c.S++;
+            }
+            ans.F += c.F;
+            (ans.S *= c.S) %= mod;
+        }
     }
     cout << ans << endl;
 }
