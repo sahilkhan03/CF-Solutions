@@ -70,7 +70,7 @@ public:
 const ll mod = 1e9 + 7;
 multiset<ll> dif, pts;
 
-void add(ll a) {
+inline void add(ll a) {
     if (pts.empty()) {
         pts.insert(a);
         return;
@@ -86,7 +86,7 @@ void add(ll a) {
     pts.insert(a);
 }
 
-void del(ll a) {
+inline void del(ll a) {
     if (dif.empty()) {
         pts.erase(pts.find(a));
         return;
@@ -102,7 +102,7 @@ void del(ll a) {
     pts.erase(pts.find(a));
 }
 
-void calc() {
+inline void calc() {
     if (dif.empty()) {
         cout << 0 << endl;
         return;
