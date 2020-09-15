@@ -16003,6 +16003,23 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF92878104": {
+    "contest_id": 1418,
+    "language": "GNU C++14",
+    "path": "codeforces/1418/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Trash Problem",
+    "problem_url": "https://codeforces.com/contest/1418/problem/D",
+    "submission_id": "CF92878104",
+    "submission_url": "https://codeforces.com/contest/1418/submission/92878104",
+    "tags": [
+      "data structures",
+      "implementation",
+      "*2100"
+    ],
+    "timestamp": "Sep/15/2020 12:16"
+  },
   "CF92911000": {
     "contest_id": 427,
     "language": "GNU C++14",
