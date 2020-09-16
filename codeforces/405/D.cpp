@@ -71,28 +71,34 @@ const ll mod = 1e9 + 7, N = 1e6;
 
 void solve() {
     int n; scanf("%d", &n);
-    vi v(n), ans;
+    set<ll> s, v;
+    for (int i = 1; i <= 1e6; i++) s.insert(i);
+    for (int i = 0; i < n; i++) {
+        int a; scanf("%d", &a);
+        v.insert(a);
+    }
+    vi ans;
     int c = 0;
-    for (int i = 0; i < n; i++) scanf("%d", &v[i]);
-    set<ll> s(all(v)), s1(all(v));
-    while (!s.empty()) {
-        int x = *s.begin();
-        s.erase(s.begin());
-        if (s.find(N - x + 1) == s.end()) {
-            ans.pb(N - x  + 1);
+    while (!v.empty()) {
+        int x = *v.begin();
+        s.erase(s.find(x));
+        s.erase(s.find(N - x + 1));
+        v.erase(v.begin());
+        if (v.find(N - x + 1) == v.end()) {
+            ans.pb(N - x + 1);
             continue;
         }
         c++;
-        s.erase(s.find(N - x + 1));
+        v.erase(v.find(N - x + 1));
     }
-    ll i = 1;
     while (c--) {
-        while (i < N and (s1.find(i) != s1.end() or s1.find(N - i + 1) != s1.end())) i++;
-        ans.pb(i); ans.pb(N - i + 1);
-        i++;
+        ans.pb(*s.begin());
+        ans.pb(*s.rbegin());
+        s.erase(s.begin());
+        s.erase(*prev(s.end()));
     }
     printf("%d\n", ans.size());
-    for (int j : ans) printf("%d ", j);
+    for (int i : ans) printf("%d ", i);
 }
 
 int main()
