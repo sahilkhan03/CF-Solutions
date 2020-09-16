@@ -16003,6 +16003,24 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF92964188": {
+    "contest_id": 732,
+    "language": "GNU C++14",
+    "path": "codeforces/732/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Exams",
+    "problem_url": "https://codeforces.com/contest/732/problem/D",
+    "submission_id": "CF92964188",
+    "submission_url": "https://codeforces.com/contest/732/submission/92964188",
+    "tags": [
+      "binary search",
+      "greedy",
+      "sortings",
+      "*1700"
+    ],
+    "timestamp": "Sep/16/2020 15:45"
+  },
   "CF92966498": {
     "contest_id": 405,
     "language": "GNU C++14",
