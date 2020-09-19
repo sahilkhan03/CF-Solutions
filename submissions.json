@@ -16003,6 +16003,22 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF93163187": {
+    "contest_id": 938,
+    "language": "GNU C++14",
+    "path": "codeforces/938/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Word Correction",
+    "problem_url": "https://codeforces.com/contest/938/problem/A",
+    "submission_id": "CF93163187",
+    "submission_url": "https://codeforces.com/contest/938/submission/93163187",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Sep/19/2020 10:18"
+  },
   "CF93163548": {
     "contest_id": 938,
     "language": "GNU C++14",
