@@ -16003,6 +16003,27 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF93300949": {
+    "contest_id": 1419,
+    "language": "GNU C++14",
+    "path": "codeforces/1419/D2.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D2",
+    "problem_name": "Sage's Birthday (hard version)",
+    "problem_url": "https://codeforces.com/contest/1419/problem/D2",
+    "submission_id": "CF93300949",
+    "submission_url": "https://codeforces.com/contest/1419/submission/93300949",
+    "tags": [
+      "binary search",
+      "brute force",
+      "constructive algorithms",
+      "greedy",
+      "sortings",
+      "two pointers",
+      "*1500"
+    ],
+    "timestamp": "Sep/20/2020 10:18"
+  },
   "CF93315805": {
     "contest_id": 739,
     "language": "GNU C++14",
