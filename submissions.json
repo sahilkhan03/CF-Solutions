@@ -16003,6 +16003,24 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF93384520": {
+    "contest_id": 1286,
+    "language": "GNU C++17",
+    "path": "codeforces/1286/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Garland",
+    "problem_url": "https://codeforces.com/contest/1286/problem/A",
+    "submission_id": "CF93384520",
+    "submission_url": "https://codeforces.com/contest/1286/submission/93384520",
+    "tags": [
+      "dp",
+      "greedy",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Sep/21/2020 12:51"
+  },
   "CF93392284": {
     "contest_id": 1185,
     "language": "GNU C++17",
