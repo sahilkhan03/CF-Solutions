@@ -67,6 +67,7 @@ public:
 #define debug(args...)
 #endif
 
+
 void solve() {
     ll n, m, b, mod;
     cin >> n >> m >> b >> mod;
