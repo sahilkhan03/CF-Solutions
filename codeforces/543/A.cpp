@@ -67,6 +67,7 @@ public:
 #define debug(args...)
 #endif
 
+// const ll mod = 1e9 + 7;
 
 void solve() {
     ll n, m, b, mod;
