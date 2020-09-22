@@ -16003,6 +16003,22 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF93465883": {
+    "contest_id": 979,
+    "language": "GNU C++17",
+    "path": "codeforces/979/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Treasure Hunt",
+    "problem_url": "https://codeforces.com/contest/979/problem/B",
+    "submission_id": "CF93465883",
+    "submission_url": "https://codeforces.com/contest/979/submission/93465883",
+    "tags": [
+      "greedy",
+      "*1800"
+    ],
+    "timestamp": "Sep/22/2020 14:37"
+  },
   "CF93473406": {
     "contest_id": 1396,
     "language": "GNU C++17",
