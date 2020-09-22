@@ -72,6 +72,13 @@ const ll mod = 1e9 + 7;
 void solve() {
     ll n, p, w, d;
     cin >> n >> p >> w >> d;
+    for (ll x = 0; x <= 1e6; x++) {
+        if ((p - x * w) / d < 0) break;
+        if ((p - x * w) % d == 0 and (p - x * w) / d + x <= n) {
+            cout << x << " " << (p - x * w) / d << " " << n - x - (p - x * w) / d << endl;
+            return;
+        }
+    }
     for (ll y = 0; y <= 1e6; y++) {
         if ((p - y * d) / w < 0) break;
         if ((p - y * d) % w == 0 and (p - y * d) / w + y <= n) {
