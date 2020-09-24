@@ -16003,6 +16003,22 @@
     ],
     "timestamp": "Aug/20/2020 14:29"
   },
+  "CF93632258": {
+    "contest_id": 920,
+    "language": "GNU C++17",
+    "path": "codeforces/920/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Water The Garden",
+    "problem_url": "https://codeforces.com/contest/920/problem/A",
+    "submission_id": "CF93632258",
+    "submission_url": "https://codeforces.com/contest/920/submission/93632258",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Sep/24/2020 16:22"
+  },
   "CF93633732": {
     "contest_id": 920,
     "language": "GNU C++17",
