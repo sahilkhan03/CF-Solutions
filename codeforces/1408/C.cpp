@@ -71,25 +71,26 @@ vl v;
 ll n, l;
 
 long double calcx(long double mid) {
-	long double cur = 0, sp = 1, i = 1, dis = 0;
-	while (i < v.size() and cur + (v[i] - v[i - 1]) / sp < mid) {
-		dis = v[i];
-		cur += (v[i] - v[i - 1]) / sp;
-		sp++; i++;
+	long double sp = 1, i = 1, t = 0;
+	while (v[i] < mid) {
+		long double dis = v[i] - v[i - 1];
+		t += dis / sp;
+		sp++;
+		i++;
 	}
-	dis += (mid - cur) * sp;
-	return dis;
+	t += (mid - v[i - 1]) / sp;
+	return t;
 }
 
 long double calcy(long double mid) {
-	long double sp = 1, i = v.size() - 2, dis = l, cur = 0;
-	while (i >= 0 and cur + (v[i + 1] - v[i]) / sp < mid) {
-		dis = v[i];
-		cur += (v[i + 1] - v[i]) / sp;
+	long double sp = 1, i = v.size() - 2, t = 0;
+	while (v[i] > mid) {
+		long double dis = v[i + 1] - v[i];
+		t += dis / sp;
 		sp++; i--;
 	}
-	dis -= (mid - cur) * sp;
-	return dis;
+	t += (v[i + 1] - mid) / sp;
+	return t;
 }
 
 void solve() {
@@ -103,7 +104,7 @@ void solve() {
 		mid = lo + (hi - lo) / 2;
 		long double x = calcx(mid), y = calcy(mid);
 		if (abs(x - y) < 1e-8) {
-			ans = mid;
+			ans = x;
 			break;
 		}
 		if (x > y) hi = mid;
