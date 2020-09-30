@@ -86,7 +86,7 @@ void solve() {
 	for (int i = 0; i < n; i++) {
 		lf[i] = rf[i] = v[i];
 		for (int j = i - 1; j >= 0; j--) {
-			rf[j] ^= rf[j + 1];
+			rf[j] = rf[j] ^ rf[j + 1];
 			lf[j] = max({lf[j], lf[j + 1], rf[j]});
 		}
 		while (k < m and q[k][1] <= i + 1) {
