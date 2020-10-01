@@ -82,10 +82,8 @@ void solve() {
 			if (cx >= 0) v[cx] = max(v[cx], cy);
 		}
 	}
-	for (int i = 1e6 + 1; i >= 0; i--) {
-		v[i] = max(v[i], v[i + 1]);
-		ans = min(ans, i + v[i]);
-	}
+	for (int i = 1e6 + 1; i >= 0; i--) v[i] = max(v[i], v[i + 1]);
+	for (int i = 0; i <= 1e6 + 1; i++) ans = min(ans, i + v[i]);
 	cout << ans << endl;
 }
 
