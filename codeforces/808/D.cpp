@@ -76,20 +76,25 @@ void solve() {
 		cout << "NO" << endl;
 		return;
 	}
-	ll pre = 0, suf = sum;
-	multiset<ll> p, s(all(v));
+	multiset<ll> s(all(v));
+	ll pre = 0;
 	for (int i = 0; i < n; i++) {
-		if (suf >= pre and (suf - pre) % 2 == 0 and s.find((suf - pre) / 2) != s.end()) {
+		if (s.find(sum / 2 - pre) != s.end()) {
 			cout << "YES" << endl;
 			return;
 		}
-		if (suf <= pre and (pre - suf) % 2 == 0 and p.find((pre - suf) / 2) != p.end()) {
+		pre += v[i];
+		s.erase(s.find(v[i]));
+	}
+	s = multiset<ll> (all(v));
+	ll suf = 0;
+	for (int i = n - 1; i >= 0; i--) {
+		if (s.find(sum / 2 - suf) != s.end()) {
 			cout << "YES" << endl;
 			return;
 		}
-		pre += v[i], suf -= v[i];
-		p.insert(v[i]), s.erase(s.find(v[i]));
-
+		suf += v[i];
+		s.erase(s.find(v[i]));
 	}
 	cout << "NO" << endl;
 }
