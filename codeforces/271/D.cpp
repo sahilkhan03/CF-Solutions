@@ -66,7 +66,9 @@ public:
 #define debug(args...)
 #endif
 
-const ll mod = 1e9 + 7, p1 = 7, p2 = 31;
+random_device rd;
+uniform_int_distribution<int> dist(7, 1e9);
+const ll mod = 1e9 + 7, p1 = dist(rd), p2 = dist(rd);
 void solve() {
 	string s; cin >> s;
 	string t; cin >> t;
