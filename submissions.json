@@ -2830,6 +2830,25 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF94642098": {
+    "contest_id": 911,
+    "language": "GNU C++17",
+    "path": "codeforces/911/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Stack Sorting",
+    "problem_url": "https://codeforces.com/contest/911/problem/E",
+    "submission_id": "CF94642098",
+    "submission_url": "https://codeforces.com/contest/911/submission/94642098",
+    "tags": [
+      "constructive algorithms",
+      "data structures",
+      "greedy",
+      "implementation",
+      "*2000"
+    ],
+    "timestamp": "Oct/04/2020 17:23"
+  },
   "CF94740914": {
     "contest_id": 1422,
     "language": "GNU C++17",
