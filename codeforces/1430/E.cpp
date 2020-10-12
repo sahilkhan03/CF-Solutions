@@ -4,6 +4,13 @@
 
 #pragma GCC optimize("Ofast")
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+
+using namespace __gnu_pbds;
+
+#define ordered_set tree<ll, null_type, less<ll>, rb_tree_tag, tree_order_statistics_node_update>
+
 using namespace std;
 typedef long long ll;
 #define fast ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -68,40 +75,6 @@ public:
 
 const ll mod = 1e9 + 7;
 
-template <class T> struct fenwick_tree {
-public:
-	fenwick_tree() : _n(0) {}
-	fenwick_tree(int n) : _n(n), data(n) {}
-
-	void add(int p, T x) {
-		assert(0 <= p && p < _n);
-		p++;
-		while (p <= _n) {
-			data[p - 1] += T(x);
-			p += p & -p;
-		}
-	}
-
-	T sum(int l, int r) {
-		assert(0 <= l && l <= r && r <= _n);
-		return sum(r) - sum(l);
-	}
-
-private:
-	int _n;
-	std::vector<T> data;
-
-	T sum(int r) {
-		T s = 0;
-		while (r > 0) {
-			s += data[r - 1];
-			r -= r & -r;
-		}
-		return s;
-	}
-};
-
-
 void solve() {
 	ll n; cin >> n;
 	string s; cin >> s;
@@ -110,10 +83,10 @@ void solve() {
 		v[s[i] - 'a'].insert(n - i - 1);
 	}
 	ll ans = 0;
-	fenwick_tree<ll> fen(n + 1);
+	ordered_set st;
 	for (int i = 0; i < n; i++) {
-		ans += fen.sum(0, n) - fen.sum(0, *v[s[i] - 'a'].begin());
-		fen.add(*v[s[i] - 'a'].begin(), 1);
+		ans += st.size() - st.order_of_key(*v[s[i] - 'a'].begin());
+		st.insert(*v[s[i] - 'a'].begin());
 		v[s[i] - 'a'].erase(v[s[i] - 'a'].begin());
 	}
 	cout << ans << endl;
