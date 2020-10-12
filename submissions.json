@@ -2830,6 +2830,22 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF95333709": {
+    "contest_id": 1427,
+    "language": "GNU C++17",
+    "path": "codeforces/1427/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "The Hard Work of Paparazzi",
+    "problem_url": "https://codeforces.com/contest/1427/problem/C",
+    "submission_id": "CF95333709",
+    "submission_url": "https://codeforces.com/contest/1427/submission/95333709",
+    "tags": [
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Oct/12/2020 16:15"
+  },
   "CF95350955": {
     "contest_id": 1427,
     "language": "GNU C++17",
