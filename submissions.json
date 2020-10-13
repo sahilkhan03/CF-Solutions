@@ -2830,6 +2830,24 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF95402850": {
+    "contest_id": 1152,
+    "language": "GNU C++17",
+    "path": "codeforces/1152/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Neko does Maths",
+    "problem_url": "https://codeforces.com/contest/1152/problem/C",
+    "submission_id": "CF95402850",
+    "submission_url": "https://codeforces.com/contest/1152/submission/95402850",
+    "tags": [
+      "brute force",
+      "math",
+      "number theory",
+      "*1800"
+    ],
+    "timestamp": "Oct/13/2020 13:34"
+  },
   "CF95403737": {
     "contest_id": 519,
     "language": "GNU C++17",
