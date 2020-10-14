@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF95503629": {
+    "contest_id": 598,
+    "language": "GNU C++17",
+    "path": "codeforces/598/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Chocolate Bar",
+    "problem_url": "https://codeforces.com/contest/598/problem/E",
+    "submission_id": "CF95503629",
+    "submission_url": "https://codeforces.com/contest/598/submission/95503629",
+    "tags": [
+      "brute force",
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Oct/14/2020 17:53"
+  },
   "CF95504359": {
     "contest_id": 598,
     "language": "GNU C++17",

@@ -64,41 +64,36 @@ public:
 
 const ll mod = 1e9 + 7;
 
-void solve() {
-	vector<vector<vl>> dp(31, vector<vl> (31, vl(51, 1e18)));
-	for (int i = 1; i <= 30; i++) {
-		for (int j = 1; j <= 30; j++) {
-			for (int k = 0; k <= 50; k++) {
-				if (!k or i * j == k) {
-					dp[i][j][k] = 0;
-					continue;
-				}
-				for (int l = 1; l < i; l++) {
-					for (int r = 0; r <= k; r++) {
-						dp[i][j][k] = min(dp[i][j][k], j * j + min(dp[l][j][r] + dp[i - l][j][k - r], dp[l][j][k - r] + dp[i - l][j][r]));
-					}
-				}
-				for (int l = 1; l < j; l++) {
-					for (int r = 0; r <= k; r++) {
-						dp[i][j][k] = min(dp[i][j][k], i * i + min(dp[i][l][r] + dp[i][j - l][k - r], dp[i][l][k - r] + dp[i][j - l][r]));
-					}
-				}
-			}
+vector<vector<vl>> dp (31, vector<vl>(31, vl(51, -1)));
+ll calc(ll n, ll m, ll k) {
+	if (n * m == k or !k) return 0;
+	ll &ans = dp[n][m][k];
+	if (ans != -1) return ans;
+	ans = 1e18;
+	for (int i = 1; i < n; i++) {
+		for (int j = 0; j <= k; j++) {
+			ans = min(ans, m * m + calc(i, m, j) + calc(n - i, m, k - j));
 		}
 	}
-	ll t; cin >> t;
-	while (t--) {
-		ll a, b, c;
-		cin >> a >> b >> c;
-		cout << dp[a][b][c] << endl;
+	for (int i = 1; i < m; i++) {
+		for (int j = 0; j <= k; j++) {
+			ans = min(ans, n * n + calc(n, i, j) + calc(n, m - i, k - j));
+		}
 	}
+	return ans;
+}
+
+void solve() {
+	ll n, m, k;
+	cin >> n >> m >> k;
+	cout << calc(n, m, k) << endl;
 }
 
 int main()
 {
 	fast;
 	ll T = 1;
-	// cin >> T;
+	cin >> T;
 	while (T--) {
 		solve();
 	}
