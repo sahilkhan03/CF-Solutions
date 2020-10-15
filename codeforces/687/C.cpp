@@ -68,7 +68,8 @@ void solve() {
 	ll n, k;
 	cin >> n >> k;
 	vl v(n); cin >> v;
-	for (int i = 0; i <= n; i++) dp[i][0][0] = 1;
+	dp[0][0][0] = 1;
+	for (int i = 1; i <= n; i++) dp[i][v[i - 1]][v[i - 1]] = dp[i][0][0] = 1;
 	for (int i = 1; i <= n; i++) {
 		for (int j = 0; j <= k; j++) {
 			for (int x = 0; x <= j; x++) {
