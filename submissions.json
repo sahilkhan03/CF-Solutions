@@ -2830,6 +2830,27 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF95640367": {
+    "contest_id": 1237,
+    "language": "GNU C++17",
+    "path": "codeforces/1237/C2.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C2",
+    "problem_name": "Balanced Removals (Harder)",
+    "problem_url": "https://codeforces.com/contest/1237/problem/C2",
+    "submission_id": "CF95640367",
+    "submission_url": "https://codeforces.com/contest/1237/submission/95640367",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "divide and conquer",
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1900"
+    ],
+    "timestamp": "Oct/16/2020 12:55"
+  },
   "CF95645263": {
     "contest_id": 1237,
     "language": "GNU C++17",
