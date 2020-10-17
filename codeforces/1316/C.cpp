@@ -65,10 +65,9 @@ const ll mod = 1e9 + 7;
 
 void solve() {
 	ll n, m, p;
-	scanf("%lld %lld %lld", &n, &m, &p);
+	cin >> n >> m >> p;
 	vl a(n), b(m);
-	for (auto &x : a) scanf("%lld", &x);
-	for (auto &x : b) scanf("%lld", &x);
+	cin >> a >> b;
 	ll i = 0;
 	while (a[i] % p == 0) i++;
 	for (int j = 0; j < m; j++) {
@@ -81,7 +80,7 @@ void solve() {
 
 int main()
 {
-	// fast;
+	fast;
 	ll T = 1;
 	// cin >> T;
 	while (T--) {
