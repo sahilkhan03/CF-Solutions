@@ -1,7 +1,8 @@
+#pragma GCC optimize("Ofast")
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-#define fast ios_base::sync_with_stdio(false); cin.tie(nullptr);
+#define fast ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(0);
 #define all(x) x.begin(), x.end()
 #define F first
 #define S second
