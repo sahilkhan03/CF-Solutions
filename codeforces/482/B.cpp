@@ -66,15 +66,15 @@ const ll mod = 1e9 + 7;
 
 void solve() {
 	ll n, m;
-	scanf("%lld %lld", &n, &m);
+	cin >> n >> m;
 	vector<vl> pre(30, vl(n + 2));
 	vector<vl> q(m, vl(3));
-	for (int j = 0; j < m; j++) {
-		scanf("%lld %lld %lld", &q[j][0], &q[j][1], &q[j][2]);
+	cin >> q;
+	for (auto& x : q) {
 		for (int i = 0; i < 30; i++) {
-			if (q[j][2] & (1 << i)) {
-				pre[i][q[j][0]]++;
-				pre[i][q[j][1] + 1]--;
+			if (x[2] & (1 << i)) {
+				pre[i][x[0]]++;
+				pre[i][x[1] + 1]--;
 			}
 		}
 	}
@@ -92,19 +92,19 @@ void solve() {
 			if (!(x[2] & (1 << i))) {
 				ll c = upper_bound(all(z[i]), x[1]) - lower_bound(all(z[i]), x[0]);
 				if (!c) {
-					printf("NO\n");
+					cout << "NO" << endl;
 					return;
 				}
 			}
 		}
 	}
-	printf("YES\n");
-	for (int i = 0; i < n; i++) printf("%lld ", ans[i]);
+	cout << "YES" << endl;
+	cout << ans << endl;
 }
 
 int main()
 {
-	// fast;
+	fast;
 	ll T = 1;
 	// cin >> T;
 	while (T--) {
