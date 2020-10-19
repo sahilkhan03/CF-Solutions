@@ -69,12 +69,14 @@ void solve() {
 	cin >> x >> y;
 	vl c(6); cin >> c;
 	ll ans = 1e18;
-	c[0] = min(c[0], c[1] + c[5]);
-	c[1] = min(c[1], c[0] + c[2]);
-	c[2] = min(c[2], c[3] + c[1]);
-	c[3] = min(c[3], c[2] + c[4]);
-	c[4] = min(c[4], c[3] + c[5]);
-	c[5] = min(c[5], c[0] + c[4]);
+	for (int i = 0; i < 1; i++) {
+		c[0] = min(c[0], c[1] + c[5]);
+		c[1] = min(c[1], c[0] + c[2]);
+		c[2] = min(c[2], c[3] + c[1]);
+		c[3] = min(c[3], c[2] + c[4]);
+		c[4] = min(c[4], c[3] + c[5]);
+		c[5] = min(c[5], c[0] + c[4]);
+	}
 	if (x >= 0) {
 		if (y >= 0) {
 			ans = c[5] * x + c[1] * y;
