@@ -69,7 +69,7 @@ void solve() {
 	cin >> x >> y;
 	vl c(6); cin >> c;
 	ll ans = 1e18;
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < 36; i++) {
 		c[0] = min(c[0], c[1] + c[5]);
 		c[1] = min(c[1], c[0] + c[2]);
 		c[2] = min(c[2], c[3] + c[1]);
