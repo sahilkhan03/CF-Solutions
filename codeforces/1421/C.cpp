@@ -66,9 +66,10 @@ const ll mod = 1e9 + 7;
 
 void solve() {
 	string s; cin >> s;
-	cout << 3 << endl;
-	cout << "R " << s.size() - 1 << endl;
-	cout << "L " << s.size() << endl;
+	cout << 4 << endl;
+	cout << "R 2" << endl;
+	cout << "R " << 2 * s.size() - 3 << endl;
+	cout << "L " << 2 * s.size() - 2 << endl;
 	cout << "L 2" << endl;
 }
 
