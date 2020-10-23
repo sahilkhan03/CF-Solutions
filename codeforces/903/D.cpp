@@ -122,7 +122,7 @@ void solve() {
 		return a.S < b.S;
 	});
 	// debug(inv);
-	unsigned long long ansp = 0, ansn = 0;
+	long double ans = 0;
 	s.insert({1e9 + 7, n + 1});
 	s.insert({ -1e9, -1});
 	for (int i = 0; i < n; i++) {
@@ -131,15 +131,13 @@ void solve() {
 		// debug(*idx1, *idx2);
 		ll sum = fen1.sum(0, idx1->S + 1) + fen1.sum(idx2->S, n + 2);
 		ll c = fen2.sum(0, idx1->S + 1) + fen2.sum(idx2->S, n + 2);
-		if (c * v[i].F - sum > 0) ansp += c * v[i].F - sum;
-		else ansn -= c * v[i].F - sum;
+		ans += c * v[i].F - sum;
 		// debug(sum, c);
 		s.insert({v[i].F, inv[i]});
 		fen1.add(inv[i], v[i].F);
 		fen2.add(inv[i], 1);
 	}
-	if (ansp >= ansn) cout << ansp - ansn << endl;
-	else cout << "-" << ansn - ansp << endl;
+	printf("%.0Lf\n", ans);
 }
 
 int main()
