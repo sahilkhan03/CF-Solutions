@@ -68,19 +68,26 @@ void solve() {
 	ll n, d;
 	cin >> n >> d;
 	vl v(n); cin >> v;
-	ll ans = 0, pre1 = 0, pre2 = 0;
+	ll pre = 0;
 	for (int i = 0; i < n; i++) {
 		if (!v[i]) {
-			if (pre1 < 0) ans++, pre1 = d;
-			if (pre2 < 0) pre2 = 0;
+			if (pre < 0) pre = 0;
 			continue;
 		}
-		pre1 += v[i], pre2 += v[i];
-		if (pre2 > d) {
+		pre += v[i];
+		if (pre > d) {
 			cout << -1 << endl;
 			return;
 		}
-		pre1 = min(pre1, d);
+	}
+	ll ans = 0; pre = 0;
+	for (int i = 0; i < n; i++) {
+		if (!v[i]) {
+			if (pre < 0) ans++, pre = d;
+			continue;
+		}
+		pre += v[i];
+		if (pre > d) pre = d;
 	}
 	cout << ans << endl;
 }
