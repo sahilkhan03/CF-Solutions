@@ -2830,6 +2830,22 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF96693550": {
+    "contest_id": 888,
+    "language": "GNU C++17",
+    "path": "codeforces/888/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Buggy Robot",
+    "problem_url": "https://codeforces.com/contest/888/problem/B",
+    "submission_id": "CF96693550",
+    "submission_url": "https://codeforces.com/contest/888/submission/96693550",
+    "tags": [
+      "greedy",
+      "*1000"
+    ],
+    "timestamp": "Oct/25/2020 18:21"
+  },
   "CF96696173": {
     "contest_id": 888,
     "language": "GNU C++17",
