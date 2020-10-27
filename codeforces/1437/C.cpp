@@ -69,10 +69,12 @@ void solve() {
 	vl v(n); cin >> v;
 	sort(all(v));
 	vector<vl> dp(n + 1, vl(401, 1e18));
-	for (int i = 0; i <= 400; i++) dp[0][i] = 0;
+	dp[0][0] = 0;
 	for (int i = 1; i <= n; i++) {
 		for (int j = 1; j <= 400; j++) {
-			dp[i][j] = min(dp[i][j - 1], dp[i - 1][j - 1] + abs(j - v[i - 1]));
+			dp[i][j] = dp[i][j - 1];
+			for (int k = i - 1; k < j; k++)
+				dp[i][j] = min(dp[i][j], dp[i - 1][k] + abs(j - v[i - 1]));
 			debug(i, j, dp[i][j]);
 		}
 	}
