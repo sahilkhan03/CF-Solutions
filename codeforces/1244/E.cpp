@@ -67,45 +67,45 @@ const ll mod = 1e9 + 7;
 void solve() {
 	ll n, k;
 	cin >> n >> k;
-	vl v(n); cin >> v;
-	sort(all(v));
-	ll ans = 1e18;
-	vl pre(n + 1), suf(n + 2);
+	set<pl> s;
 	for (int i = 0; i < n; i++) {
-		pre[i + 1] = pre[i] + v[i];
-		suf[n - i] = suf[n - i + 1] + v[n - i - 1];
-	}
-	for (int l = 0; l < n; l++) {
-		auto it = lower_bound(all(v), v[l]) - v.begin();
-		ll cost = it * v[l] - pre[it];
-		if (cost > k) break;
-		ll rem = k - cost;
-		ll lo = v[l], hi = v.back(), mid, r = v.back();
-		while (lo <= hi) {
-			mid = (lo + hi) / 2;
-			auto it1 = v.end() - upper_bound(all(v), mid);
-			ll c = suf[n - it1 + 1] - it1 * mid;
-			if (c > rem) lo = mid + 1;
-			else hi = mid - 1, r = mid;
+		ll x; cin >> x;
+		auto it = s.lower_bound({x, -1});
+		if (it == s.end() or it->F != x) s.insert({x, 1});
+		else {
+			s.insert({x, it->S + 1});
+			s.erase(it);
 		}
-		ans = min(ans, r - v[l]);
 	}
-	for (int r = n - 1; r >= 0; r--) {
-		auto it = v.end() - upper_bound(all(v), v[r]);
-		ll cost = suf[n - it + 1] - it * v[r];
+	while (s.size() > 1) {
+		ll cost = min(s.begin()->S, s.rbegin()->S);
 		if (cost > k) break;
-		ll rem = k - cost;
-		ll lo = v[0], hi = v[r], mid, l = v[0];
-		while (lo <= hi) {
-			mid = (lo + hi) / 2;
-			auto it1 = lower_bound(all(v), mid) - v.begin();
-			ll c = it1 * mid - pre[it1];
-			if (c > rem) hi = mid - 1;
-			else lo = mid + 1, l = mid;
+		if (s.begin()->S < s.rbegin()->S) {
+			ll up = min(k / s.begin()->S, next(s.begin())->F - s.begin()->F);
+			k -= up * s.begin()->S;
+			ll x = s.begin()->F;
+			auto it = next(s.begin());
+			if (it->F != x + up) s.insert({x + up, s.begin()->S});
+			else {
+				s.insert({x + up, s.begin()->S + it->S});
+				s.erase(it);
+			}
+			s.erase(s.begin());
 		}
-		ans = min(ans, v[r] - l);
+		else {
+			ll x = s.rbegin()->F;
+			ll dn = min(k / s.rbegin()->S, s.rbegin()->F - prev(s.end(), 2)->F);
+			k -= dn * s.rbegin()->S;
+			auto it = prev(s.end(), 2);
+			if (it ->F != x - dn) s.insert({x - dn, s.rbegin()->S});
+			else {
+				s.insert({x - dn, s.rbegin()->S + it->S});
+				s.erase(it);
+			}
+			s.erase(prev(s.end()));
+		}
 	}
-	cout << ans << endl;
+	cout << s.rbegin()->F - s.begin()->F << endl;
 }
 
 int main()
