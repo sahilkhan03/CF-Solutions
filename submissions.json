@@ -2830,6 +2830,23 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF97429773": {
+    "contest_id": 863,
+    "language": "GNU C++17",
+    "path": "codeforces/863/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "1-2-3",
+    "problem_url": "https://codeforces.com/contest/863/problem/C",
+    "submission_id": "CF97429773",
+    "submission_url": "https://codeforces.com/contest/863/submission/97429773",
+    "tags": [
+      "graphs",
+      "implementation",
+      "*1800"
+    ],
+    "timestamp": "Nov/02/2020 18:46"
+  },
   "CF97434757": {
     "contest_id": 863,
     "language": "GNU C++17",
