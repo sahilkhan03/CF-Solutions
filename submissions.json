@@ -2830,6 +2830,25 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF97710469": {
+    "contest_id": 846,
+    "language": "GNU C++17",
+    "path": "codeforces/846/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Random Query",
+    "problem_url": "https://codeforces.com/contest/846/problem/F",
+    "submission_id": "CF97710469",
+    "submission_url": "https://codeforces.com/contest/846/submission/97710469",
+    "tags": [
+      "data structures",
+      "math",
+      "probabilities",
+      "two pointers",
+      "*1800"
+    ],
+    "timestamp": "Nov/05/2020 19:21"
+  },
   "CF97712455": {
     "contest_id": 846,
     "language": "GNU C++17",
