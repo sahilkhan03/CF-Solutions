@@ -2830,6 +2830,22 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF97850220": {
+    "contest_id": 837,
+    "language": "GNU C++17",
+    "path": "codeforces/837/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Text Volume",
+    "problem_url": "https://codeforces.com/contest/837/problem/A",
+    "submission_id": "CF97850220",
+    "submission_url": "https://codeforces.com/contest/837/submission/97850220",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Nov/07/2020 19:34"
+  },
   "CF97976295": {
     "contest_id": 862,
     "language": "GNU C++17",
