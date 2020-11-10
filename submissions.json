@@ -18862,6 +18862,25 @@
     ],
     "timestamp": "Nov/09/2020 14:44"
   },
+  "CF98065838": {
+    "contest_id": 817,
+    "language": "GNU C++17",
+    "path": "codeforces/817/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Imbalanced Array",
+    "problem_url": "https://codeforces.com/contest/817/problem/D",
+    "submission_id": "CF98065838",
+    "submission_url": "https://codeforces.com/contest/817/submission/98065838",
+    "tags": [
+      "data structures",
+      "divide and conquer",
+      "dsu",
+      "sortings",
+      "*1900"
+    ],
+    "timestamp": "Nov/10/2020 19:47"
+  },
   "CF98065846": {
     "contest_id": 817,
     "language": "GNU C++17",
