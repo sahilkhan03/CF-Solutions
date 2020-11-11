@@ -18862,6 +18862,22 @@
     ],
     "timestamp": "Nov/09/2020 14:44"
   },
+  "CF98124935": {
+    "contest_id": 792,
+    "language": "GNU C++17",
+    "path": "codeforces/792/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Counting-out Rhyme",
+    "problem_url": "https://codeforces.com/contest/792/problem/B",
+    "submission_id": "CF98124935",
+    "submission_url": "https://codeforces.com/contest/792/submission/98124935",
+    "tags": [
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "Nov/11/2020 18:05"
+  },
   "CF98126017": {
     "contest_id": 792,
     "language": "GNU C++17",
