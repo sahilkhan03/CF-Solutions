@@ -74,69 +74,62 @@ struct Node
 	}
 };
 
-struct Trie
-{
-	Node *root;
-	Trie() {
-		root = new Node();
+Node *root = new Node();
+
+void insert(int num) {
+	auto cur = root;
+	for (int i = 30; i >= 0; i--) {
+		int cbit = !!((1 << i) & num);
+		if (cur->child[cbit] == NULL)
+			cur->child[cbit] = new Node();
+		cur = cur->child[cbit];
+		cur->cnt++;
 	}
-	void insert(int num) {
-		auto cur = root;
-		for (int i = 30; i >= 0; i--) {
-			int cbit = ((num >> i) & 1);
-			if (cur->child[cbit] == NULL)
-				cur->child[cbit] = new Node();
-			cur = cur->child[cbit];
-			cur->cnt++;
+}
+
+void remove(int num) {
+	auto cur = root;
+	for (int i = 30; i >= 0; i--) {
+		int cbit = !!((1 << i) & num);
+		cur = cur->child[cbit];
+		cur->cnt--;
+	}
+}
+
+int query(Node *cur, int i, int p, int l) {
+	if (i < 0 or cur == NULL) return 0;
+	int pbit = !!((1 << i) & p), lbit = !!((1 << i) & l);
+	int ans = 0;
+	if (!lbit) ans += query(cur->child[pbit], i - 1, p, l);
+	else {
+		if (!pbit) {
+			if (cur->child[0]) ans += cur->child[0]->cnt;
+			ans += query(cur -> child[1], i - 1, p, l);
 		}
-	}
-	void remove(int num) {
-		auto cur = root;
-		for (int i = 30; i >= 0; i--) {
-			int cbit = ((num >> i) & 1);
-			cur = cur->child[cbit];
-			cur->cnt--;
-		}
-	}
-	int query(Node *cur, int i, int p, int l) {
-		if (i < 0 or cur == NULL) return 0;
-		int pbit = ((p >> i) & 1), lbit = ((l >> i) & 1);
-		int ans = 0;
-		if (!lbit) ans += query(cur->child[pbit], i - 1, p, l);
 		else {
-			if (!pbit) {
-				if (cur->child[0]) ans += cur->child[0]->cnt;
-				ans += query(cur -> child[1], i - 1, p, l);
-			}
-			else {
-				if (cur->child[1]) ans += cur->child[1]->cnt;
-				ans += query(cur -> child[0], i - 1, p, l);
-			}
+			if (cur->child[1]) ans += cur->child[1]->cnt;
+			ans += query(cur -> child[0], i - 1, p, l);
 		}
-		return ans;
 	}
-	int query(int p, int l) {
-		return query(root, 30, p, l);
-	}
-};
+	return ans;
+}
 
 void solve() {
 	ll q; cin >> q;
-	Trie tr;
 	while (q--) {
 		ll op; cin >> op;
 		if (op == 1) {
 			ll x; cin >> x;
-			tr.insert(x);
+			insert(x);
 		}
 		else if (op == 2) {
 			ll x; cin >> x;
-			tr.remove(x);
+			remove(x);
 		}
 		else {
 			ll p, l;
 			cin >> p >> l;
-			cout << tr.query(p, l) << endl;
+			cout << query(root, 30, p, l) << endl;
 		}
 	}
 }
