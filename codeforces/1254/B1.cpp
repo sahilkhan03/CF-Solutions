@@ -84,6 +84,7 @@ void solve() {
 	for (ll i = 2; i * i <= sum; i++) {
 		if (sum % i == 0) {
 			ans = min({ans, calc(i), calc(sum / i)});
+
 		}
 	}
 	ans = min(ans, calc(sum));
