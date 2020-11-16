@@ -16066,6 +16066,22 @@
     ],
     "timestamp": "Nov/09/2020 14:44"
   },
+  "CF98567123": {
+    "contest_id": 702,
+    "language": "GNU C++17",
+    "path": "codeforces/702/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Road to Post Office",
+    "problem_url": "https://codeforces.com/contest/702/problem/D",
+    "submission_id": "CF98567123",
+    "submission_url": "https://codeforces.com/contest/702/submission/98567123",
+    "tags": [
+      "math",
+      "*1900"
+    ],
+    "timestamp": "Nov/16/2020 18:44"
+  },
   "CF98690173": {
     "contest_id": 1440,
     "language": "GNU C++17",
