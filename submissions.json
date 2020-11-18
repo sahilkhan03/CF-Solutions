@@ -16066,6 +16066,24 @@
     ],
     "timestamp": "Nov/09/2020 14:44"
   },
+  "CF98815284": {
+    "contest_id": 691,
+    "language": "GNU C++17",
+    "path": "codeforces/691/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Swaps in Permutation",
+    "problem_url": "https://codeforces.com/contest/691/problem/D",
+    "submission_id": "CF98815284",
+    "submission_url": "https://codeforces.com/contest/691/submission/98815284",
+    "tags": [
+      "dfs and similar",
+      "dsu",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "Nov/18/2020 19:04"
+  },
   "CF98818963": {
     "contest_id": 691,
     "language": "GNU C++17",
