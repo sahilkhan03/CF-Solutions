@@ -16066,6 +16066,24 @@
     ],
     "timestamp": "Nov/09/2020 14:44"
   },
+  "CF99903019": {
+    "contest_id": 1457,
+    "language": "GNU C++17",
+    "path": "codeforces/1457/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "XOR-gun",
+    "problem_url": "https://codeforces.com/contest/1457/problem/D",
+    "submission_id": "CF99903019",
+    "submission_url": "https://codeforces.com/contest/1457/submission/99903019",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Nov/29/2020 18:05"
+  },
   "CF99904756": {
     "contest_id": 660,
     "language": "GNU C++17",
