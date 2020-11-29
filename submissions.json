@@ -16066,6 +16066,24 @@
     ],
     "timestamp": "Nov/09/2020 14:44"
   },
+  "CF99906015": {
+    "contest_id": 660,
+    "language": "GNU C++17",
+    "path": "codeforces/660/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Hard Process",
+    "problem_url": "https://codeforces.com/contest/660/problem/C",
+    "submission_id": "CF99906015",
+    "submission_url": "https://codeforces.com/contest/660/submission/99906015",
+    "tags": [
+      "binary search",
+      "dp",
+      "two pointers",
+      "*1600"
+    ],
+    "timestamp": "Nov/29/2020 18:43"
+  },
   "CF99907113": {
     "contest_id": 660,
     "language": "GNU C++17",
