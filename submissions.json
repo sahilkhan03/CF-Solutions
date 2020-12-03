@@ -1,4 +1,22 @@
 {
+  "CF100281478": {
+    "contest_id": 1301,
+    "language": "GNU C++17",
+    "path": "codeforces/1301/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Time to Run",
+    "problem_url": "https://codeforces.com/contest/1301/problem/D",
+    "submission_id": "CF100281478",
+    "submission_url": "https://codeforces.com/contest/1301/submission/100281478",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "implementation",
+      "*2000"
+    ],
+    "timestamp": "Dec/03/2020 20:09"
+  },
   "CF100351228": {
     "contest_id": 1453,
     "language": "GNU C++17",
