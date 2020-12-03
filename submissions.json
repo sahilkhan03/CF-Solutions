@@ -1,4 +1,21 @@
 {
+  "CF100272902": {
+    "contest_id": 1301,
+    "language": "GNU C++17",
+    "path": "codeforces/1301/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Three Strings",
+    "problem_url": "https://codeforces.com/contest/1301/problem/A",
+    "submission_id": "CF100272902",
+    "submission_url": "https://codeforces.com/contest/1301/submission/100272902",
+    "tags": [
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Dec/03/2020 18:34"
+  },
   "CF100274510": {
     "contest_id": 1301,
     "language": "GNU C++17",
