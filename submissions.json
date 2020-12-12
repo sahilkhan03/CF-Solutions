@@ -1,4 +1,20 @@
 {
+  "CF101020201": {
+    "contest_id": 1277,
+    "language": "GNU C++17",
+    "path": "codeforces/1277/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Happy Birthday, Polycarp!",
+    "problem_url": "https://codeforces.com/contest/1277/problem/A",
+    "submission_id": "CF101020201",
+    "submission_url": "https://codeforces.com/contest/1277/submission/101020201",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Dec/12/2020 18:16"
+  },
   "CF101020759": {
     "contest_id": 1277,
     "language": "GNU C++17",
