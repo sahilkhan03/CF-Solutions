@@ -58,12 +58,17 @@ const ll mod = 1e9 + 7;
 void solve() {
 	ll n; cin >> n;
 	vl v(n); cin >> v;
-	map<ll, ll> m;
-	ll pre = 0, ans = 1e18;
+	map<ll, vl> m;
+	ll pre = 0;
 	for (int i = 0; i < n; i++) {
 		pre += v[i];
-		m[pre]++;
-		ans = min(ans, n - m[pre]);
+		m[pre].pb(i);
+	}
+	ll ans = 1e18;
+	for (auto& [x, vec] : m) {
+		ll cur = vec[0] + n - vec.back() - 1;
+		for (int i = 1; i < vec.size(); i++) cur += vec[i] - vec[i - 1] - 1;
+		ans = min(ans, cur);
 	}
 	cout << ans << endl;
 }

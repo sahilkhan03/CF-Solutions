@@ -1,4 +1,23 @@
 {
+  "CF100999007": {
+    "contest_id": 675,
+    "language": "GNU C++17",
+    "path": "codeforces/675/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Money Transfers",
+    "problem_url": "https://codeforces.com/contest/675/problem/C",
+    "submission_id": "CF100999007",
+    "submission_url": "https://codeforces.com/contest/675/submission/100999007",
+    "tags": [
+      "constructive algorithms",
+      "data structures",
+      "greedy",
+      "sortings",
+      "*2100"
+    ],
+    "timestamp": "Dec/12/2020 13:42"
+  },
   "CF100999146": {
     "contest_id": 675,
     "language": "GNU C++17",
