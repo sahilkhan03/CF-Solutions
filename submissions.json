@@ -1,4 +1,21 @@
 {
+  "CF101504628": {
+    "contest_id": 1461,
+    "language": "GNU C++17",
+    "path": "codeforces/1461/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "String Generation",
+    "problem_url": "https://codeforces.com/contest/1461/problem/A",
+    "submission_id": "CF101504628",
+    "submission_url": "https://codeforces.com/contest/1461/submission/101504628",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*800"
+    ],
+    "timestamp": "Dec/17/2020 18:30"
+  },
   "CF101505296": {
     "contest_id": 1461,
     "language": "GNU C++17",
