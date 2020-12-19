@@ -62,7 +62,7 @@ void solve() {
 	cin >> a >> b;
 	sort(all(a));
 	ll g = 0;
-	for (int i = 1; i < n; i++) g = __gcd(g, a[i] - a[0]);
+	for (int i = 1; i < n; i++) g = __gcd(g, a[i] - a[i - 1]);
 	for (int i = 0; i < m; i++) cout << __gcd(g, a[0] + b[i]) << " ";
 }
 
