@@ -89,23 +89,24 @@ ll calc(string& s) {
 	return (dp[0][n - 1][0] + dp[1][n - 1][0]) % mod;
 }
 
-bool check(string& a) {
-	ll md = 0;
-	for (int i = 0; i < a.size(); i++) {
-		if (i & 1) {
-			if (a[i] - '0' != d) return 0;
+void dec(string& s) {
+	for (int i = s.size() - 1; i >= 0; i--) {
+		if (s[i] == '0') s[i] == '9';
+		else {
+			s[i]--;
+			break;
 		}
-		else if (a[i] - '0' == d) return 0;
-		md = (md * 10 + a[i] - '0') % m;
 	}
-	return !md;
+	if (s[0] == '0') s = s.substr(1);
 }
 
 void solve() {
 	cin >> m >> d;
 	string a, b;
 	cin >> a >> b;
-	cout << (calc(b) - calc(a) + check(a) + mod) % mod << endl;
+	dec(a);
+	if (a.size() != b.size()) cout << calc(b) << endl;
+	else cout << (calc(b) - calc(a) + mod) % mod << endl;
 }
 
 int main()
