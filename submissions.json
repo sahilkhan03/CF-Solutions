@@ -1,4 +1,21 @@
 {
+  "CF102397503": {
+    "contest_id": 622,
+    "language": "GNU C++17",
+    "path": "codeforces/622/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Infinite Sequence",
+    "problem_url": "https://codeforces.com/contest/622/problem/A",
+    "submission_id": "CF102397503",
+    "submission_url": "https://codeforces.com/contest/622/submission/102397503",
+    "tags": [
+      "implementation",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Dec/26/2020 18:35"
+  },
   "CF102397847": {
     "contest_id": 622,
     "language": "GNU C++17",
