@@ -1,4 +1,20 @@
 {
+  "CF102402138": {
+    "contest_id": 622,
+    "language": "GNU C++17",
+    "path": "codeforces/622/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Optimal Number Permutation",
+    "problem_url": "https://codeforces.com/contest/622/problem/D",
+    "submission_id": "CF102402138",
+    "submission_url": "https://codeforces.com/contest/622/submission/102402138",
+    "tags": [
+      "constructive algorithms",
+      "*1900"
+    ],
+    "timestamp": "Dec/26/2020 19:33"
+  },
   "CF102470815": {
     "contest_id": 609,
     "language": "GNU C++17",
