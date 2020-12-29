@@ -1,4 +1,22 @@
 {
+  "CF102690307": {
+    "contest_id": 1091,
+    "language": "GNU C++17",
+    "path": "codeforces/1091/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "New Year and the Christmas Ornament",
+    "problem_url": "https://codeforces.com/contest/1091/problem/A",
+    "submission_id": "CF102690307",
+    "submission_url": "https://codeforces.com/contest/1091/submission/102690307",
+    "tags": [
+      "brute force",
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Dec/29/2020 18:40"
+  },
   "CF102691252": {
     "contest_id": 1091,
     "language": "GNU C++17",
