@@ -58,20 +58,36 @@ const ll mod = 1e9 + 7;
 void solve() {
 	ll n, k;
 	cin >> n >> k;
-	vl v(n); cin >> v;
-	ll mx = v[0], mn = v[0];
+	priority_queue<pl> pq;
+	vl v(n), cur(n, -1);
+	cin >> v;
+	if (n == 2 and abs(v[0] - v[1]) >= k) {
+		cout << "NO" << endl;
+		return;
+	}
+	cur[0] = v[0], cur[n - 1] = v[n - 1];
 	for (int i = 1; i < n - 1; i++) {
-		if (v[i] >= mx + k or v[i] + 2 * k - 1 <= mn) {
+		pq.push({v[i], i});
+	}
+	while (!pq.empty()) {
+		auto [h, i] = pq.top();
+		pq.pop();
+		ll mx = max(cur[i - 1], cur[i + 1]);
+		if (mx == -1) cur[i] = h;
+		else if (h + 2 * k - 1 <= mx) {
 			cout << "NO" << endl;
 			return;
 		}
-		mx = min(v[i] + k - 1, mx + k - 1);
-		mn = max(v[i], mn - k + 1);
-		debug(mx, mn);
-	}
-	if (v[n - 1] >= mx + k or v[n - 1] + k <= mn) {
-		cout << "NO" << endl;
-		return;
+		else cur[i] = max(h, mx - k + 1);
+		debug(h, i, cur[i], mx);
+		if (i == n - 2 and abs(cur[i] - cur[i + 1]) >= k) {
+			cout << "NO" << endl;
+			return;
+		}
+		if (i == 1 and abs(cur[i] - cur[i - 1]) >= k) {
+			cout << "NO" << endl;
+			return;
+		}
 	}
 	cout << "YES" << endl;
 }
