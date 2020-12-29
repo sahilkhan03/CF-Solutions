@@ -1,4 +1,22 @@
 {
+  "CF102698573": {
+    "contest_id": 1091,
+    "language": "GNU C++17",
+    "path": "codeforces/1091/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "New Year and the Permutation Concatenation",
+    "problem_url": "https://codeforces.com/contest/1091/problem/D",
+    "submission_id": "CF102698573",
+    "submission_url": "https://codeforces.com/contest/1091/submission/102698573",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "Dec/29/2020 20:15"
+  },
   "CF102769176": {
     "contest_id": 1236,
     "language": "GNU C++17",
