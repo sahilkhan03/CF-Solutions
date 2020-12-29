@@ -55,6 +55,8 @@ public:
 
 const ll mod = 1e9 + 7;
 
+map<pl, ll> edge;
+
 struct LCA {
 	vector<vector<pl>> v, lca;
 	vector<int> dep;
