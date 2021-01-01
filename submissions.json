@@ -1,4 +1,23 @@
 {
+  "CF102963911": {
+    "contest_id": 1262,
+    "language": "GNU C++17",
+    "path": "codeforces/1262/D2.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D2",
+    "problem_name": "Optimal Subsequences (Hard Version)",
+    "problem_url": "https://codeforces.com/contest/1262/problem/D2",
+    "submission_id": "CF102963911",
+    "submission_url": "https://codeforces.com/contest/1262/submission/102963911",
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Jan/01/2021 19:46"
+  },
   "CF103033008": {
     "contest_id": 1243,
     "language": "GNU C++17",
