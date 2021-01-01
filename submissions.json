@@ -1,4 +1,21 @@
 {
+  "CF102962983": {
+    "contest_id": 1262,
+    "language": "GNU C++17",
+    "path": "codeforces/1262/D1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D1",
+    "problem_name": "Optimal Subsequences (Easy Version)",
+    "problem_url": "https://codeforces.com/contest/1262/problem/D1",
+    "submission_id": "CF102962983",
+    "submission_url": "https://codeforces.com/contest/1262/submission/102962983",
+    "tags": [
+      "data structures",
+      "greedy",
+      "*1600"
+    ],
+    "timestamp": "Jan/01/2021 19:35"
+  },
   "CF102963911": {
     "contest_id": 1262,
     "language": "GNU C++17",
