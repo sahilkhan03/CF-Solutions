@@ -57,12 +57,51 @@ const ll mod = 1e9 + 7;
 
 void solve() {
 	ll n; cin >> n;
-	vl v(n), pts(2); cin >> v;
-	sort(all(v));
-	for (int i = n - 1, par = 0; ~i; i--, par ^= 1)
-		if (v[i] % 2 == par) pts[par] += v[i];
-	if (pts[0] == pts[1]) cout << "Tie" << endl;
-	else if (pts[0] > pts[1]) cout << "Alice" << endl;
+	vl o, e;
+	for (int i = 0; i < n; i++) {
+		ll x; cin >> x;
+		if (x & 1) o.pb(x);
+		else e.pb(x);
+	}
+	sort(all(o));
+	sort(all(e));
+	ll a = 0, b = 0;
+	for (int i = 0; i < n; i++) {
+		if (i & 1) {
+			if (e.empty()) {
+				b += o.back();
+				o.pop_back();
+			}
+			else if (o.empty()) {
+				e.pop_back();
+			}
+			else if (e.back() > o.back()) {
+				e.pop_back();
+			}
+			else {
+				b += o.back();
+				o.pop_back();
+			}
+		}
+		else {
+			if (o.empty()) {
+				a += e.back();
+				e.pop_back();
+			}
+			else if (e.empty()) {
+				o.pop_back();
+			}
+			else if (o.back() > e.back()) {
+				o.pop_back();
+			}
+			else {
+				a += e.back();
+				e.pop_back();
+			}
+		}
+	}
+	if (a == b) cout << "Tie" << endl;
+	else if (a > b) cout << "Alice" << endl;
 	else cout << "Bob" << endl;
 }
 
