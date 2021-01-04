@@ -65,15 +65,17 @@ void solve() {
 	}
 	sort(all(v));
 	vl ans(n, -1);
+	set<pl> s;
 	int i = 0, j = 0;
-	pl mn = {1e18, -1};
 	while (i < n) {
 		for (j = i; j < n and v[j][0] == v[i][0]; j++) {
-			if (mn.F >= v[j][1]) continue;
-			ans[v[j][2] - 1] = mn.S;
+			auto it = s.lower_bound({v[j][1], -1});
+			if (it == s.begin()) continue;
+			ans[v[j][2] - 1] = prev(it)->S;
 		}
+
 		for (j = i; j < n and v[j][0] == v[i][0]; j++) {
-			mn = min(mn, {v[j][1], v[j][2]});
+			s.insert({v[i][1], v[i][2]});
 		}
 		i = j;
 	}
