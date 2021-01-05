@@ -86,7 +86,7 @@ void solve() {
 		}
 		else {
 			if (v[i + 1].F == 2) {
-				if ((v[i + 1].S - v[i].S) % 2 == 0) {
+				if ((v[i + 1].S - v[i].S) % 2 == 0 or (i + 2 < m and v[i + 2] == pl({1, v[i + 1].S}))) {
 					cout << "NO" << endl;
 					return;
 				}
