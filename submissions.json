@@ -1,4 +1,24 @@
 {
+  "CF103641075": {
+    "contest_id": 1245,
+    "language": "GNU C++17",
+    "path": "codeforces/1245/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Shichikuji and Power Grid",
+    "problem_url": "https://codeforces.com/contest/1245/problem/D",
+    "submission_id": "CF103641075",
+    "submission_url": "https://codeforces.com/contest/1245/submission/103641075",
+    "tags": [
+      "dsu",
+      "graphs",
+      "greedy",
+      "shortest paths",
+      "trees",
+      "*1900"
+    ],
+    "timestamp": "Jan/07/2021 19:51"
+  },
   "CF103694250": {
     "contest_id": 1364,
     "language": "GNU C++17",
