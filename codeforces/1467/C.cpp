@@ -54,10 +54,18 @@ public:
 #endif
 
 const ll mod = 1e9 + 7;
-ll n1, n2, n3, sum;
+ll n1, n2, n3, sum1, sum2, sum3;
 vl v1, v2, v3;
 ll calc(vl a, vl b, vl c) {
-	return sum - 2 * min(b[0] + a[0], accumulate(all(a), 0ll));
+	ll p1 = a[0], p2 = b[0];
+	for (int i = 0; i < c.size() - 1; i++) p1 -= c[i];
+	for (int i = 1; i < b.size(); i++) p1 -= b[i];
+	for (int i = 1; i < a.size(); i++) p2 -= a[i];
+	ll ans1 = c.back() - p1 - p2;
+	p1 -= b[0];
+	ll ans2 = c.back() - p1;
+	for (int i = 1; i < a.size(); i++) ans2 -= a[i];
+	return max(ans1, ans2);
 }
 
 void solve() {
@@ -66,7 +74,6 @@ void solve() {
 	cin >> v1 >> v2 >> v3;
 	sort(all(v1)); sort(all(v2));
 	sort(all(v3));
-	sum = accumulate(all(v1), 0ll) + accumulate(all(v2), 0ll) + accumulate(all(v3), 0ll);
 	cout << max({calc(v1, v2, v3), calc(v1, v3, v2), calc(v2, v1, v3), calc(v2, v3, v1), calc(v3, v1, v2), calc(v3, v2, v1)}) << endl;
 }
 
