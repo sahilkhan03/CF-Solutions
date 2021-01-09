@@ -1,4 +1,20 @@
 {
+  "CF103880994": {
+    "contest_id": 620,
+    "language": "GNU C++17",
+    "path": "codeforces/620/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Pearls in a Row",
+    "problem_url": "https://codeforces.com/contest/620/problem/C",
+    "submission_id": "CF103880994",
+    "submission_url": "https://codeforces.com/contest/620/submission/103880994",
+    "tags": [
+      "greedy",
+      "*1500"
+    ],
+    "timestamp": "Jan/09/2021 18:34"
+  },
   "CF103935779": {
     "contest_id": 620,
     "language": "GNU C++17",
