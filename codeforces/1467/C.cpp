@@ -56,7 +56,7 @@ public:
 const ll mod = 1e9 + 7;
 
 void solve() {
-	vl n(3), sum(3);
+	vl n(3), sum(3), per = {0, 1, 2};
 	cin >> n;
 	vector<vl> v(3);
 	ll ans = -1e18;
@@ -66,7 +66,10 @@ void solve() {
 		sort(all(v[i]));
 		sum[i] = accumulate(all(v[i]), 0ll);
 	}
-	cout << sum[0] + sum[1] + sum[2] - 2 * min(*min_element(all(sum)), v[0][0] + v[1][0] + v[2][0] - max({v[0][0], v[1][0], v[2][0]})) << endl;
+	do {
+		ans = max(ans, sum[0] + sum[1] + sum[2] - 2 * min(v[per[0]][0] + v[per[1]][0], sum[per[0]]));
+	} while (next_permutation(all(per)));
+	cout << ans << endl;
 }
 
 int main()
