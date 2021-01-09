@@ -54,22 +54,20 @@ public:
 #endif
 
 const ll mod = 1e9 + 7;
+ll n1, n2, n3, sum;
+vl v1, v2, v3;
+ll calc(vl a, vl b, vl c) {
+	return sum - 2 * min(b[0] + a[0], accumulate(all(a), 0ll));
+}
 
 void solve() {
-	vl n(3), sum(3), per = {0, 1, 2};
-	cin >> n;
-	vector<vl> v(3);
-	ll ans = -1e18;
-	for (int i = 0; i < 3; i++) {
-		v[i] = vl(n[i]);
-		cin >> v[i];
-		sort(all(v[i]));
-		sum[i] = accumulate(all(v[i]), 0ll);
-	}
-	do {
-		ans = max(ans, sum[0] + sum[1] + sum[2] - 2 * min(v[per[0]][0] + v[per[1]][0], sum[per[0]]));
-	} while (next_permutation(all(per)));
-	cout << ans << endl;
+	cin >> n1 >> n2 >> n3;
+	v1 = vl(n1), v2 = vl(n2), v3 = vl(n3);
+	cin >> v1 >> v2 >> v3;
+	sort(all(v1)); sort(all(v2));
+	sort(all(v3));
+	sum = accumulate(all(v1), 0ll) + accumulate(all(v2), 0ll) + accumulate(all(v3), 0ll);
+	cout << max({calc(v1, v2, v3), calc(v1, v3, v2), calc(v2, v1, v3), calc(v2, v3, v1), calc(v3, v1, v2), calc(v3, v2, v1)}) << endl;
 }
 
 int main()
