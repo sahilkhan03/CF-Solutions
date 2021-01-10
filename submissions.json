@@ -1,4 +1,22 @@
 {
+  "CF103966004": {
+    "contest_id": 1230,
+    "language": "GNU C++17",
+    "path": "codeforces/1230/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Kamil and Making a Stream",
+    "problem_url": "https://codeforces.com/contest/1230/problem/E",
+    "submission_id": "CF103966004",
+    "submission_url": "https://codeforces.com/contest/1230/submission/103966004",
+    "tags": [
+      "math",
+      "number theory",
+      "trees",
+      "*2000"
+    ],
+    "timestamp": "Jan/10/2021 19:58"
+  },
   "CF104008030": {
     "contest_id": 1012,
     "language": "GNU C++17",
