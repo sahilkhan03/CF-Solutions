@@ -1,4 +1,23 @@
 {
+  "CF103962953": {
+    "contest_id": 1230,
+    "language": "GNU C++17",
+    "path": "codeforces/1230/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Marcin and Training Camp",
+    "problem_url": "https://codeforces.com/contest/1230/problem/D",
+    "submission_id": "CF103962953",
+    "submission_url": "https://codeforces.com/contest/1230/submission/103962953",
+    "tags": [
+      "brute force",
+      "dfs and similar",
+      "graphs",
+      "greedy",
+      "*1700"
+    ],
+    "timestamp": "Jan/10/2021 19:19"
+  },
   "CF103966004": {
     "contest_id": 1230,
     "language": "GNU C++17",
