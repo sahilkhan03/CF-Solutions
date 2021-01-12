@@ -1,4 +1,21 @@
 {
+  "CF104115049": {
+    "contest_id": 1201,
+    "language": "GNU C++17",
+    "path": "codeforces/1201/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Important Exam",
+    "problem_url": "https://codeforces.com/contest/1201/problem/A",
+    "submission_id": "CF104115049",
+    "submission_url": "https://codeforces.com/contest/1201/submission/104115049",
+    "tags": [
+      "implementation",
+      "strings",
+      "*900"
+    ],
+    "timestamp": "Jan/12/2021 18:50"
+  },
   "CF104115218": {
     "contest_id": 1201,
     "language": "GNU C++17",
