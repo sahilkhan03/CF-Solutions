@@ -1,4 +1,21 @@
 {
+  "CF104115218": {
+    "contest_id": 1201,
+    "language": "GNU C++17",
+    "path": "codeforces/1201/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Zero Array",
+    "problem_url": "https://codeforces.com/contest/1201/problem/B",
+    "submission_id": "CF104115218",
+    "submission_url": "https://codeforces.com/contest/1201/submission/104115218",
+    "tags": [
+      "greedy",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Jan/12/2021 18:52"
+  },
   "CF104115893": {
     "contest_id": 1201,
     "language": "GNU C++17",
