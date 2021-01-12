@@ -1,4 +1,22 @@
 {
+  "CF104089170": {
+    "contest_id": 582,
+    "language": "GNU C++17",
+    "path": "codeforces/582/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Once Again...",
+    "problem_url": "https://codeforces.com/contest/582/problem/B",
+    "submission_id": "CF104089170",
+    "submission_url": "https://codeforces.com/contest/582/submission/104089170",
+    "tags": [
+      "constructive algorithms",
+      "dp",
+      "matrices",
+      "*1900"
+    ],
+    "timestamp": "Jan/12/2021 12:39"
+  },
   "CF104115049": {
     "contest_id": 1201,
     "language": "GNU C++17",
