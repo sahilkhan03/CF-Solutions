@@ -1,4 +1,23 @@
 {
+  "CF104173457": {
+    "contest_id": 1201,
+    "language": "GNU C++17",
+    "path": "codeforces/1201/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Treasure Hunting",
+    "problem_url": "https://codeforces.com/contest/1201/problem/D",
+    "submission_id": "CF104173457",
+    "submission_url": "https://codeforces.com/contest/1201/submission/104173457",
+    "tags": [
+      "binary search",
+      "dp",
+      "greedy",
+      "implementation",
+      "*2100"
+    ],
+    "timestamp": "Jan/13/2021 13:24"
+  },
   "CF104192628": {
     "contest_id": 1199,
     "language": "GNU C++17",
