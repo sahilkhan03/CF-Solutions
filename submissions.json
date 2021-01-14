@@ -1,4 +1,22 @@
 {
+  "CF104241526": {
+    "contest_id": 1199,
+    "language": "GNU C++17",
+    "path": "codeforces/1199/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Matching vs  Independent Set",
+    "problem_url": "https://codeforces.com/contest/1199/problem/E",
+    "submission_id": "CF104241526",
+    "submission_url": "https://codeforces.com/contest/1199/submission/104241526",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "greedy",
+      "*2000"
+    ],
+    "timestamp": "Jan/14/2021 10:45"
+  },
   "CF104272727": {
     "contest_id": 1195,
     "language": "GNU C++17",
