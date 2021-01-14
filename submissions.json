@@ -1,4 +1,22 @@
 {
+  "CF104276026": {
+    "contest_id": 1195,
+    "language": "GNU C++17",
+    "path": "codeforces/1195/D2.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D2",
+    "problem_name": "Submarine in the Rybinsk Sea (hard edition)",
+    "problem_url": "https://codeforces.com/contest/1195/problem/D2",
+    "submission_id": "CF104276026",
+    "submission_url": "https://codeforces.com/contest/1195/submission/104276026",
+    "tags": [
+      "combinatorics",
+      "math",
+      "number theory",
+      "*1800"
+    ],
+    "timestamp": "Jan/14/2021 19:11"
+  },
   "CF104378088": {
     "contest_id": 1195,
     "language": "GNU C++17",
