@@ -1,4 +1,21 @@
 {
+  "CF104514460": {
+    "contest_id": 1191,
+    "language": "GNU C++17",
+    "path": "codeforces/1191/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Tokitsukaze and Strange Rectangle",
+    "problem_url": "https://codeforces.com/contest/1191/problem/F",
+    "submission_id": "CF104514460",
+    "submission_url": "https://codeforces.com/contest/1191/submission/104514460",
+    "tags": [
+      "data structures",
+      "divide and conquer",
+      "*2000"
+    ],
+    "timestamp": "Jan/16/2021 19:29"
+  },
   "CF104556381": {
     "contest_id": 26,
     "language": "GNU C++17",
