@@ -1,4 +1,21 @@
 {
+  "CF104511468": {
+    "contest_id": 1191,
+    "language": "GNU C++17",
+    "path": "codeforces/1191/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Tokitsukaze, CSL and Stone Game",
+    "problem_url": "https://codeforces.com/contest/1191/problem/D",
+    "submission_id": "CF104511468",
+    "submission_url": "https://codeforces.com/contest/1191/submission/104511468",
+    "tags": [
+      "games",
+      "greedy",
+      "*1800"
+    ],
+    "timestamp": "Jan/16/2021 18:48"
+  },
   "CF104514460": {
     "contest_id": 1191,
     "language": "GNU C++17",
