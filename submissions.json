@@ -1,4 +1,23 @@
 {
+  "CF104588561": {
+    "contest_id": 1189,
+    "language": "GNU C++17",
+    "path": "codeforces/1189/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Candies!",
+    "problem_url": "https://codeforces.com/contest/1189/problem/C",
+    "submission_id": "CF104588561",
+    "submission_url": "https://codeforces.com/contest/1189/submission/104588561",
+    "tags": [
+      "data structures",
+      "dp",
+      "implementation",
+      "math",
+      "*1400"
+    ],
+    "timestamp": "Jan/17/2021 18:53"
+  },
   "CF104589116": {
     "contest_id": 1189,
     "language": "GNU C++17",
