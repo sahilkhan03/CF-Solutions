@@ -1,4 +1,21 @@
 {
+  "CF104636569": {
+    "contest_id": 27,
+    "language": "GNU C++17",
+    "path": "codeforces/27/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Unordered Subsequence",
+    "problem_url": "https://codeforces.com/contest/27/problem/C",
+    "submission_id": "CF104636569",
+    "submission_url": "https://codeforces.com/contest/27/submission/104636569",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*1900"
+    ],
+    "timestamp": "Jan/18/2021 10:50"
+  },
   "CF104683727": {
     "contest_id": 1182,
     "language": "GNU C++17",
