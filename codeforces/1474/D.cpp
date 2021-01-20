@@ -58,6 +58,15 @@ const ll mod = 1e9 + 7;
 void solve() {
 	ll n; cin >> n;
 	vl v(n); cin >> v;
+	if (n == 1) {
+		cout << "NO" << endl;
+		return;
+	}
+	if (n == 2) {
+		if (v[0] == v[1]) cout << "YES" << endl;
+		else cout << "NO" << endl;
+		return;
+	}
 	vl pre(n + 1), suf(n + 4);
 	for (int i = 0; i < n; i++) {
 		if (pre[i] == -1 or v[i] < pre[i]) pre[i + 1] = -1;
