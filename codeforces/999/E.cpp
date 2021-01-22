@@ -55,116 +55,53 @@ public:
 
 const ll mod = 1e9 + 7;
 
-template <class E> struct csr {
-	std::vector<int> start;
-	std::vector<E> elist;
-	csr(int n, const std::vector<std::pair<int, E>>& edges)
-		: start(n + 1), elist(edges.size()) {
-		for (auto e : edges) {
-			start[e.first + 1]++;
-		}
-		for (int i = 1; i <= n; i++) {
-			start[i] += start[i - 1];
-		}
-		auto counter = start;
-		for (auto e : edges) {
-			elist[counter[e.first]++] = e.second;
-		}
-	}
-};
-struct scc_graph {
-public:
-	scc_graph(int n) : _n(n) {}
-
-	int num_vertices() { return _n; }
-
-	void add_edge(int from, int to) { edges.push_back({from, {to}}); }
-
-	std::pair<int, std::vector<int>> scc_ids() {
-		auto g = csr<edge>(_n, edges);
-		int now_ord = 0, group_num = 0;
-		std::vector<int> visited, low(_n), ord(_n, -1), ids(_n);
-		visited.reserve(_n);
-		auto dfs = [&](auto self, int v) -> void {
-			low[v] = ord[v] = now_ord++;
-			visited.push_back(v);
-			for (int i = g.start[v]; i < g.start[v + 1]; i++) {
-				auto to = g.elist[i].to;
-				if (ord[to] == -1) {
-					self(self, to);
-					low[v] = std::min(low[v], low[to]);
-				} else {
-					low[v] = std::min(low[v], ord[to]);
-				}
-			}
-			if (low[v] == ord[v]) {
-				while (true) {
-					int u = visited.back();
-					visited.pop_back();
-					ord[u] = _n;
-					ids[u] = group_num;
-					if (u == v) break;
-				}
-				group_num++;
-			}
-		};
-		for (int i = 0; i < _n; i++) {
-			if (ord[i] == -1) dfs(dfs, i);
-		}
-		for (auto& x : ids) {
-			x = group_num - 1 - x;
-		}
-		return {group_num, ids};
-	}
-
-	std::vector<std::vector<int>> scc() {
-		auto ids = scc_ids();
-		int group_num = ids.first;
-		std::vector<int> counts(group_num);
-		for (auto x : ids.second) counts[x]++;
-		std::vector<std::vector<int>> groups(ids.first);
-		for (int i = 0; i < group_num; i++) {
-			groups[i].reserve(counts[i]);
-		}
-		for (int i = 0; i < _n; i++) {
-			groups[ids.second[i]].push_back(i);
-		}
-		return groups;
-	}
-
-private:
-	int _n;
-	struct edge {
-		int to;
-	};
-	std::vector<std::pair<int, edge>> edges;
-};
-
 void solve() {
 	int n, m, r;
 	cin >> n >> m >> r;
 	vector<vi> v(n);
-	scc_graph g(n);
-	vector<pl> ed;
+	vi vis(n);
 	while (m--) {
 		int a, b;
 		cin >> a >> b;
 		v[a - 1].pb(b - 1);
-		g.add_edge(a - 1, b - 1);
-		ed.pb({a - 1, b - 1});
 	}
-	auto grp = g.scc();
-	vi inv(n);
-	for (int i = 0; i < grp.size(); i++) {
-		for (auto x : grp[i]) inv[x] = i;
+	queue<int> q;
+	q.push(r - 1);
+	while (!q.empty()) {
+		auto tp = q.front(); q.pop();
+		if (vis[tp]) continue;
+		vis[tp] = 1;
+		for (auto x : v[tp]) q.push(x);
 	}
-	int ans = 0;
-	vi cnt(grp.size());
-	for (auto x : ed) {
-		if (inv[x.S] != inv[x.F]) cnt[inv[x.S]]++;
+	int cnt = 0, ans = 0;
+	vi nvis;
+	function<void(int)> dfs = [&](int i) {
+		if (nvis[i]) return;
+		cnt++;
+		nvis[i] = 1;
+		for (auto x : v[i]) dfs(x);
+	};
+	function<void(int)> dfs2 = [&] (int i) {
+		if (vis[i]) return;
+		vis[i] = 1;
+		for (auto x : v[i]) dfs2(x);
+	};
+	vector<pl> val;
+	for (int i = 0; i < n; i++) {
+		cnt = 0;
+		if (!vis[i]) {
+			nvis = vis;
+			dfs(i);
+		}
+		val.pb({cnt, i});
 	}
-	debug(cnt);
-	for (int i = 0; i < cnt.size(); i++) if (!cnt[i] and i != inv[r - 1]) ans++;
+	sort(all(val), greater<pl>());
+	for (int i = 0; i < n; i++) {
+		if (!vis[val[i].S]) {
+			ans++;
+			dfs2(val[i].S);
+		}
+	}
 	cout << ans << endl;
 }
 
