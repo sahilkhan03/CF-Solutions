@@ -1,4 +1,21 @@
 {
+  "CF105039655": {
+    "contest_id": 44,
+    "language": "GNU C++17",
+    "path": "codeforces/44/J.cpp",
+    "platform": "Codeforces",
+    "problem_index": "J",
+    "problem_name": "Triminoes",
+    "problem_url": "https://codeforces.com/contest/44/problem/J",
+    "submission_id": "CF105039655",
+    "submission_url": "https://codeforces.com/contest/44/submission/105039655",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*2000"
+    ],
+    "timestamp": "Jan/22/2021 12:00"
+  },
   "CF105064110": {
     "contest_id": 999,
     "language": "GNU C++17",
