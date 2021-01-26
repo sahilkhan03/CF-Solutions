@@ -55,16 +55,22 @@ public:
 
 const ll mod = 1e9 + 7;
 
+vector<vi> g(2e5 + 5);
 void solve() {
 	int n; cin >> n;
-	vi v(n), cnt(2e5 + 5), dp(2e5 + 5);
+	vi v(n), cnt(2e5 + 5);
 	cin >> v;
 	for (auto x : v) cnt[x]++;
-	for (int i = 2e5; i; i--) {
-		dp[i] = cnt[i];
-		for (int j = 2 * i; j < 2e5 + 5; j += i)
-			dp[i] = max(dp[i], cnt[i] + dp[j]);
-	}
+	vi dp(2e5 + 5, -1);
+	function<void(ll)> dfs = [&](ll u) {
+		if (dp[u] != -1) return;
+		dp[u] = cnt[u];
+		for (auto x : g[u]) {
+			dfs(x);
+			dp[u] = max(dp[u], cnt[u] + dp[x]);
+		}
+	};
+	dfs(1);
 	cout << n - dp[1] << endl;
 }
 
@@ -73,6 +79,9 @@ int main()
 	fast;
 	int T = 1;
 	cin >> T;
+	for (int i = 1; i < 2e5 + 5; i++) {
+		for (int j = 2 * i; j < 2e5 + 5; j += i) g[i].pb(j);
+	}
 	while (T--) {
 		solve();
 	}

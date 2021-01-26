@@ -1,4 +1,22 @@
 {
+  "CF105437421": {
+    "contest_id": 1475,
+    "language": "GNU C++17",
+    "path": "codeforces/1475/G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Strange Beauty",
+    "problem_url": "https://codeforces.com/contest/1475/problem/G",
+    "submission_id": "CF105437421",
+    "submission_url": "https://codeforces.com/contest/1475/submission/105437421",
+    "tags": [
+      "dp",
+      "math",
+      "number theory",
+      "*1900"
+    ],
+    "timestamp": "Jan/26/2021 09:59"
+  },
   "CF105439963": {
     "contest_id": 1475,
     "language": "GNU C++17",
