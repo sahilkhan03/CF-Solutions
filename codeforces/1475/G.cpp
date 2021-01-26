@@ -55,12 +55,15 @@ public:
 
 const ll mod = 1e9 + 7;
 
-vector<vi> g(2e5 + 5);
 void solve() {
 	int n; cin >> n;
 	vi v(n), cnt(2e5 + 5);
 	cin >> v;
+	vector<vi> g(2e5 + 5);
 	for (auto x : v) cnt[x]++;
+	for (int i = 1; i < 2e5 + 5; i++) {
+		for (int j = 2 * i; j < 2e5 + 5; j += i) g[i].pb(j);
+	}
 	vi dp(2e5 + 5, -1);
 	function<void(ll)> dfs = [&](ll u) {
 		if (dp[u] != -1) return;
@@ -79,9 +82,6 @@ int main()
 	fast;
 	int T = 1;
 	cin >> T;
-	for (int i = 1; i < 2e5 + 5; i++) {
-		for (int j = 2 * i; j < 2e5 + 5; j += i) g[i].pb(j);
-	}
 	while (T--) {
 		solve();
 	}
