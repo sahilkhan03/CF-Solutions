@@ -5,10 +5,11 @@ Submissions
 ## Introduction
 
 A repository to keep track of problem solving practice, containing solutions from platforms:
-{profile_placeholder}
+* Codeforces &nbsp; [![Codeforces](https://run.kaist.ac.kr/badges/codeforces/DLN.svg)](https://codeforces.com/profile/DLN)
+
 
 ## Contents
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-{submission_placeholder}
+1 | [G - Strange Beauty](https://codeforces.com/contest/1475/problem/G) | [GNU C++17](./codeforces/1475/G.cpp) | `dp` `math` `number theory` `*1900` | Jan/26/2021 10:40 | 
