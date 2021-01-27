@@ -2830,6 +2830,25 @@
     ],
     "timestamp": "Jan/26/2021 10:40"
   },
+  "CF105575116": {
+    "contest_id": 1163,
+    "language": "GNU C++17",
+    "path": "codeforces/1163/C2.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C2",
+    "problem_name": "Power Transmission (Hard Edition)",
+    "problem_url": "https://codeforces.com/contest/1163/problem/C2",
+    "submission_id": "CF105575116",
+    "submission_url": "https://codeforces.com/contest/1163/submission/105575116",
+    "tags": [
+      "data structures",
+      "geometry",
+      "implementation",
+      "math",
+      "*1900"
+    ],
+    "timestamp": "Jan/27/2021 18:48"
+  },
   "CF59621115": {
     "contest_id": 677,
     "language": "GNU C++14",
