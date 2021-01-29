@@ -2934,6 +2934,25 @@
     ],
     "timestamp": "Jan/28/2021 11:47"
   },
+  "CF105810549": {
+    "contest_id": 1166,
+    "language": "GNU C++17",
+    "path": "codeforces/1166/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Cute Sequences",
+    "problem_url": "https://codeforces.com/contest/1166/problem/D",
+    "submission_id": "CF105810549",
+    "submission_url": "https://codeforces.com/contest/1166/submission/105810549",
+    "tags": [
+      "binary search",
+      "brute force",
+      "greedy",
+      "math",
+      "*2200"
+    ],
+    "timestamp": "Jan/29/2021 11:56"
+  },
   "CF59621115": {
     "contest_id": 677,
     "language": "GNU C++14",
