@@ -4981,6 +4981,23 @@
     ],
     "timestamp": "Jan/31/2021 12:49"
   },
+  "CF106109589": {
+    "contest_id": 1162,
+    "language": "GNU C++17",
+    "path": "codeforces/1162/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Hide and Seek",
+    "problem_url": "https://codeforces.com/contest/1162/problem/C",
+    "submission_id": "CF106109589",
+    "submission_url": "https://codeforces.com/contest/1162/submission/106109589",
+    "tags": [
+      "graphs",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Jan/31/2021 19:36"
+  },
   "CF106110637": {
     "contest_id": 1162,
     "language": "GNU C++17",
