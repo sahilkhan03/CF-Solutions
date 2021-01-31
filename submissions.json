@@ -4893,6 +4893,25 @@
     ],
     "timestamp": "Jan/29/2021 19:29"
   },
+  "CF106078734": {
+    "contest_id": 1159,
+    "language": "GNU C++17",
+    "path": "codeforces/1159/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Permutation recovery",
+    "problem_url": "https://codeforces.com/contest/1159/problem/E",
+    "submission_id": "CF106078734",
+    "submission_url": "https://codeforces.com/contest/1159/submission/106078734",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "graphs",
+      "math",
+      "*2100"
+    ],
+    "timestamp": "Jan/31/2021 12:49"
+  },
   "CF58448107": {
     "contest_id": 1202,
     "language": "GNU C++14",
