@@ -4981,6 +4981,22 @@
     ],
     "timestamp": "Jan/31/2021 12:49"
   },
+  "CF106104839": {
+    "contest_id": 1162,
+    "language": "GNU C++17",
+    "path": "codeforces/1162/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Zoning Restrictions Again",
+    "problem_url": "https://codeforces.com/contest/1162/problem/A",
+    "submission_id": "CF106104839",
+    "submission_url": "https://codeforces.com/contest/1162/submission/106104839",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Jan/31/2021 18:42"
+  },
   "CF106109589": {
     "contest_id": 1162,
     "language": "GNU C++17",
