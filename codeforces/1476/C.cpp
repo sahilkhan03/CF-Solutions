@@ -62,8 +62,9 @@ void solve() {
 	ll ans = 0;
 	vl pre(n);
 	for (int i = 1; i < n; i++) {
-		pre[i] = 2 + (a[i] != b[i]) * max(abs(a[i] - b[i]), (i > 1) * (c[i - 1] - 1 - abs(a[i] - b[i]) + pre[i - 1]));
-		ans = max(ans, c[i] - 1 + pre[i]);
+		if (a[i] == b[i]) pre[i] = c[i] + 1;
+		else pre[i] = max(c[i] + 1 + abs(a[i] - b[i]), c[i] + 1 + pre[i - 1] - abs(a[i] - b[i]));
+		ans = max(ans, pre[i]);
 	}
 	cout << ans << endl;
 }
