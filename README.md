@@ -12,15 +12,16 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1514 | [C - Safe cracking](https://codeforces.com/contest/42/problem/C) | [GNU C++17](./codeforces/42/C.cpp) | `brute force` `constructive algorithms` `*2200` | Feb/05/2021 11:38 | 
-1513 | [E - Director](https://codeforces.com/contest/45/problem/E) | [GNU C++17](./codeforces/45/E.cpp) | `constructive algorithms` `greedy` `*2000` | Feb/04/2021 20:20 | 
-1512 | [C - Prefix Sum Primes](https://codeforces.com/contest/1150/problem/C) | [GNU C++17](./codeforces/1150/C.cpp) | `constructive algorithms` `greedy` `math` `number theory` `*1200` | Feb/04/2021 17:28 | 
-1511 | [B - Tiling Challenge](https://codeforces.com/contest/1150/problem/B) | [GNU C++17](./codeforces/1150/B.cpp) | `greedy` `implementation` `*900` | Feb/04/2021 17:20 | 
-1510 | [A - Stock Arbitraging](https://codeforces.com/contest/1150/problem/A) | [GNU C++17](./codeforces/1150/A.cpp) | `greedy` `implementation` `*800` | Feb/04/2021 17:13 | 
-1509 | [D - The minimal unique substring](https://codeforces.com/contest/1159/problem/D) | [GNU C++17](./codeforces/1159/D.cpp) | `brute force` `constructive algorithms` `greedy` `math` `strings` `*2200` | Feb/02/2021 11:26 | 
-1508 | [C - Longest Simple Cycle](https://codeforces.com/contest/1476/problem/C) | [GNU C++17](./codeforces/1476/C.cpp) | `dp` `graphs` `greedy` `*1600` | Feb/01/2021 19:49 | 
-1507 | [D - Journey](https://codeforces.com/contest/1476/problem/D) | [GNU C++17](./codeforces/1476/D.cpp) | `dfs and similar` `dp` `dsu` `implementation` `*1700` | Feb/01/2021 18:27 | 
-1506 | [B - Inflation](https://codeforces.com/contest/1476/problem/B) | [GNU C++17](./codeforces/1476/B.cpp) | `binary search` `brute force` `greedy` `math` `*1300` | Feb/01/2021 18:04 | 
+1515 | [C - Safe cracking](https://codeforces.com/contest/42/problem/C) | [GNU C++17](./codeforces/42/C.cpp) | `brute force` `constructive algorithms` `*2200` | Feb/05/2021 11:38 | 
+1514 | [E - Director](https://codeforces.com/contest/45/problem/E) | [GNU C++17](./codeforces/45/E.cpp) | `constructive algorithms` `greedy` `*2000` | Feb/04/2021 20:20 | 
+1513 | [C - Prefix Sum Primes](https://codeforces.com/contest/1150/problem/C) | [GNU C++17](./codeforces/1150/C.cpp) | `constructive algorithms` `greedy` `math` `number theory` `*1200` | Feb/04/2021 17:28 | 
+1512 | [B - Tiling Challenge](https://codeforces.com/contest/1150/problem/B) | [GNU C++17](./codeforces/1150/B.cpp) | `greedy` `implementation` `*900` | Feb/04/2021 17:20 | 
+1511 | [A - Stock Arbitraging](https://codeforces.com/contest/1150/problem/A) | [GNU C++17](./codeforces/1150/A.cpp) | `greedy` `implementation` `*800` | Feb/04/2021 17:13 | 
+1510 | [D - The minimal unique substring](https://codeforces.com/contest/1159/problem/D) | [GNU C++17](./codeforces/1159/D.cpp) | `brute force` `constructive algorithms` `greedy` `math` `strings` `*2200` | Feb/02/2021 11:26 | 
+1509 | [C - Longest Simple Cycle](https://codeforces.com/contest/1476/problem/C) | [GNU C++17](./codeforces/1476/C.cpp) | `dp` `graphs` `greedy` `*1600` | Feb/01/2021 19:49 | 
+1508 | [D - Journey](https://codeforces.com/contest/1476/problem/D) | [GNU C++17](./codeforces/1476/D.cpp) | `dfs and similar` `dp` `dsu` `implementation` `*1700` | Feb/01/2021 18:27 | 
+1507 | [B - Inflation](https://codeforces.com/contest/1476/problem/B) | [GNU C++17](./codeforces/1476/B.cpp) | `binary search` `brute force` `greedy` `math` `*1300` | Feb/01/2021 18:04 | 
+1506 | [A - K-divisible Sum](https://codeforces.com/contest/1476/problem/A) | [GNU C++17](./codeforces/1476/A.cpp) | `binary search` `constructive algorithms` `greedy` `math` `*1000` | Feb/01/2021 17:56 | 
 1505 | [E - Thanos Nim](https://codeforces.com/contest/1162/problem/E) | [GNU C++17](./codeforces/1162/E.cpp) | `games` `*2000` | Feb/01/2021 11:46 | 
 1504 | [D - Chladni Figure](https://codeforces.com/contest/1162/problem/D) | [GNU C++17](./codeforces/1162/D.cpp) | `number theory` `strings` `*1900` | Feb/01/2021 11:00 | 
 1503 | [B - Double Matrix](https://codeforces.com/contest/1162/problem/B) | [GNU C++17](./codeforces/1162/B.cpp) | `brute force` `greedy` `*1400` | Jan/31/2021 19:47 | 
