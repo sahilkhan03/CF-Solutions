@@ -5064,6 +5064,26 @@
     ],
     "timestamp": "Feb/01/2021 11:46"
   },
+  "CF106249431": {
+    "contest_id": 1159,
+    "language": "GNU C++17",
+    "path": "codeforces/1159/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "The minimal unique substring",
+    "problem_url": "https://codeforces.com/contest/1159/problem/D",
+    "submission_id": "CF106249431",
+    "submission_url": "https://codeforces.com/contest/1159/submission/106249431",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "strings",
+      "*2200"
+    ],
+    "timestamp": "Feb/02/2021 11:26"
+  },
   "CF106448849": {
     "contest_id": 1150,
     "language": "GNU C++17",
