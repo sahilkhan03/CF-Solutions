@@ -5064,6 +5064,40 @@
     ],
     "timestamp": "Feb/01/2021 11:46"
   },
+  "CF106507686": {
+    "contest_id": 42,
+    "language": "GNU C++17",
+    "path": "codeforces/42/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Safe cracking",
+    "problem_url": "https://codeforces.com/contest/42/problem/C",
+    "submission_id": "CF106507686",
+    "submission_url": "https://codeforces.com/contest/42/submission/106507686",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "*2200"
+    ],
+    "timestamp": "Feb/05/2021 11:35"
+  },
+  "CF106507795": {
+    "contest_id": 42,
+    "language": "GNU C++17",
+    "path": "codeforces/42/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Safe cracking",
+    "problem_url": "https://codeforces.com/contest/42/problem/C",
+    "submission_id": "CF106507795",
+    "submission_url": "https://codeforces.com/contest/42/submission/106507795",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "*2200"
+    ],
+    "timestamp": "Feb/05/2021 11:38"
+  },
   "CF58448107": {
     "contest_id": 1202,
     "language": "GNU C++14",
