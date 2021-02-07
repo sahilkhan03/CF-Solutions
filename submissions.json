@@ -5281,6 +5281,23 @@
     ],
     "timestamp": "Feb/05/2021 11:38"
   },
+  "CF106718167": {
+    "contest_id": 81,
+    "language": "GNU C++17",
+    "path": "codeforces/81/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Polycarp's Picture Gallery",
+    "problem_url": "https://codeforces.com/contest/81/problem/D",
+    "submission_id": "CF106718167",
+    "submission_url": "https://codeforces.com/contest/81/submission/106718167",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*2100"
+    ],
+    "timestamp": "Feb/07/2021 11:41"
+  },
   "CF106740189": {
     "contest_id": 1153,
     "language": "GNU C++17",
