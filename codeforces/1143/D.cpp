@@ -65,7 +65,17 @@ void solve() {
 		mn = min(mn, n * k / __gcd(i, n * k));
 		mx = max(mx, n * k / __gcd(i, n * k));
 	}
+	for (ll i = a - b; i <= n * k; i += k) {
+		if (i < 0) continue;
+		mn = min(mn, n * k / __gcd(i, n * k));
+		mx = max(mx, n * k / __gcd(i, n * k));
+	}
 	for (ll i = k - b - a; i <= n * k; i += k) {
+		if (i < 0) continue;
+		mn = min(mn, n * k / __gcd(i, n * k));
+		mx = max(mx, n * k / __gcd(i, n * k));
+	}
+	for (ll i = b + a; i <= n * k; i += k) {
 		if (i < 0) continue;
 		mn = min(mn, n * k / __gcd(i, n * k));
 		mx = max(mx, n * k / __gcd(i, n * k));
