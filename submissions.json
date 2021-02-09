@@ -5511,6 +5511,24 @@
     ],
     "timestamp": "Feb/08/2021 13:54"
   },
+  "CF106953806": {
+    "contest_id": 1143,
+    "language": "GNU C++17",
+    "path": "codeforces/1143/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Lynyrd Skynyrd",
+    "problem_url": "https://codeforces.com/contest/1143/problem/E",
+    "submission_id": "CF106953806",
+    "submission_url": "https://codeforces.com/contest/1143/submission/106953806",
+    "tags": [
+      "data structures",
+      "greedy",
+      "math",
+      "*2000"
+    ],
+    "timestamp": "Feb/09/2021 11:25"
+  },
   "CF106982552": {
     "contest_id": 1480,
     "language": "GNU C++17",
