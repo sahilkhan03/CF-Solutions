@@ -5511,6 +5511,23 @@
     ],
     "timestamp": "Feb/08/2021 13:54"
   },
+  "CF106982552": {
+    "contest_id": 1480,
+    "language": "GNU C++17",
+    "path": "codeforces/1480/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Yet Another String Game",
+    "problem_url": "https://codeforces.com/contest/1480/problem/A",
+    "submission_id": "CF106982552",
+    "submission_url": "https://codeforces.com/contest/1480/submission/106982552",
+    "tags": [
+      "games",
+      "greedy",
+      "strings"
+    ],
+    "timestamp": "Feb/09/2021 18:12"
+  },
   "CF106983946": {
     "contest_id": 1480,
     "language": "GNU C++17",
