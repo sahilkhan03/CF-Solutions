@@ -13,14 +13,15 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1686 | [D - Lucky Sorting](https://codeforces.com/contest/109/problem/D) | [GNU C++17](./codeforces/109/D.cpp) | `constructive algorithms` `sortings` `*2000` | Feb/15/2021 11:13 | 
-1685 | [C - Creative Snap](https://codeforces.com/contest/1111/problem/C) | [GNU C++17](./codeforces/1111/C.cpp) | `binary search` `brute force` `divide and conquer` `math` `*1700` | Feb/14/2021 17:53 | 
-1684 | [B - Average Superhero Gang Power ](https://codeforces.com/contest/1111/problem/B) | [GNU C++17](./codeforces/1111/B.cpp) | `brute force` `implementation` `math` `*1700` | Feb/14/2021 17:41 | 
-1683 | [A - Superhero Transformation](https://codeforces.com/contest/1111/problem/A) | [GNU C++17](./codeforces/1111/A.cpp) | `implementation` `strings` `*1000` | Feb/14/2021 17:35 | 
-1682 | [E - Wrong Answer](https://codeforces.com/contest/1130/problem/E) | [GNU C++17](./codeforces/1130/E.cpp) | `brute force` `constructive algorithms` `math` `*2000` | Feb/14/2021 12:31 | 
-1681 | [D2 - Toy Train](https://codeforces.com/contest/1130/problem/D2) | [GNU C++17](./codeforces/1130/D2.cpp) | `brute force` `greedy` `implementation` `*1800` | Feb/14/2021 10:30 | 
-1680 | [D1 - Toy Train (Simplified)](https://codeforces.com/contest/1130/problem/D1) | [GNU C++17](./codeforces/1130/D1.cpp) | `brute force` `greedy` `*1700` | Feb/13/2021 18:09 | 
-1679 | [C - Connect](https://codeforces.com/contest/1130/problem/C) | [GNU C++17](./codeforces/1130/C.cpp) | `brute force` `dfs and similar` `dsu` `*1400` | Feb/13/2021 17:42 | 
+1687 | [D - Lucky Sorting](https://codeforces.com/contest/109/problem/D) | [GNU C++17](./codeforces/109/D.cpp) | `constructive algorithms` `sortings` `*2000` | Feb/15/2021 11:13 | 
+1686 | [C - Creative Snap](https://codeforces.com/contest/1111/problem/C) | [GNU C++17](./codeforces/1111/C.cpp) | `binary search` `brute force` `divide and conquer` `math` `*1700` | Feb/14/2021 17:53 | 
+1685 | [B - Average Superhero Gang Power ](https://codeforces.com/contest/1111/problem/B) | [GNU C++17](./codeforces/1111/B.cpp) | `brute force` `implementation` `math` `*1700` | Feb/14/2021 17:41 | 
+1684 | [A - Superhero Transformation](https://codeforces.com/contest/1111/problem/A) | [GNU C++17](./codeforces/1111/A.cpp) | `implementation` `strings` `*1000` | Feb/14/2021 17:35 | 
+1683 | [E - Wrong Answer](https://codeforces.com/contest/1130/problem/E) | [GNU C++17](./codeforces/1130/E.cpp) | `brute force` `constructive algorithms` `math` `*2000` | Feb/14/2021 12:31 | 
+1682 | [D2 - Toy Train](https://codeforces.com/contest/1130/problem/D2) | [GNU C++17](./codeforces/1130/D2.cpp) | `brute force` `greedy` `implementation` `*1800` | Feb/14/2021 10:30 | 
+1681 | [D1 - Toy Train (Simplified)](https://codeforces.com/contest/1130/problem/D1) | [GNU C++17](./codeforces/1130/D1.cpp) | `brute force` `greedy` `*1700` | Feb/13/2021 18:09 | 
+1680 | [C - Connect](https://codeforces.com/contest/1130/problem/C) | [GNU C++17](./codeforces/1130/C.cpp) | `brute force` `dfs and similar` `dsu` `*1400` | Feb/13/2021 17:42 | 
+1679 | [B - Two Cakes](https://codeforces.com/contest/1130/problem/B) | [GNU C++17](./codeforces/1130/B.cpp) | `greedy` `*1200` | Feb/13/2021 17:24 | 
 1678 | [C - Floor and Mod](https://codeforces.com/contest/1485/problem/C) | [GNU C++17](./codeforces/1485/C.cpp) | `binary search` `brute force` `data structures` `math` `number theory` `*1700` | Feb/13/2021 10:44 | 
 1677 | [D - Multiples and Power Differences](https://codeforces.com/contest/1485/problem/D) | [GNU C++17](./codeforces/1485/D.cpp) | `constructive algorithms` `math` `number theory` `*2200` | Feb/13/2021 09:45 | 
 1676 | [B - Replace and Keep Sorted](https://codeforces.com/contest/1485/problem/B) | [GNU C++17](./codeforces/1485/B.cpp) | `dp` `implementation` `math` `*1200` | Feb/12/2021 20:38 | 
