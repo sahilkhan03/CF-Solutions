@@ -8271,6 +8271,25 @@
     ],
     "timestamp": "Feb/13/2021 10:44"
   },
+  "CF107337713": {
+    "contest_id": 1111,
+    "language": "GNU C++17",
+    "path": "codeforces/1111/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Creative Snap",
+    "problem_url": "https://codeforces.com/contest/1111/problem/C",
+    "submission_id": "CF107337713",
+    "submission_url": "https://codeforces.com/contest/1111/submission/107337713",
+    "tags": [
+      "binary search",
+      "brute force",
+      "divide and conquer",
+      "math",
+      "*1700"
+    ],
+    "timestamp": "Feb/14/2021 17:53"
+  },
   "CF107380595": {
     "contest_id": 109,
     "language": "GNU C++17",
