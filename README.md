@@ -13,6 +13,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1679 | [D - Lucky Sorting](https://codeforces.com/contest/109/problem/D) | [GNU C++17](./codeforces/109/D.cpp) | `constructive algorithms` `sortings` `*2000` | Feb/15/2021 11:13 | 
 1678 | [C - Floor and Mod](https://codeforces.com/contest/1485/problem/C) | [GNU C++17](./codeforces/1485/C.cpp) | `binary search` `brute force` `data structures` `math` `number theory` `*1700` | Feb/13/2021 10:44 | 
 1677 | [D - Multiples and Power Differences](https://codeforces.com/contest/1485/problem/D) | [GNU C++17](./codeforces/1485/D.cpp) | `constructive algorithms` `math` `number theory` `*2200` | Feb/13/2021 09:45 | 
 1676 | [B - Replace and Keep Sorted](https://codeforces.com/contest/1485/problem/B) | [GNU C++17](./codeforces/1485/B.cpp) | `dp` `implementation` `math` `*1200` | Feb/12/2021 20:38 | 
