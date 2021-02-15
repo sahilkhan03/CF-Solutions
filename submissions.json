@@ -8445,6 +8445,23 @@
     ],
     "timestamp": "Feb/15/2021 11:13"
   },
+  "CF107400941": {
+    "contest_id": 1106,
+    "language": "GNU C++17",
+    "path": "codeforces/1106/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Lunar New Year and Food Ordering",
+    "problem_url": "https://codeforces.com/contest/1106/problem/B",
+    "submission_id": "CF107400941",
+    "submission_url": "https://codeforces.com/contest/1106/submission/107400941",
+    "tags": [
+      "data structures",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Feb/15/2021 17:50"
+  },
   "CF107401182": {
     "contest_id": 1106,
     "language": "GNU C++17",
