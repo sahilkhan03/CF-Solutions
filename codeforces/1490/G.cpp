@@ -66,11 +66,11 @@ void solve() {
 		sum += v[i];
 	}
 	auto calc = [&](ll s) {
-		// ll ans = n - 1;
-		// for (ll st = 1e6; st; st /= 2) {
-		// 	while (ans - st >= 0 and pre[ans - st] >= s) ans -= st;
-		// }
-		return ll(lower_bound(all(pre), s) - pre.begin());
+		ll ans = n - 1;
+		for (ll st = 1e6; st; st /= 2) {
+			while (ans - st >= 0 and pre[ans - st] >= s) ans -= st;
+		}
+		return ans;
 	};
 	while (m--) {
 		ll x; cin >> x;
