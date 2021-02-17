@@ -83,7 +83,7 @@ void solve() {
 			continue;
 		}
 		ll tm = (x - pre.back() + sum - 1) / sum;
-		cout << tm * n + ll(lower_bound(all(pre), x - tm * sum) - pre.begin())  << " ";
+		cout << tm * n + calc(x - sum * tm)  << " ";
 	}
 	cout << endl;
 }
