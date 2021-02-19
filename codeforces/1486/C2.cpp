@@ -55,11 +55,14 @@ public:
 
 const ll mod = 1e9 + 7;
 
+map<pl, ll> m;
+
 ll query(ll l, ll r) {
 	if (r == l) return -1;
+	if (m.find({l, r}) != m.end()) return m[ {l, r}];
 	cout << "? " << l << " " << r << endl << flush;
 	ll x; cin >> x;
-	return x;
+	return m[ {l, r}] = x;
 }
 
 void solve() {
