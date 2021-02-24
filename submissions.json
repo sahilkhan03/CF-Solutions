@@ -8999,6 +8999,24 @@
     ],
     "timestamp": "Feb/19/2021 19:23"
   },
+  "CF108363256": {
+    "contest_id": 1099,
+    "language": "GNU C++17",
+    "path": "codeforces/1099/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Nice table",
+    "problem_url": "https://codeforces.com/contest/1099/problem/E",
+    "submission_id": "CF108363256",
+    "submission_url": "https://codeforces.com/contest/1099/submission/108363256",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "*2100"
+    ],
+    "timestamp": "Feb/24/2021 11:35"
+  },
   "CF108400972": {
     "contest_id": 1084,
     "language": "GNU C++17",
