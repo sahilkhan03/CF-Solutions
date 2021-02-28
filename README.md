@@ -13,6 +13,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1716 | [D - Minimum Diameter Tree](https://codeforces.com/contest/1087/problem/D) | [GNU C++17](./codeforces/1087/D.cpp) | `implementation` `trees` `*1700` | Feb/28/2021 19:02 | 
 1715 | [D - Game with modulo](https://codeforces.com/contest/1104/problem/D) | [GNU C++17](./codeforces/1104/D.cpp) | `binary search` `interactive` `math` `*2000` | Feb/19/2021 19:23 | 
 1714 | [C - Grid game](https://codeforces.com/contest/1104/problem/C) | [GNU C++17](./codeforces/1104/C.cpp) | `constructive algorithms` `implementation` `*1400` | Feb/19/2021 17:52 | 
 1713 | [B - Game with string](https://codeforces.com/contest/1104/problem/B) | [GNU C++17](./codeforces/1104/B.cpp) | `data structures` `implementation` `math` `*1200` | Feb/19/2021 17:39 | 
