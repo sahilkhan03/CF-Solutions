@@ -13,15 +13,16 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1765 | [D - Minimum path](https://codeforces.com/contest/1072/problem/D) | [GNU C++17](./codeforces/1072/D.cpp) | `dfs and similar` `dp` `graphs` `greedy` `sortings` `*1900` | Mar/08/2021 12:38 | 
-1764 | [C - Cram Time](https://codeforces.com/contest/1072/problem/C) | [GNU C++17](./codeforces/1072/C.cpp) | `greedy` `math` `*1600` | Mar/07/2021 18:20 | 
-1763 | [B - Curiosity Has No Limits](https://codeforces.com/contest/1072/problem/B) | [GNU C++17](./codeforces/1072/B.cpp) | `dp` `*1500` | Mar/07/2021 18:03 | 
-1762 | [A - Golden Plate](https://codeforces.com/contest/1072/problem/A) | [GNU C++17](./codeforces/1072/A.cpp) | `implementation` `math` `*800` | Mar/07/2021 17:52 | 
-1761 | [C - K-beautiful Strings](https://codeforces.com/contest/1493/problem/C) | [GNU C++17](./codeforces/1493/C.cpp) | `binary search` `brute force` `greedy` `implementation` `strings` `*2000` | Mar/07/2021 11:49 | 
-1760 | [D - GCD of an Array](https://codeforces.com/contest/1493/problem/D) | [GNU C++17](./codeforces/1493/D.cpp) | `data structures` `math` `number theory` `sortings` `two pointers` `*2100` | Mar/06/2021 21:03 | 
-1759 | [B - Planet Lapituletti](https://codeforces.com/contest/1493/problem/B) | [GNU C++17](./codeforces/1493/B.cpp) | `brute force` `implementation` `*1300` | Mar/06/2021 20:10 | 
-1758 | [A - Anti-knapsack](https://codeforces.com/contest/1493/problem/A) | [GNU C++17](./codeforces/1493/A.cpp) | `constructive algorithms` `greedy` `*800` | Mar/06/2021 19:48 | 
-1757 | [E - Multihedgehog](https://codeforces.com/contest/1068/problem/E) | [GNU C++17](./codeforces/1068/E.cpp) | `graphs` `shortest paths` `trees` `*1800` | Mar/06/2021 11:55 | 
+1766 | [D - Minimum path](https://codeforces.com/contest/1072/problem/D) | [GNU C++17](./codeforces/1072/D.cpp) | `dfs and similar` `dp` `graphs` `greedy` `sortings` `*1900` | Mar/08/2021 12:38 | 
+1765 | [C - Cram Time](https://codeforces.com/contest/1072/problem/C) | [GNU C++17](./codeforces/1072/C.cpp) | `greedy` `math` `*1600` | Mar/07/2021 18:20 | 
+1764 | [B - Curiosity Has No Limits](https://codeforces.com/contest/1072/problem/B) | [GNU C++17](./codeforces/1072/B.cpp) | `dp` `*1500` | Mar/07/2021 18:03 | 
+1763 | [A - Golden Plate](https://codeforces.com/contest/1072/problem/A) | [GNU C++17](./codeforces/1072/A.cpp) | `implementation` `math` `*800` | Mar/07/2021 17:52 | 
+1762 | [C - K-beautiful Strings](https://codeforces.com/contest/1493/problem/C) | [GNU C++17](./codeforces/1493/C.cpp) | `binary search` `brute force` `greedy` `implementation` `strings` `*2000` | Mar/07/2021 11:49 | 
+1761 | [D - GCD of an Array](https://codeforces.com/contest/1493/problem/D) | [GNU C++17](./codeforces/1493/D.cpp) | `data structures` `math` `number theory` `sortings` `two pointers` `*2100` | Mar/06/2021 21:03 | 
+1760 | [B - Planet Lapituletti](https://codeforces.com/contest/1493/problem/B) | [GNU C++17](./codeforces/1493/B.cpp) | `brute force` `implementation` `*1300` | Mar/06/2021 20:10 | 
+1759 | [A - Anti-knapsack](https://codeforces.com/contest/1493/problem/A) | [GNU C++17](./codeforces/1493/A.cpp) | `constructive algorithms` `greedy` `*800` | Mar/06/2021 19:48 | 
+1758 | [E - Multihedgehog](https://codeforces.com/contest/1068/problem/E) | [GNU C++17](./codeforces/1068/E.cpp) | `graphs` `shortest paths` `trees` `*1800` | Mar/06/2021 11:55 | 
+1757 | [D - Array Without Local Maximums ](https://codeforces.com/contest/1068/problem/D) | [GNU C++17](./codeforces/1068/D.cpp) | `dp` `*1900` | Mar/06/2021 11:23 | 
 1756 | [D - Minimum Diameter Tree](https://codeforces.com/contest/1087/problem/D) | [GNU C++17](./codeforces/1087/D.cpp) | `implementation` `trees` `*1700` | Feb/28/2021 19:02 | 
 1755 | [C - Connect Three](https://codeforces.com/contest/1087/problem/C) | [GNU C++17](./codeforces/1087/C.cpp) | `implementation` `*1600` | Feb/28/2021 18:03 | 
 1754 | [B - Div Times Mod](https://codeforces.com/contest/1087/problem/B) | [GNU C++17](./codeforces/1087/B.cpp) | `*1100` | Feb/28/2021 17:38 | 
