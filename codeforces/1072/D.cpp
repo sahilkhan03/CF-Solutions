@@ -78,7 +78,7 @@ void solve() {
 	vector<string> s(n);
 	cin >> s;
 	string ans;
-	vector<map<pl, ll>> v(26);
+	vector<unordered_map<pl, ll, pair_hash>> v(26);
 	char c = 'a';
 	if (ck > 0) {
 		if (s[0][0] == 'a') v[0][ {0, 0}] = ck;
