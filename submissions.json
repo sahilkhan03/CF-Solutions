@@ -10263,6 +10263,23 @@
     ],
     "timestamp": "Mar/08/2021 12:38"
   },
+  "CF109470198": {
+    "contest_id": 1008,
+    "language": "GNU C++17",
+    "path": "codeforces/1008/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Romaji",
+    "problem_url": "https://codeforces.com/contest/1008/problem/A",
+    "submission_id": "CF109470198",
+    "submission_url": "https://codeforces.com/contest/1008/submission/109470198",
+    "tags": [
+      "implementation",
+      "strings",
+      "*900"
+    ],
+    "timestamp": "Mar/09/2021 18:28"
+  },
   "CF109470466": {
     "contest_id": 1008,
     "language": "GNU C++17",
