@@ -10263,6 +10263,24 @@
     ],
     "timestamp": "Mar/08/2021 12:38"
   },
+  "CF109891605": {
+    "contest_id": 984,
+    "language": "GNU C++17",
+    "path": "codeforces/984/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Finite or not?",
+    "problem_url": "https://codeforces.com/contest/984/problem/C",
+    "submission_id": "CF109891605",
+    "submission_url": "https://codeforces.com/contest/984/submission/109891605",
+    "tags": [
+      "implementation",
+      "math",
+      "number theory",
+      "*1700"
+    ],
+    "timestamp": "Mar/13/2021 18:21"
+  },
   "CF109947534": {
     "contest_id": 1079,
     "language": "GNU C++17",
