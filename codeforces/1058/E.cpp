@@ -70,16 +70,16 @@ void solve() {
 	ll ans = 0;
 	for (int i = 0; i < n; i++) {
 		ll sum = 0, c = 0, mx = 0;
-		for (int j = i; j < i + 100 and j < n; j++) {
+		for (int j = i; j < i + 200 and j < n; j++) {
 			sum += v[j];
 			c += (v[j] & 1);
 			mx = max(mx, v[j]);
 			if (mx <= sum - mx and sum % 2 == 0) ans++;
 		}
-		if (i + 100 < n) {
-			auto it = lower_bound(all(odd), i + 100) - odd.begin();
+		if (i + 200 < n) {
+			auto it = lower_bound(all(odd), i + 200) - odd.begin();
 			if (c & 1) ans += suf[it];
-			else ans += n - i - 100 - suf[it];
+			else ans += n - i - 200 - suf[it];
 		}
 	}
 	cout << ans << endl;
