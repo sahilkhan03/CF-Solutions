@@ -13,6 +13,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1787 | [C - Basic Diplomacy](https://codeforces.com/contest/1484/problem/C) | [GNU C++17](./codeforces/1484/C.cpp) | `combinatorics` `flows` `greedy` `implementation` `*1600` | Mar/22/2021 18:23 | 
 1786 | [D - Minimum path](https://codeforces.com/contest/1072/problem/D) | [GNU C++17](./codeforces/1072/D.cpp) | `dfs and similar` `dp` `graphs` `greedy` `sortings` `*1900` | Mar/08/2021 12:38 | 
 1785 | [C - Cram Time](https://codeforces.com/contest/1072/problem/C) | [GNU C++17](./codeforces/1072/C.cpp) | `greedy` `math` `*1600` | Mar/07/2021 18:20 | 
 1784 | [B - Curiosity Has No Limits](https://codeforces.com/contest/1072/problem/B) | [GNU C++17](./codeforces/1072/B.cpp) | `dp` `*1500` | Mar/07/2021 18:03 | 
