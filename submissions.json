@@ -11198,6 +11198,24 @@
     ],
     "timestamp": "Mar/22/2021 18:23"
   },
+  "CF110895367": {
+    "contest_id": 1040,
+    "language": "GNU C++17",
+    "path": "codeforces/1040/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Shashlik Cooking",
+    "problem_url": "https://codeforces.com/contest/1040/problem/B",
+    "submission_id": "CF110895367",
+    "submission_url": "https://codeforces.com/contest/1040/submission/110895367",
+    "tags": [
+      "dp",
+      "greedy",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Mar/24/2021 18:25"
+  },
   "CF110948448": {
     "contest_id": 1040,
     "language": "GNU C++17",
