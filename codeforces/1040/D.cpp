@@ -68,7 +68,7 @@ void solve() {
 	cin >> n >> k;
 	ll lo = 1, hi = n, mid;
 	while (lo <= hi) {
-		if (hi - lo + 1 > 6 * k) {
+		if (hi - lo + 1 > 5 * k) {
 			mid = (lo + hi) / 2;
 			if (query(lo, mid)) {
 				hi = mid;
