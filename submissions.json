@@ -11198,6 +11198,24 @@
     ],
     "timestamp": "Mar/22/2021 18:23"
   },
+  "CF111102371": {
+    "contest_id": 1040,
+    "language": "GNU C++17",
+    "path": "codeforces/1040/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Network Safety",
+    "problem_url": "https://codeforces.com/contest/1040/problem/E",
+    "submission_id": "CF111102371",
+    "submission_url": "https://codeforces.com/contest/1040/submission/111102371",
+    "tags": [
+      "combinatorics",
+      "dfs and similar",
+      "graphs",
+      "*2200"
+    ],
+    "timestamp": "Mar/26/2021 11:52"
+  },
   "CF111131095": {
     "contest_id": 1041,
     "language": "GNU C++17",
