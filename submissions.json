@@ -11198,6 +11198,24 @@
     ],
     "timestamp": "Mar/22/2021 18:23"
   },
+  "CF111186318": {
+    "contest_id": 1484,
+    "language": "GNU C++17",
+    "path": "codeforces/1484/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Playlist",
+    "problem_url": "https://codeforces.com/contest/1484/problem/D",
+    "submission_id": "CF111186318",
+    "submission_url": "https://codeforces.com/contest/1484/submission/111186318",
+    "tags": [
+      "data structures",
+      "dsu",
+      "implementation",
+      "*1900"
+    ],
+    "timestamp": "Mar/27/2021 12:10"
+  },
   "CF111208940": {
     "contest_id": 1506,
     "language": "GNU C++17",
