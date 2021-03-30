@@ -11709,6 +11709,23 @@
     ],
     "timestamp": "Mar/30/2021 11:02"
   },
+  "CF111471831": {
+    "contest_id": 998,
+    "language": "GNU C++17",
+    "path": "codeforces/998/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Balloons",
+    "problem_url": "https://codeforces.com/contest/998/problem/A",
+    "submission_id": "CF111471831",
+    "submission_url": "https://codeforces.com/contest/998/submission/111471831",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Mar/30/2021 18:01"
+  },
   "CF111472527": {
     "contest_id": 998,
     "language": "GNU C++17",
