@@ -71,10 +71,6 @@ void solve() {
 		cout << 0 << endl;
 		return;
 	}
-	if (!o) {
-		cout << y << endl;
-		return;
-	}
 	cout << y + (z - 1) * min(x, y) << endl;
 }
 
