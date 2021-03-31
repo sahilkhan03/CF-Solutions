@@ -11709,6 +11709,24 @@
     ],
     "timestamp": "Mar/30/2021 11:02"
   },
+  "CF111554852": {
+    "contest_id": 996,
+    "language": "GNU C++17",
+    "path": "codeforces/996/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Suit and Tie",
+    "problem_url": "https://codeforces.com/contest/996/problem/D",
+    "submission_id": "CF111554852",
+    "submission_url": "https://codeforces.com/contest/996/submission/111554852",
+    "tags": [
+      "brute force",
+      "greedy",
+      "math",
+      "*1400"
+    ],
+    "timestamp": "Mar/31/2021 17:34"
+  },
   "CF111612541": {
     "contest_id": 996,
     "language": "GNU C++17",
