@@ -11709,6 +11709,21 @@
     ],
     "timestamp": "Mar/30/2021 11:02"
   },
+  "CF111612541": {
+    "contest_id": 996,
+    "language": "GNU C++17",
+    "path": "codeforces/996/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Tesla",
+    "problem_url": "https://codeforces.com/contest/996/problem/C",
+    "submission_id": "CF111612541",
+    "submission_url": "https://codeforces.com/contest/996/submission/111612541",
+    "tags": [
+      "*2100"
+    ],
+    "timestamp": "Apr/01/2021 11:18"
+  },
   "CF111642925": {
     "contest_id": 991,
     "language": "GNU C++17",
