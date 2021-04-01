@@ -11709,6 +11709,23 @@
     ],
     "timestamp": "Mar/30/2021 11:02"
   },
+  "CF111643438": {
+    "contest_id": 991,
+    "language": "GNU C++17",
+    "path": "codeforces/991/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Getting an A",
+    "problem_url": "https://codeforces.com/contest/991/problem/B",
+    "submission_id": "CF111643438",
+    "submission_url": "https://codeforces.com/contest/991/submission/111643438",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*900"
+    ],
+    "timestamp": "Apr/01/2021 17:57"
+  },
   "CF111644188": {
     "contest_id": 991,
     "language": "GNU C++17",
