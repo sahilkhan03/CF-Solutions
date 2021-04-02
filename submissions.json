@@ -11709,6 +11709,24 @@
     ],
     "timestamp": "Mar/30/2021 11:02"
   },
+  "CF111757218": {
+    "contest_id": 132,
+    "language": "GNU C++17",
+    "path": "codeforces/132/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Constants in the language of Shakespeare",
+    "problem_url": "https://codeforces.com/contest/132/problem/D",
+    "submission_id": "CF111757218",
+    "submission_url": "https://codeforces.com/contest/132/submission/111757218",
+    "tags": [
+      "constructive algorithms",
+      "dp",
+      "greedy",
+      "*2100"
+    ],
+    "timestamp": "Apr/02/2021 11:08"
+  },
   "CF111783408": {
     "contest_id": 1498,
     "language": "GNU C++17",
