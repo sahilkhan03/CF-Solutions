@@ -11709,6 +11709,23 @@
     ],
     "timestamp": "Mar/30/2021 11:02"
   },
+  "CF112001907": {
+    "contest_id": 992,
+    "language": "GNU C++17",
+    "path": "codeforces/992/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Nastya Studies Informatics",
+    "problem_url": "https://codeforces.com/contest/992/problem/B",
+    "submission_id": "CF112001907",
+    "submission_url": "https://codeforces.com/contest/992/submission/112001907",
+    "tags": [
+      "math",
+      "number theory",
+      "*1600"
+    ],
+    "timestamp": "Apr/04/2021 18:11"
+  },
   "CF112003276": {
     "contest_id": 992,
     "language": "GNU C++17",
