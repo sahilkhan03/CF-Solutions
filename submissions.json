@@ -11709,6 +11709,24 @@
     ],
     "timestamp": "Mar/30/2021 11:02"
   },
+  "CF112071275": {
+    "contest_id": 994,
+    "language": "GNU C++17",
+    "path": "codeforces/994/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Knights of a Polygonal Table",
+    "problem_url": "https://codeforces.com/contest/994/problem/B",
+    "submission_id": "CF112071275",
+    "submission_url": "https://codeforces.com/contest/994/submission/112071275",
+    "tags": [
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "Apr/05/2021 17:08"
+  },
   "CF112074282": {
     "contest_id": 994,
     "language": "GNU C++17",
