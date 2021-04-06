@@ -11709,6 +11709,22 @@
     ],
     "timestamp": "Mar/30/2021 11:02"
   },
+  "CF112124775": {
+    "contest_id": 994,
+    "language": "GNU C++17",
+    "path": "codeforces/994/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Open Communication",
+    "problem_url": "https://codeforces.com/contest/994/problem/D",
+    "submission_id": "CF112124775",
+    "submission_url": "https://codeforces.com/contest/994/submission/112124775",
+    "tags": [
+      "bitmasks",
+      "*1900"
+    ],
+    "timestamp": "Apr/06/2021 11:52"
+  },
   "CF112144171": {
     "contest_id": 987,
     "language": "GNU C++17",
