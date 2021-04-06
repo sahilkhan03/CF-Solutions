@@ -13,12 +13,13 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1873 | [C - Cut 'em all!](https://codeforces.com/contest/982/problem/C) | [GNU C++17](./codeforces/982/C.cpp) | `dfs and similar` `dp` `graphs` `greedy` `trees` `*1500` | Apr/07/2021 17:58 | 
-1872 | [B - Bus of Characters](https://codeforces.com/contest/982/problem/B) | [GNU C++17](./codeforces/982/B.cpp) | `data structures` `greedy` `implementation` `*1300` | Apr/07/2021 17:42 | 
-1871 | [A - Row](https://codeforces.com/contest/982/problem/A) | [GNU C++17](./codeforces/982/A.cpp) | `brute force` `constructive algorithms` `*1200` | Apr/07/2021 17:37 | 
-1870 | [E - Petr and Permutations](https://codeforces.com/contest/987/problem/E) | [GNU C++17](./codeforces/987/E.cpp) | `math` `*1800` | Apr/06/2021 18:54 | 
-1869 | [D - Fair](https://codeforces.com/contest/987/problem/D) | [GNU C++17](./codeforces/987/D.cpp) | `graphs` `shortest paths` `*1600` | Apr/06/2021 17:40 | 
-1868 | [C - Three displays](https://codeforces.com/contest/987/problem/C) | [GNU C++17](./codeforces/987/C.cpp) | `brute force` `dp` `implementation` `*1400` | Apr/06/2021 17:24 | 
+1874 | [C - Cut 'em all!](https://codeforces.com/contest/982/problem/C) | [GNU C++17](./codeforces/982/C.cpp) | `dfs and similar` `dp` `graphs` `greedy` `trees` `*1500` | Apr/07/2021 17:58 | 
+1873 | [B - Bus of Characters](https://codeforces.com/contest/982/problem/B) | [GNU C++17](./codeforces/982/B.cpp) | `data structures` `greedy` `implementation` `*1300` | Apr/07/2021 17:42 | 
+1872 | [A - Row](https://codeforces.com/contest/982/problem/A) | [GNU C++17](./codeforces/982/A.cpp) | `brute force` `constructive algorithms` `*1200` | Apr/07/2021 17:37 | 
+1871 | [E - Petr and Permutations](https://codeforces.com/contest/987/problem/E) | [GNU C++17](./codeforces/987/E.cpp) | `math` `*1800` | Apr/06/2021 18:54 | 
+1870 | [D - Fair](https://codeforces.com/contest/987/problem/D) | [GNU C++17](./codeforces/987/D.cpp) | `graphs` `shortest paths` `*1600` | Apr/06/2021 17:40 | 
+1869 | [C - Three displays](https://codeforces.com/contest/987/problem/C) | [GNU C++17](./codeforces/987/C.cpp) | `brute force` `dp` `implementation` `*1400` | Apr/06/2021 17:24 | 
+1868 | [B - High School: Become Human](https://codeforces.com/contest/987/problem/B) | [GNU C++17](./codeforces/987/B.cpp) | `math` `*1100` | Apr/06/2021 17:01 | 
 1867 | [E - Skyline Photo](https://codeforces.com/contest/1484/problem/E) | [GNU C++17](./codeforces/1484/E.cpp) | `data structures` `dp` `*2100` | Mar/30/2021 11:02 | 
 1866 | [F - Triangular Paths](https://codeforces.com/contest/1506/problem/F) | [GNU C++17](./codeforces/1506/F.cpp) | `constructive algorithms` `graphs` `math` `shortest paths` `sortings` `*2000` | Mar/29/2021 12:14 | 
 1865 | [E - Border](https://codeforces.com/contest/1011/problem/E) | [GNU C++17](./codeforces/1011/E.cpp) | `number theory` `*1800` | Mar/28/2021 18:50 | 
