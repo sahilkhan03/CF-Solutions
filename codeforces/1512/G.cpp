@@ -55,9 +55,9 @@ public:
 
 const ll mod = 1e9 + 7;
 
-vi sieve(1e7 + 1, 1), ans(1e7 + 1, -1);
+vl sieve(1e7 + 1, 1), ans(1e7 + 1, -1);
 
-inline void solve() {
+void solve() {
 	int c; scanf("%d", &c);
 	printf("%d\n", ans[c]);
 }
@@ -67,12 +67,9 @@ int main()
 	ans[1] = 1;
 	for (int i = 2; i <= 1e7; i++) {
 		for (int j = i; j <= 1e7; j += i) {
-			if (sieve[j]) {
-				sieve[j] += i;
-				if (sieve[j] > 1e7) sieve[j] = 0;
-			}
+			sieve[j] += i;
 		}
-		if (sieve[i] and ans[sieve[i]] == -1) ans[sieve[i]] = i;
+		if (sieve[i] <= 1e7 and ans[sieve[i]] == -1) ans[sieve[i]] = i;
 	}
 	int T = 1;
 	scanf("%d", &T);
