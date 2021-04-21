@@ -13135,6 +13135,24 @@
     ],
     "timestamp": "Apr/19/2021 10:27"
   },
+  "CF113741720": {
+    "contest_id": 931,
+    "language": "GNU C++17",
+    "path": "codeforces/931/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Game with String",
+    "problem_url": "https://codeforces.com/contest/931/problem/E",
+    "submission_id": "CF113741720",
+    "submission_url": "https://codeforces.com/contest/931/submission/113741720",
+    "tags": [
+      "implementation",
+      "math",
+      "probabilities",
+      "*1600"
+    ],
+    "timestamp": "Apr/21/2021 19:36"
+  },
   "CF113847293": {
     "contest_id": 1504,
     "language": "GNU C++17",
