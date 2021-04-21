@@ -64,7 +64,7 @@ void solve() {
 			pr.pb({i, j});
 		}
 	}
-	sort(all(pr), [&](const pl & a, const pl & b) -> bool {
+	sort(all(pr), [&](pl a, pl b) -> bool {
 		return abs(v[a.F] - v[a.S]) > abs(v[b.F] - v[b.S]);
 	});
 	for (auto x : pr) {
