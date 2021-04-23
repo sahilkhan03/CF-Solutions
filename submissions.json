@@ -13135,6 +13135,25 @@
     ],
     "timestamp": "Apr/19/2021 10:27"
   },
+  "CF113943764": {
+    "contest_id": 1511,
+    "language": "GNU C++17",
+    "path": "codeforces/1511/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Colorings and Dominoes",
+    "problem_url": "https://codeforces.com/contest/1511/problem/E",
+    "submission_id": "CF113943764",
+    "submission_url": "https://codeforces.com/contest/1511/submission/113943764",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "greedy",
+      "math",
+      "*2100"
+    ],
+    "timestamp": "Apr/23/2021 11:20"
+  },
   "CF113968222": {
     "contest_id": 1514,
     "language": "GNU C++17",
