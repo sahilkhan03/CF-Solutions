@@ -13135,6 +13135,24 @@
     ],
     "timestamp": "Apr/19/2021 10:27"
   },
+  "CF114249698": {
+    "contest_id": 1517,
+    "language": "GNU C++17",
+    "path": "codeforces/1517/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Explorer Space",
+    "problem_url": "https://codeforces.com/contest/1517/problem/D",
+    "submission_id": "CF114249698",
+    "submission_url": "https://codeforces.com/contest/1517/submission/114249698",
+    "tags": [
+      "dp",
+      "graphs",
+      "shortest paths",
+      "*1800"
+    ],
+    "timestamp": "Apr/26/2021 10:40"
+  },
   "CF114276921": {
     "contest_id": 918,
     "language": "GNU C++17",
