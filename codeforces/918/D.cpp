@@ -62,12 +62,15 @@ void solve() {
 	for (int i = 0; i < m; i++) {
 		int a, b; char c;
 		cin >> a >> b >> c;
+		debug(a, b, c);
 		v[a - 1].pb({b - 1, c - 'a'});
 	}
 	vector<vector<vi>> dp(26, vector<vi>(n, vi(n, -1)));
 	function<int(int, int, int)> calc = [&](int c, int i, int j) {
 		if (dp[c][i][j] != -1) return dp[c][i][j];
+		// debug(i + 1, j + 1, char(c + 'a'));
 		for (auto [x, ch] : v[i]) {
+			// debug(x + 1, char('a' + ch));
 			if (ch >= c) {
 				calc(ch, j, x);
 				if (!dp[ch][j][x])
@@ -79,6 +82,7 @@ void solve() {
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			calc(0, i, j);
+			// debug(dp[0][i][j]);
 			cout << "BA"[dp[0][i][j]];
 		}
 		cout << endl;
