@@ -54,23 +54,69 @@ public:
 #endif
 
 const ll mod = 1e9 + 7;
+template<typename T> struct RMQ {
+	vector<T> v; int n;
+	static const int b = 30;
+	vector<int> mask, t;
+
+	int op(int x, int y) {
+		return v[x] < v[y] ? x : y;
+	}
+
+	int lsb(int x) {
+		return x & -x;
+	}
+
+	int msb_index(int x) {
+		return __builtin_clz(1) - __builtin_clz(x);
+	}
+
+	int small(int r, int size = b) {
+		int dist_from_r = msb_index(mask[r] & ((1 << size) - 1));
+		return r - dist_from_r;
+	}
+
+	RMQ(const vector<T>& v_) : v(v_), n(v.size()), mask(n), t(n) {
+		int curr_mask = 0;
+		for (int i = 0; i < n; i++) {
+			curr_mask = (curr_mask << 1) & ((1 << b) - 1);
+			while (curr_mask > 0 and op(i, i - msb_index(lsb(curr_mask))) == i) {
+				curr_mask ^= lsb(curr_mask);
+			}
+			curr_mask |= 1;
+
+			mask[i] = curr_mask;
+		}
+
+		for (int i = 0; i < n / b; i++) t[i] = small(b * i + b - 1);
+		for (int j = 1; (1 << j) <= n / b; j++) for (int i = 0; i + (1 << j) <= n / b; i++)
+				t[n / b * j + i] = op(t[n / b * (j - 1) + i], t[n / b * (j - 1) + i + (1 << (j - 1))]);
+	}
+	T query(int l, int r) {
+		if (r - l + 1 <= b) return v[small(r, r - l + 1)];
+		int ans = op(small(l + b - 1), small(r));
+		int x = l / b + 1, y = r / b - 1;
+		if (x <= y) {
+			int j = msb_index(y - x + 1);
+			ans = op(ans, op(t[n / b * j + x], t[n / b * j + y - (1 << j) + 1]));
+		}
+		return v[ans];
+	}
+};
+
 void solve() {
 	ll n, c;
 	cin >> n >> c;
 	vl v(n); cin >> v;
-	ll sum = 0;
-	multiset<ll> s;
+	vl pre(n + 1);
+	for (int i = 0; i < n; i++)
+		pre[i + 1] = pre[i] + v[i];
+	RMQ<ll> rmq(v);
 	vl dp(n + 1);
 	for (int i = 1; i <= n; i++) {
-		s.insert(v[i - 1]);
-		sum += v[i - 1];
-		if (i > c) {
-			sum -= v[i - c - 1];
-			s.erase(s.find(v[i - c - 1]));
-		}
 		dp[i] = dp[i - 1] + v[i - 1];
 		if (i - c >= 0)
-			dp[i] = min(dp[i], dp[i - c] + sum - *s.begin());
+			dp[i] = min(dp[i], dp[i - c] + pre[i] - pre[i - c] - rmq.query(i - c, i - 1));
 	}
 	cout << dp[n] << endl;
 }
