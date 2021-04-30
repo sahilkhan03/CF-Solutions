@@ -13135,6 +13135,25 @@
     ],
     "timestamp": "Apr/19/2021 10:27"
   },
+  "CF114654405": {
+    "contest_id": 940,
+    "language": "GNU C++17",
+    "path": "codeforces/940/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Cashback",
+    "problem_url": "https://codeforces.com/contest/940/problem/E",
+    "submission_id": "CF114654405",
+    "submission_url": "https://codeforces.com/contest/940/submission/114654405",
+    "tags": [
+      "data structures",
+      "dp",
+      "greedy",
+      "math",
+      "*2000"
+    ],
+    "timestamp": "Apr/30/2021 10:40"
+  },
   "CF114682576": {
     "contest_id": 1519,
     "language": "GNU C++17",
