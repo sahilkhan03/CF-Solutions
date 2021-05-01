@@ -13135,6 +13135,23 @@
     ],
     "timestamp": "Apr/19/2021 10:27"
   },
+  "CF114745313": {
+    "contest_id": 931,
+    "language": "GNU C++17",
+    "path": "codeforces/931/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Teodor is not a liar!",
+    "problem_url": "https://codeforces.com/contest/931/problem/F",
+    "submission_id": "CF114745313",
+    "submission_url": "https://codeforces.com/contest/931/submission/114745313",
+    "tags": [
+      "data structures",
+      "dp",
+      "*1900"
+    ],
+    "timestamp": "May/01/2021 11:21"
+  },
   "CF114771347": {
     "contest_id": 935,
     "language": "GNU C++17",
