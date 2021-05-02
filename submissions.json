@@ -13135,6 +13135,23 @@
     ],
     "timestamp": "Apr/19/2021 10:27"
   },
+  "CF114854905": {
+    "contest_id": 887,
+    "language": "GNU C++17",
+    "path": "codeforces/887/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Cubes for Masha",
+    "problem_url": "https://codeforces.com/contest/887/problem/B",
+    "submission_id": "CF114854905",
+    "submission_url": "https://codeforces.com/contest/887/submission/114854905",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1300"
+    ],
+    "timestamp": "May/02/2021 17:45"
+  },
   "CF114858116": {
     "contest_id": 887,
     "language": "GNU C++17",
