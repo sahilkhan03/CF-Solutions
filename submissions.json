@@ -13135,6 +13135,24 @@
     ],
     "timestamp": "Apr/19/2021 10:27"
   },
+  "CF115176518": {
+    "contest_id": 1515,
+    "language": "GNU C++17",
+    "path": "codeforces/1515/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Phoenix and Computers",
+    "problem_url": "https://codeforces.com/contest/1515/problem/E",
+    "submission_id": "CF115176518",
+    "submission_url": "https://codeforces.com/contest/1515/submission/115176518",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "math",
+      "*2200"
+    ],
+    "timestamp": "May/05/2021 12:18"
+  },
   "CF115213733": {
     "contest_id": 1520,
     "language": "GNU C++17",
