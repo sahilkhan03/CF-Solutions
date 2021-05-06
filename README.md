@@ -13,15 +13,16 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-1956 | [B - Maximum of Maximums of Minimums](https://codeforces.com/contest/872/problem/B) | [GNU C++17](./codeforces/872/B.cpp) | `implementation` `*1200` | May/09/2021 16:39 | 
-1955 | [A - Search for Pretty Integers](https://codeforces.com/contest/872/problem/A) | [GNU C++17](./codeforces/872/A.cpp) | `implementation` `*900` | May/08/2021 18:13 | 
-1954 | [C - A Twisty Movement](https://codeforces.com/contest/934/problem/C) | [GNU C++17](./codeforces/934/C.cpp) | `brute force` `dp` `implementation` `*1800` | May/07/2021 18:34 | 
-1953 | [B - A Prosperous Lot](https://codeforces.com/contest/934/problem/B) | [GNU C++17](./codeforces/934/B.cpp) | `constructive algorithms` `implementation` `*1200` | May/07/2021 18:19 | 
-1952 | [A - A Compatible Pair](https://codeforces.com/contest/934/problem/A) | [GNU C++17](./codeforces/934/A.cpp) | `brute force` `games` `*1400` | May/07/2021 18:15 | 
-1951 | [E - Maximize!](https://codeforces.com/contest/939/problem/E) | [GNU C++17](./codeforces/939/E.cpp) | `binary search` `greedy` `ternary search` `two pointers` `*1800` | May/06/2021 19:15 | 
-1950 | [D - Love Rescue](https://codeforces.com/contest/939/problem/D) | [GNU C++17](./codeforces/939/D.cpp) | `dfs and similar` `dsu` `graphs` `greedy` `strings` `*1600` | May/06/2021 18:38 | 
-1949 | [C - Convenient For Everybody](https://codeforces.com/contest/939/problem/C) | [GNU C++17](./codeforces/939/C.cpp) | `binary search` `two pointers` `*1600` | May/06/2021 18:33 | 
-1948 | [B - Hamster Farm](https://codeforces.com/contest/939/problem/B) | [GNU C++17](./codeforces/939/B.cpp) | `implementation` `*1000` | May/06/2021 17:55 | 
+1957 | [B - Maximum of Maximums of Minimums](https://codeforces.com/contest/872/problem/B) | [GNU C++17](./codeforces/872/B.cpp) | `implementation` `*1200` | May/09/2021 16:39 | 
+1956 | [A - Search for Pretty Integers](https://codeforces.com/contest/872/problem/A) | [GNU C++17](./codeforces/872/A.cpp) | `implementation` `*900` | May/08/2021 18:13 | 
+1955 | [C - A Twisty Movement](https://codeforces.com/contest/934/problem/C) | [GNU C++17](./codeforces/934/C.cpp) | `brute force` `dp` `implementation` `*1800` | May/07/2021 18:34 | 
+1954 | [B - A Prosperous Lot](https://codeforces.com/contest/934/problem/B) | [GNU C++17](./codeforces/934/B.cpp) | `constructive algorithms` `implementation` `*1200` | May/07/2021 18:19 | 
+1953 | [A - A Compatible Pair](https://codeforces.com/contest/934/problem/A) | [GNU C++17](./codeforces/934/A.cpp) | `brute force` `games` `*1400` | May/07/2021 18:15 | 
+1952 | [E - Maximize!](https://codeforces.com/contest/939/problem/E) | [GNU C++17](./codeforces/939/E.cpp) | `binary search` `greedy` `ternary search` `two pointers` `*1800` | May/06/2021 19:15 | 
+1951 | [D - Love Rescue](https://codeforces.com/contest/939/problem/D) | [GNU C++17](./codeforces/939/D.cpp) | `dfs and similar` `dsu` `graphs` `greedy` `strings` `*1600` | May/06/2021 18:38 | 
+1950 | [C - Convenient For Everybody](https://codeforces.com/contest/939/problem/C) | [GNU C++17](./codeforces/939/C.cpp) | `binary search` `two pointers` `*1600` | May/06/2021 18:33 | 
+1949 | [B - Hamster Farm](https://codeforces.com/contest/939/problem/B) | [GNU C++17](./codeforces/939/B.cpp) | `implementation` `*1000` | May/06/2021 17:55 | 
+1948 | [A - Love Triangle](https://codeforces.com/contest/939/problem/A) | [GNU C++17](./codeforces/939/A.cpp) | `graphs` `*800` | May/06/2021 17:51 | 
 1947 | [F - Education](https://codeforces.com/contest/1512/problem/F) | [GNU C++17](./codeforces/1512/F.cpp) | `brute force` `dp` `greedy` `implementation` `*1900` | Apr/19/2021 10:27 | 
 1946 | [G - Short Task](https://codeforces.com/contest/1512/problem/G) | [GNU C++17](./codeforces/1512/G.cpp) | `brute force` `dp` `math` `number theory` `*1700` | Apr/19/2021 10:12 | 
 1945 | [E - Permutation by Sum](https://codeforces.com/contest/1512/problem/E) | [GNU C++17](./codeforces/1512/E.cpp) | `brute force` `greedy` `math` `*1600` | Apr/18/2021 17:48 | 
